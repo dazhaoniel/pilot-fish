@@ -1,0 +1,492 @@
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+body {}
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+/* Primary Navigation */
+.primary_navigation {
+	clear:both;
+	margin:0 auto;
+}
+
+.primary_navigation, .primary_navigation ul {
+	display:block;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.primary_navigation li {
+	border:0;
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	position:relative;
+	z-index:5;
+}
+
+.primary_navigation li:hover {
+	white-space:normal;
+	z-index:10000;
+}
+
+.primary_navigation li li {
+	float:none;
+}
+
+.primary_navigation ul {
+	left:0;
+	position:absolute;
+	top:0;
+	visibility:hidden;
+	z-index:10;
+}
+
+.primary_navigation li:hover > ul {
+	top:100%;
+	visibility:visible;
+}
+
+.primary_navigation li li:hover > ul {
+	left:100%;
+	top:0;
+}
+
+.primary_navigation:after, .primary_navigation ul:after {
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+}
+
+.primary_navigation, .primary_navigation ul {
+	min-height:0;
+}
+
+.primary_navigation ul {
+	margin:-10px 0 0 -30px;
+	padding:10px 30px 30px;
+}
+
+.primary_navigation ul ul {
+	margin:-30px 0 0 -10px;
+	padding:30px 30px 30px 10px;
+}
+
+.primary_navigation ul li a:hover, 
+.primary_navigation li li a:hover {
+}
+
+.primary_navigation ul {
+	min-width:15em;
+	width:auto;
+}
+
+.primary_navigation a {
+	font-family: "Droid Serif","Georgia",serif;
+	border-left:1px solid #DEDCC3; 
+	color: #377687; 
+	display:block;
+	font-size:13px;
+	font-weight:700;
+	height:45px;
+	line-height:45px;
+	margin:0;
+	padding:0 0.9em;
+	position:relative;
+	text-decoration:none;
+}
+
+.primary_navigation a:hover {
+    	background-image: url(images/menu-bg.png);
+	text-decoration:none;
+	color: #377687;
+}
+
+.primary_navigation .current_page_item a,
+.primary_navigation .current-menu-item a {
+	background-image: url(images/menu-bg.png);
+}
+
+.primary_navigation li li {
+	background:#fff;
+	background-image:none;
+	border:1px solid #b2b2b2;
+	border-top:none;
+	color:#444;
+	filter:none;
+	width:auto;
+}
+
+.primary_navigation li li a {
+	border:none;
+	color:#444;
+	font-size:12px;
+	font-weight:400;
+	height:auto;
+	height:20px;
+	line-height:20px;
+	padding:5px 10px;
+	text-shadow:none;
+	white-space:nowrap;
+}
+
+.primary_navigation li li a:hover {
+	background:#f5f5f5;
+	background-image:none;
+	border:none;
+	color:#444;
+	filter:none;
+}
+
+.primary_navigation ul > li + li {
+	border-top:0;
+}
+
+.primary_navigation li li:hover > ul {
+	left:100%;
+	top:0;
+}
+
+.primary_navigation > li:first-child > a {
+	border-left:none;
+}
+
+.primary_navigation > li:first-child > a, .menu-container li + li + li li:first-child > a {
+}
+
+.primary_navigation ul.children a, .primary_navigation .current_page_ancestor, .primary_navigation .current_page_ancestor ul a {
+	background:none;
+	background-image:none;
+	filter:none;
+}
+
+ul.sub-menu .current_page_item a {
+	background:transparent !important;
+}
+
+
+
+/* =============================================================================
+   Content
+   ========================================================================== */
+
+
+
+/* =============================================================================
+   Featured Content
+   ========================================================================== */
+
+#featured {
+	background-attachment: fixed;
+	background-image: url(images/home_banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 380px;
+	display: block;
+	/*position: relative;*/
+	text-align: center;
+}
+
+#featured p {
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 27px;
+	padding: 0 40px 0 40px;
+	text-align:center;
+}
+
+.featured-title {
+	font-size: 60px;
+	color: #ffffff;
+	letter-spacing: -1px;
+	line-height: 1;
+	margin: 0;
+	padding-left: 250px;
+	text-shadow: 0 0 1px #3F544E;
+	position: fixed;
+	top: 380px;
+}
+
+.featured-subtitle {
+	text-align:center;
+}
+
+.featured-image img {
+	margin-top:44px;
+}
+
+/* =============================================================================
+   Sidebar
+   ========================================================================== */
+
+#widgets {
+	margin-top:40px;
+}
+
+#widgets a {
+	display:inline-block;
+	margin:0;
+	padding:3px;
+	text-decoration:none;
+}
+
+#widgets ul, #widgets .textwidget, #widgets .tagcloud, #widgets #searchform, #widgets #calendar_wrap {
+	font-size:13px;
+	margin:0 0 20px;
+	padding:20px;
+	list-style: none;
+}
+
+#widgets #s {
+	width:70%;
+}
+
+#widgets ul li {
+	margin-left:15px;
+}
+
+#widgets ul li a {
+	display:inline;
+	color: #4fa1ab; 
+	text-decoration:none;
+}
+
+#widgets ul li a:hover {
+}
+
+#widgets ul ul a {
+	padding:3px 0 3px 18px;
+}
+
+#widgets ul ul ul a {
+	padding:3px 0 3px 18px;
+}
+
+#widgets ul ul ul ul a {
+	border:none;
+	padding:3px 0 3px 18px;
+}
+
+#widgets .widget-title img {
+	float:right;
+	height:11px;
+	position:relative;
+	top:4px;
+	width:11px;
+}
+
+#widgets .rss-date {
+	line-height:18px;
+	padding:6px 12px;
+}
+
+#widgets .rssSummary {
+	padding:10px;
+}
+
+#widgets cite {
+	font-style:normal;
+	line-height:18px;
+	padding:6px 12px;
+}
+
+#widgets .textwidget, #widgets .tagcloud {
+	display:block;
+	line-height:1.5em;
+	margin:0 0 20px;
+	word-wrap:break-word;
+}
+
+#widgets .textwidget a {
+	display:inline;
+}
+
+#widgets ul .children {
+	border:none;
+	margin:0;
+	padding:0;
+}
+
+#widgets .author {
+	font-weight:700;
+	padding-top:4px;
+}
+
+.widget_archive select, #cat {
+	display:block;
+	margin:20px 15px 0;
+}
+
+/* =Titles
+-------------------------------------------------------------- */
+
+.widget-inner h3 {  
+	color: #377687;
+	display:block;
+	font-size:24px;
+	font-weight:700;
+	line-height:23px;
+	margin:0;
+	padding:20px 20px 0 20px;
+	text-align:center;
+}
+
+.widget-title a {
+	border-bottom:none;
+	padding:0!important;
+}
+
+.title-404 {
+	color:#6e9489;
+	font-size: 60px;
+	text-align: center;
+}
+
+
+
+
+/* =============================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry h2 a { text-decoration: none; }
+.hentry time { display: block; }
+.hentry p.byline { }
+.hentry footer { clear: both; }
+
+.comments-link {
+	font-size:12px;
+}
+
+#cancel-comment-reply-link {
+	color:#900;
+}
+
+.post-data {
+	clear:both;
+	font-size:11px;
+	margin-top:20px;
+}
+
+.post-entry {
+	clear:both;
+}
+
+.post-meta {
+	clear:both;
+	color:#9f9f9f;
+	font-size:13px;
+	margin-bottom:10px;
+}
+
+.post-edit {
+	clear:both;
+	display:block;
+	font-size:12px;
+	margin:1.5em 0;
+}
+
+.post-search-terms {
+	clear:both;
+}
+
+.read-more {
+	clear:both;
+}
+
+.attachment-entry {
+	clear:both;
+	text-align:center;
+}
+
+
+/* =============================================================================
+   Post Comments
+   ========================================================================== */
+
+#comments, #respond, #submit { clear: both; display: block; }
+ol.commentlist img.avatar { float: left; margin-right: 10px; }
+
+
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+
+#content-info {
+  margin-top: 45px;
+  padding: 35px 0 36px;
+  border-top: 1px solid #e5e5e5;
+}
+
+#content-info p small { font-size: 13px; }
+
+.copyright { text-align:left; }
+.scroll-top { text-align:center; }
+.powered { text-align:right; }
+
+/* =============================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { margin: 0 20px 20px 0; float: left; }
+.alignright { margin: 0 0 20px 20px; float: right; }
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.center {
+	text-align:center;
+}
+
+/* =Clearfix
+-------------------------------------------------------------- */
+
+.clearfix:after, #container:after {
+	clear:both;
+	content:"\0020";
+	display:block;
+	height:0;
+	max-height:0;
+	overflow:hidden;
+	visibility:hidden;
+}
+
+.clearfix, #container {
+	display:inline-block;
+}
+
+*html .clearfix, *html #container {
+	height:1%;
+}
+
+.clearfix, #container {
+	display:block;
+}
+
+.clear {
+	clear:both;
+}
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+

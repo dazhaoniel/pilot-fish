@@ -1,0 +1,78 @@
+.row {
+	float:left;
+	margin-bottom:2.083%;
+	padding-top:0;
+}
+
+.row-offset {
+	float:right;
+	margin-bottom:2.083%;
+	padding-top:0;
+}
+
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11 {
+	display:inline;
+	margin-right:2.083%;
+}
+
+.span1 {
+	width:6.38297%;
+}
+
+.span2 {
+	width:14.89361%;
+}
+
+.span3 {
+	width:23.40425%;
+}
+
+.span4 {
+	width:31.91489%;
+}
+
+.span5 {
+	width:40.42553%;
+}
+
+.span6 {
+	width:48.82978%;
+}
+
+.span7 {
+	width:57.4468%;
+}
+
+.spqn8 {
+	width:65.95744%;
+}
+
+.span9 {
+	width:74.46808%;
+}
+
+.span10 {
+	width:82.97872%;
+}
+
+.span11 {
+	width:91.48936%;
+}
+
+.span12 {
+	width:100%;
+}
+
+/* .fit is the very last item in your grid 
+   to keep your columns inline and without
+   floats
+*/
+.last {
+	margin-left:0!important;
+	margin-right:0!important;
+}
+
+img {
+	height:auto;
+	max-width:100%;
+}
