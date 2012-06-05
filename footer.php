@@ -21,24 +21,24 @@
     <?php pilotfish_in_footer(); ?>
     <!--<div id="sidebar-footer" class="row span4">-->
     <?php dynamic_sidebar('sidebar-footer'); ?>
-    <!--</div>-->        
-        
+    <!--</div>-->
+    </div> <!-- end of #footer-wrapper -->        
+    <div id="copyright" class="row span12">    
         <div class="row span4 copyright">
             <small><?php esc_attr_e('&copy;', 'pilotfish'); ?> <?php _e(date('Y')); ?><a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                 <?php bloginfo('name'); ?></small>
             </a>
         </div><!-- end of .copyright -->
         
-        <div class="row span4 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'pilotfish' ); ?>"><?php _e( '&uarr;', 'pilotfish' ); ?></a></div>
-
-<!-- Copyright and Powered by Wordpress -->        
+        <div class="row span4 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'pilotfish' ); ?>"><?php _e( '&uarr;', 'pilotfish' ); ?></a></div><!-- end of .scroll-top -->
+       
         <div class="row span4 last powered">
             <small><a href="<?php echo esc_url(__('http://danielatwork.com','pilotfish')); ?>" title="<?php esc_attr_e('pilotfish - A Minimal Portfolio Theme', 'pilotfish'); ?>">
                     <?php printf('Pilot Fish'); ?></a>
             powered by <a href="<?php echo esc_url(__('http://wordpress.org','pilotfish')); ?>" title="<?php esc_attr_e('WordPress', 'pilotfish'); ?>">
                     <?php printf('WordPress'); ?></a></small>
         </div><!-- end of .powered -->       
-    </div><!-- end of #footer-wrapper .span12 -->
+    </div><!-- end of #copyright .span12 -->
     </div><!-- end of #container -->
 </footer><!-- end of footer #content-info -->
 <?php pilotfish_footer_end(); // after footer hook ?>
