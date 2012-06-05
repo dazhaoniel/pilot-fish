@@ -30,9 +30,8 @@
             </a>
         </div><!-- end of .copyright -->
         
-        <div class="row span4 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'pilotfish' ); ?>"><?php _e( '&uarr;', 'pilotfish' ); ?></a></div>
-
-<!-- Copyright and Powered by Wordpress -->        
+        <div class="row span4 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'pilotfish' ); ?>"><?php _e( '&uarr;', 'pilotfish' ); ?></a></div><!-- end of .scroll-top -->
+       
         <div class="row span4 last powered">
             <small><a href="<?php echo esc_url(__('http://danielatwork.com','pilotfish')); ?>" title="<?php esc_attr_e('pilotfish - A Minimal Portfolio Theme', 'pilotfish'); ?>">
                     <?php printf('Pilot Fish'); ?></a>

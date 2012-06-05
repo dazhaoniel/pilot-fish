@@ -19,9 +19,9 @@
     <div id="footer-wrapper" class="row span12">
          
     <?php pilotfish_in_footer(); ?>
-    <!--<div id="sidebar-footer" class="row span4">-->
+
     <?php dynamic_sidebar('sidebar-footer'); ?>
-    <!--</div>-->
+
     </div> <!-- end of #footer-wrapper -->        
     <div id="copyright" class="row span12">    
         <div class="row span4 copyright">

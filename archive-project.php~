@@ -31,7 +31,7 @@
 	<?php endif; ?>
         <?php /* Display navigation to next/previous pages when applicable */ ?>
 		<?php if ($wp_query->max_num_pages > 1) { ?>
-		  <nav id="project-nav" class="pager">
+		  <nav id="post-nav" class="pager">
 		    <div class="previous"><?php next_posts_link(__('&larr; previous', 'pilotfish')); ?></div>
 		    <div class="next"><?php previous_posts_link(__('next &rarr;', 'pilotfish')); ?></div>
 		  </nav>

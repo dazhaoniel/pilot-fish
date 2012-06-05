@@ -21,7 +21,7 @@
     <nav class="pager">
         <div class="previous"><?php previous_comments_link(__( '&#8249; previous','pilotfish' )); ?></div><!-- end of .previous -->
         <div class="next"><?php next_comments_link(__( 'next &#8250;','pilotfish', 0 )); ?></div><!-- end of .next -->
-    </nav><!-- end of.pager -->
+    </nav><!-- end of.navigation -->
     <?php endif; ?>
 
     <ol class="commentlist">
@@ -32,7 +32,7 @@
     <nav class="pager">
         <div class="previous"><?php previous_comments_link(__( '&#8249; previous','pilotfish' )); ?></div><!-- end of .previous -->
         <div class="next"><?php next_comments_link(__( 'next &#8250;','pilotfish', 0 )); ?></div><!-- end of .next -->
-    </nav><!-- end of.pager -->
+    </nav><!-- end of.navigation -->
     <?php endif; ?>
 
 <?php else : ?>

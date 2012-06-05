@@ -13,7 +13,7 @@ function pilotfish_widgets_init() {
   register_sidebar(array(
     'name' => __('Footer', 'pilotfish'),
     'id' => 'sidebar-footer',
-    'before_widget' => '<div class="row span4"><section id="%1$s" class="widget %2$s"><div class="widget-inner">',
+    'before_widget' => '<div class="row span3"><section id="%1$s" class="widget %2$s"><div class="widget-inner">',
     'after_widget' => '</div></section></div>',
     'before_title' => '<h3>',
     'after_title' => '</h3>',

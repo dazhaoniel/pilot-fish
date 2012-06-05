@@ -40,7 +40,7 @@ function pilotfish_setup() {
 
   //Add custom header image
   define('HEADER_TEXTCOLOR', '');
-  define('HEADER_IMAGE', ''); // 
+  define('HEADER_IMAGE', ''); // %s is the template dir uri (%s/images/default-logo.png)
   define('HEADER_IMAGE_WIDTH', 400); // use width and height appropriate for your theme
   define('HEADER_IMAGE_HEIGHT', 125);
 
