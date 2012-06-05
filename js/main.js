@@ -13,10 +13,8 @@ function isMobile(){
     );
 }
 
-
-
 ///////////////////////////////
-// Parallax
+// Parallax Scrolling
 ///////////////////////////////
 
 // Calcualte the home banner parallax scrolling
@@ -36,9 +34,8 @@ function isMobile(){
     }); */   
   }
 
-
 ///////////////////////////////
-// Initialize
+// Initialize Parallax 
 ///////////////////////////////	
 	
 //jQuery.noConflict();
@@ -59,3 +56,32 @@ jQuery(document).ready(function(){
 	}
 });
 
+///////////////////////////////
+// Slide Down Comment Forms
+///////////////////////////////
+	
+jQuery(document).ready(function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '.comment-notes' ).hide();
+	jQuery( '.comment-form-author' ).hide();
+	jQuery( '.comment-form-email' ).hide();
+	jQuery( '.comment-form-url' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		
+	jQuery( '.comment-form-author' ).slideDown();
+	jQuery( '.comment-form-email' ).slideDown();
+	jQuery( '.comment-form-url' ).slideDown();
+	jQuery( '#commentform .form-submit' ).slideDown();
+	});
+});
