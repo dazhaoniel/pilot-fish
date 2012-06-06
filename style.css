@@ -314,7 +314,7 @@ License URI:
 		position:relative;
 }
 	#header {
-		margin-left:20%;
+		margin: 0;
 }
 	#content-info {
   		margin-top: 45px;
@@ -426,7 +426,7 @@ License URI:
 ================================================== */
 	#header #logo {
 		float:left;
-		margin:0;
+		margin-left:10%;
 }
 	#header #logo .site-name {
 		display:block;
@@ -450,17 +450,17 @@ License URI:
 		color: #8CA1A1;
 }
 /* Primary Navigation */
-	#menu-index {
+	.main-nav {
 		clear:both;
 		margin:0 auto;
 }
-	#menu-index, #menu-index ul {
+	.main-nav, .main-nav ul {
 		display:block;
 		list-style-type:none;
 		margin:0;
 		padding:0;
 }
-	#menu-index li {
+	.main-nav li {
 		border:0;
 		display:block;
 		float:left;
@@ -469,11 +469,11 @@ License URI:
 		position:relative;
 		z-index:5;
 }
-	#menu-index li:hover {
+	.main-nav li:hover {
 		white-space:normal;
 		z-index:10000;
 }
-	#menu-index a {
+	.main-nav a {
 		font-family: "Droid Serif","Georgia",serif;
 		border-left:1px solid #DEDCC3; 
 		color: #377687; 
@@ -487,19 +487,19 @@ License URI:
 		position:relative;
 		text-decoration:none;
 }
-	#menu-index a:hover {
+	.main-nav a:hover {
 	    	background-image: url(images/menu-bg.png);
 		text-decoration:none;
 		color: #377687;
 }
-	#menu-index .current_page_item a,
-	#menu-index .current-menu-item a {
+	.main-nav .current_page_item a,
+	.main-nav .current-menu-item a {
 		background-image: url(images/menu-bg.png);
 }
-	#menu-index li li {
+	.main-nav li li {
 		float:none;
 }
-	#menu-index:after, #menu-index ul:after {
+	.main-nav:after, .main-nav ul:after {
 		clear:both;
 		content:".";
 		display:block;
@@ -507,41 +507,41 @@ License URI:
 		overflow:hidden;
 		visibility:hidden;
 }
-	#menu-index, #menu-index ul {
+	.main-nav, .main-nav ul {
 		min-height:0;
 }
-/*	Sub Menu	*/
-	#menu-index ul {
+/*	Page Menu	*/
+	.main-nav ul {
 		left:0;
 		position:absolute;
 		top:0;
 		visibility:hidden;
 		z-index:10;
 }
-	#menu-index li:hover > ul {
+	.main-nav li:hover > ul {
 		top:100%;
 		visibility:visible;
 }
-	#menu-index li li:hover > ul {
+	.main-nav li li:hover > ul {
 		left:100%;
 		top:0;
 }
-	#menu-index ul {
+	.main-nav ul {
 		margin:-10px 0 0 -30px;
 		padding:10px 30px 30px;
 }
-	#menu-index ul ul {
+	.main-nav ul ul {
 		margin:-30px 0 0 -10px;
 		padding:30px 30px 30px 10px;
 }
-	#menu-index ul li a:hover, 
-	#menu-index li li a:hover {
+	.main-nav ul li a:hover {
+		background-image: url(images/menu-bg.png);
 }
-	#menu-index ul {
+	.main-nav ul {
 		min-width:15em;
 		width:auto;
 }
-	#menu-index li li {
+	.main-nav li li {
 		background:#fff;
 		background-image:none;
 		border:1px solid #b2b2b2;
@@ -550,7 +550,7 @@ License URI:
 		filter:none;
 		width:auto;
 }
-	#menu-index li li a {
+	.main-nav li li a {
 		border:none;
 		color:#444;
 		font-size:12px;
@@ -562,26 +562,26 @@ License URI:
 		text-shadow:none;
 		white-space:nowrap;
 }
-	#menu-index li li a:hover {
+	.main-nav li li a:hover {
 		background:#f5f5f5;
 		background-image:none;
 		border:none;
 		color:#444;
 		filter:none;
 }
-	#menu-index ul > li + li {
+	.main-nav ul > li + li {
 		border-top:0;
 }
-	#menu-index li li:hover > ul {
+	.main-nav li li:hover > ul {
 		left:100%;
 		top:0;
 }
-	#menu-index > li:first-child > a {
+	.main-nav > li:first-child > a {
 		border-left:none;
 }
-	#menu-index > li:first-child > a, .menu-container li + li + li li:first-child > a {
+	.main-nav > li:first-child > a, .menu-container li + li + li li:first-child > a {
 }
-	#menu-index ul.children a, #menu-index .current_page_ancestor, #menu-index .current_page_ancestor ul a {
+	.main-nav ul.children a, .main-nav .current_page_ancestor, .main-nav .current_page_ancestor ul a {
 		background:none;
 		background-image:none;
 		filter:none;
