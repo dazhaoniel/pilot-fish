@@ -7,7 +7,7 @@
 function pilotfish_scripts() {
   //wp_enqueue_style('pilotfish_bootstrap_style', get_template_directory_uri() . '/css/bootstrap.css', false, null);
   wp_enqueue_style('pilotfish_bootstrap_responsive_style', get_template_directory_uri() . '/css/bootstrap-responsive.css', false, null);
-  wp_enqueue_style('pilotfish_app_style', get_template_directory_uri() . '/css/app.css', false, null);
+  //wp_enqueue_style('pilotfish_app_style', get_template_directory_uri() . '/css/app.css', false, null);
   wp_enqueue_style('pilotfish_main_style', get_template_directory_uri() . '/style.css', false, null);
 
   if (!is_admin()) {

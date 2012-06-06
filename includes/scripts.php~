@@ -21,7 +21,9 @@ function pilotfish_scripts() {
 
   wp_register_script('pilotfish_modernizr', get_template_directory_uri() . '/js/modernizr.js', false, null, false);
   wp_register_script('pilotfish_main', get_template_directory_uri() . '/js/main.js', false, null, true);
+  wp_register_script('pilotfish_respond', get_template_directory_uri() . '/js/respond.min.js', false, null, true);
   wp_enqueue_script('pilotfish_modernizr');
+  wp_enqueue_script('pilotfish_respond');
   wp_enqueue_script('pilotfish_main');
 }
 

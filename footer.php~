@@ -15,14 +15,14 @@
 <?php pilotfish_container_end(); // after container hook ?>
 
 <footer id="content-info" class="clearfix">
-<div id="container">
-    <div id="footer-wrapper" class="row span12">
+<div id="footer-wrapper">
+    <div id="sidebar-footer" class="row span12">
          
     <?php pilotfish_in_footer(); ?>
-    <!--<div id="sidebar-footer" class="row span4">-->
+
     <?php dynamic_sidebar('sidebar-footer'); ?>
-    <!--</div>-->
-    </div> <!-- end of #footer-wrapper -->        
+
+    </div> <!-- end of #sidebar-footer -->        
     <div id="copyright" class="row span12">    
         <div class="row span4 copyright">
             <small><?php esc_attr_e('&copy;', 'pilotfish'); ?> <?php _e(date('Y')); ?><a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
@@ -39,7 +39,7 @@
                     <?php printf('WordPress'); ?></a></small>
         </div><!-- end of .powered -->       
     </div><!-- end of #copyright .span12 -->
-    </div><!-- end of #container -->
+    </div><!-- end of #footer-wrapper -->
 </footer><!-- end of footer #content-info -->
 <?php pilotfish_footer_end(); // after footer hook ?>
 <?php wp_footer(); ?>

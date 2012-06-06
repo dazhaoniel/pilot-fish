@@ -1,12 +1,12 @@
 /* 
 Theme Name: Pilot Fish 
 Theme URI: http://
-Description: minimal, full width, portfolio, responsive with one custom post type and parallax scrolling
+Description: minimal, full width, portfolio, responsive design with one custom post type and parallax scrolling
 
 Author: Daniel Zhao
 Author URI: http://danielatwork.com/
-Version: 0.1 
-Tags: white, blue, gray, light, custom-menu, custom-header, custom-background, one-column, flexible-width, theme-options, full-width-template
+Version: 0.2 
+Tags: white, blue, gray, light, custom-menu, custom-header, custom-background, one-column, flexible-width, full-width-template
 	
 License: 
 License URI:	
@@ -303,7 +303,6 @@ License URI:
 ================================================== */
 	#container {
 		margin:0 auto;
-		/*max-width:960px;*/
 		padding:0px 25px;
 		background-color:#fff;
 }	
@@ -314,25 +313,9 @@ License URI:
 		padding: 0 20px 20px 20px;
 		position:relative;
 }
-
-	/*.home #wrapper,
-	.archive #wrapper {
-		border:none;
-		margin: 20px auto 20px auto;
-		padding:0
-}*/
-
 	#header {
-		margin:0;
+		margin-left:20%;
 }
-
-	/*#footer {
-		clear:both;
-		margin:0 auto;
-		max-width:960px;
-		padding:10px 25px 0 25px;
-}*/
-
 	#content-info {
   		margin-top: 45px;
   		padding: 35px 0 36px;
@@ -982,12 +965,56 @@ License URI:
 /* 11 - Footer
 ================================================== */
 	#footer-wrapper {
-			margin:0;
+			margin:0 auto;
 			padding:0;
 }
+	.copyright { text-align:left; }
+	.scroll-top { text-align:center; }
+	.powered { text-align:right; }
 
 /* 12 - Misc
 ================================================== */
 	.remove-bottom { margin-bottom: 0 !important; }
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
+	
+/*  WordPress Generated Classes */	
+	
+	.aligncenter { display: block; margin: 0 auto; }
+	.alignleft { margin: 0 20px 20px 0; float: left; }
+	.alignright { margin: 0 0 20px 20px; float: right; }
+
+	.left {
+		float:left;
+}
+	.right {
+		float:right;
+}
+	.center {
+		text-align:center;
+}
+
+/* =Clearfix
+-------------------------------------------------------------- */
+
+	.clearfix:after, #container:after {
+		clear:both;
+		content:"\0020";
+		display:block;
+		height:0;
+		max-height:0;
+		overflow:hidden;
+		visibility:hidden;
+}
+	.clearfix, #container {
+		display:inline-block;
+}
+	*html .clearfix, *html #container {
+		height:1%;
+}
+	.clearfix, #container {
+		display:block;
+}
+	.clear {
+		clear:both;
+}
