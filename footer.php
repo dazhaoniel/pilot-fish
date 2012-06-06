@@ -14,20 +14,17 @@
 </div><!-- end of #container -->
 <?php pilotfish_container_end(); // after container hook ?>
 
-<footer id="content-info" class="clearfix">
-<div id="footer-wrapper" class="span12">
-    <div id="widgets-footer" class="row span12">
-         
-    <?php pilotfish_in_footer(); ?>
-
+<div id="footer" class="clearfix">
+<?php pilotfish_in_footer(); ?>
+    <div id="widgets-footer" class="row span12 aligncenter">
     <?php dynamic_sidebar('sidebar-footer'); ?>
-
-    </div> <!-- end of #widgets-footer -->        
-    <div id="copyright" class="row span12">    
+    </div> <!-- end of #widgets-footer --> 
+           
+    <div id="copyright" class="row span12 aligncenter">    
         <div class="row span4 copyright">
             <small><?php esc_attr_e('&copy;', 'pilotfish'); ?> <?php _e(date('Y')); ?><a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-                <?php bloginfo('name'); ?></small>
-            </a>
+                <?php bloginfo('name'); ?>
+            </a></small>
         </div><!-- end of .copyright -->
         
         <div class="row span4 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'pilotfish' ); ?>"><?php _e( '&uarr;', 'pilotfish' ); ?></a></div><!-- end of .scroll-top -->
@@ -39,10 +36,11 @@
                     <?php printf('WordPress'); ?></a></small>
         </div><!-- end of .powered -->       
     </div><!-- end of #copyright .span12 -->
-    </div><!-- end of #footer-wrapper -->
-</footer><!-- end of footer #content-info -->
+
+</div><!-- end of #footer -->
 <?php pilotfish_footer_end(); // after footer hook ?>
+
 <?php wp_footer(); ?>
-<?php pilotfish_footer?>
+<?php pilotfish_footer() ?>
 </body>
 </html>

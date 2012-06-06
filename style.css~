@@ -316,12 +316,12 @@ License URI:
 	#header {
 		margin: 0;
 }
-	#content-info {
-  		margin-top: 45px;
+	#footer {
+  		margin: 45px auto 0 auto;
   		padding: 35px 0 36px;
   		border-top: 1px solid #e5e5e5;
 }
-	#content-info p small { font-size: 13px; }
+	#footer p small { font-size: 13px; }
 
 /* 04 - Margins & Paddings
 ================================================== */
@@ -964,9 +964,11 @@ License URI:
 
 /* 11 - Footer
 ================================================== */
-	#footer-wrapper {
+	#widgets-footer,
+	#copyright {
 			margin:0 auto;
 			padding:0;
+			position: relative;
 }
 	.copyright { text-align:left; }
 	.scroll-top { text-align:center; }
@@ -993,7 +995,6 @@ License URI:
 	.center {
 		text-align:center;
 }
-
 /*	Clearfix */
 
 	.clearfix:after, #container:after {

@@ -56,7 +56,7 @@
 		      <footer>
 			<?php $tags = get_the_tags(); if ($tags) { ?><p><?php the_tags(); ?></p><?php } ?>
 		      </footer>
-		    <?php pilotfish_post_inside_after(); ?>
+		    <?php /*pilotfish_post_inside_after(); */?>
 		    </article>
 		<?php endwhile; /* End loop */ ?>
 <?php endif; ?>
