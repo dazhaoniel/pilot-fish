@@ -86,7 +86,7 @@ ol.commentlist img.avatar { float: left; margin-right: 10px; }
 
 /* =Clearfix
 -------------------------------------------------------------- */
-/*
+
 .clearfix:after, #container:after {
 	clear:both;
 	content:"\0020";
@@ -112,7 +112,7 @@ ol.commentlist img.avatar { float: left; margin-right: 10px; }
 .clear {
 	clear:both;
 }
-*/
+
 /* =============================================================================
    Media Queries
    ========================================================================== */
