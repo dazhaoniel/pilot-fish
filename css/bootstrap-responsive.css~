@@ -358,8 +358,7 @@
     float: left;
   }
   #container,
-  #wrapper,
-  #footer-wrapper {
+  #wrapper {
     width: 1170px;
     padding: 0;
   }
