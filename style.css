@@ -74,6 +74,10 @@ License URI:
 		-webkit-overflow-y: scroll;
 		-moz-overflow-y: scroll;
 		-o-overflow-y: scroll;
+		overflow-x: hidden;
+		-webkit-overflow-x: hidden;
+		-moz-overflow-x: hidden;
+		-o-overflow-x: hidden;
 }		
 	body {
 		color: #41434A; 
