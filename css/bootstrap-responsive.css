@@ -59,7 +59,7 @@
 
 /* .last to keep the last item inline */
 .last {
-	margin-left:0!important;
+	margin-left:0;
 	margin-right:0!important;
 }
 
