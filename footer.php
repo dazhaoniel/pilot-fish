@@ -15,7 +15,7 @@
 <?php pilotfish_container_end(); // after container hook ?>
 
 <footer id="content-info" class="clearfix">
-<div id="footer-wrapper">
+<div id="footer-wrapper" class="span12">
     <div id="widgets-footer" class="row span12">
          
     <?php pilotfish_in_footer(); ?>

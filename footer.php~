@@ -16,13 +16,13 @@
 
 <footer id="content-info" class="clearfix">
 <div id="footer-wrapper">
-    <div id="sidebar-footer" class="row span12">
+    <div id="widgets-footer" class="row span12">
          
     <?php pilotfish_in_footer(); ?>
 
     <?php dynamic_sidebar('sidebar-footer'); ?>
 
-    </div> <!-- end of #sidebar-footer -->        
+    </div> <!-- end of #widgets-footer -->        
     <div id="copyright" class="row span12">    
         <div class="row span4 copyright">
             <small><?php esc_attr_e('&copy;', 'pilotfish'); ?> <?php _e(date('Y')); ?><a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
