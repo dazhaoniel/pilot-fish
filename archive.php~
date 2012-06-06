@@ -42,6 +42,7 @@
         <?php while (have_posts()) : the_post(); ?>
         
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		    <?php pilotfish_post_inside_before(); ?>
 		      <header>
 			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 			<?php pilotfish_entry_meta(); ?>
@@ -58,6 +59,7 @@
 		      </footer>
 		    <?php pilotfish_post_inside_after(); ?>
 		    </article>
+		  <?php pilotfish_post_after(); ?>
 		<?php endwhile; /* End loop */ ?>
 <?php endif; ?>
 

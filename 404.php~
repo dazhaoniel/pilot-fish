@@ -12,7 +12,7 @@
  
 <?php get_header(); ?>
 
-        <div id="content-404" class="row span8">
+        <div id="content-full" class="row span12">
             <div id="post-0" class="error404">
                 <div class="post-entry">
                     <h1 class="title-404"><?php _e('404 &#8212; Oops! Deadend Here...', 'pilotfish'); ?></h1>

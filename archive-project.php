@@ -12,7 +12,6 @@
 
 <?php get_header(); ?>
         <div id="project-archive" class="row span12"> 
-<?php /*if (have_posts()) :*/ ?>
         <?php if (have_posts()) : ?>
         <div id="thumbnail">
 			<?php $var = 1; ?>

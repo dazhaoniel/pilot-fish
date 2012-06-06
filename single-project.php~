@@ -11,7 +11,7 @@
 ?>
 
 <?php get_header(); ?>
-        <div id="project" class="row span12">        
+        <div id="project-full" class="row span12">        
 <?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?> 
             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -54,5 +54,5 @@
 		<?php } ?>
 <?php endif; ?>  
       
-        </div><!-- end of #project -->
+        </div><!-- end of #project-full -->
 <?php get_footer(); ?>

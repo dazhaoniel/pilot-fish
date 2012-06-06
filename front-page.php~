@@ -10,7 +10,7 @@
  */
 ?>
 <?php get_header(); ?>    
-             <div id="featured" class="row span12 hidden-phone hidden-tablet">     
+             <div id="featured" class="row span12 hidden-phone">     
             <?php /*$options = get_option('pilotfish_theme_options');
 			// First let's check if headline was set
 			    if (!empty($options['featured_image'])) {
