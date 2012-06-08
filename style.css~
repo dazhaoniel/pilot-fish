@@ -482,7 +482,7 @@ License URI:
 		color: #377687; 
 		display:block;
 		font-size:13px;
-/*		font-weight:700;*/
+		font-weight:600;
 		height:45px;
 		line-height:45px;
 		margin:0;
@@ -753,6 +753,7 @@ License URI:
 		letter-spacing: -1px;
 		line-height: 1;
 		margin: 0;
+		padding-left: 30%;
 		text-shadow: 0 0 1px #3F544E;
 		position: fixed;
 		top: 380px;
@@ -818,7 +819,7 @@ License URI:
 		line-height:23px;
 		margin:0;
 		padding:20px 20px 0 20px;
-		/*text-align:center;*/
+		text-align:center;
 }
 	.widget-title a {
 		border-bottom:none;
@@ -972,8 +973,7 @@ License URI:
 			position: relative;
 }
 	.copyright { text-align:left; }
-	.scroll-top { text-align:center; }
-	.powered { text-align:right; }
+	.scroll-top { text-align:right; }
 
 /* 12 - Misc
 ================================================== */

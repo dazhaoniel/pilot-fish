@@ -21,20 +21,16 @@
     </div> <!-- end of #widgets-footer --> 
            
     <div id="copyright" class="row span12 aligncenter">    
-        <div class="row span4 copyright">
+        <div class="row span6 copyright">
             <small><?php esc_attr_e('&copy;', 'pilotfish'); ?> <?php _e(date('Y')); ?><a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                 <?php bloginfo('name'); ?>
-            </a></small>
+            </a>powered by <a href="<?php echo esc_url(__('http://wordpress.org','pilotfish')); ?>" title="<?php esc_attr_e('WordPress', 'pilotfish'); ?>">
+                    <?php printf('WordPress'); ?></a></small><br />
+            <small>Cover Photo from <a href="http://www.ks-image.com/" target="_blank">Kimmo Savolainen</a>, licensed under Creative Commons.</small><br />
+            <small>Designed and built by Daniel Zhao.</small>
         </div><!-- end of .copyright -->
         
-        <div class="row span4 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'pilotfish' ); ?>"><?php _e( '&uarr;', 'pilotfish' ); ?></a></div><!-- end of .scroll-top -->
-       
-        <div class="row span4 last powered">
-            <small><a href="<?php echo esc_url(__('http://danielatwork.com','pilotfish')); ?>" title="<?php esc_attr_e('pilotfish - A Minimal Portfolio Theme', 'pilotfish'); ?>">
-                    <?php printf('Pilot Fish'); ?></a>
-            powered by <a href="<?php echo esc_url(__('http://wordpress.org','pilotfish')); ?>" title="<?php esc_attr_e('WordPress', 'pilotfish'); ?>">
-                    <?php printf('WordPress'); ?></a></small>
-        </div><!-- end of .powered -->       
+        <div class="row span6 last scroll-top"><small><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'pilotfish' ); ?>"><?php _e( 'Back to Top', 'pilotfish' ); ?></a></small></div><!-- end of .scroll-top -->      
     </div><!-- end of #copyright .span12 -->
 
 </div><!-- end of #footer -->
