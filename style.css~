@@ -74,6 +74,10 @@ License URI:
 		-webkit-overflow-y: scroll;
 		-moz-overflow-y: scroll;
 		-o-overflow-y: scroll;
+/*		overflow-x: hidden;
+		-webkit-overflow-x: hidden;
+		-moz-overflow-x: hidden;
+		-o-overflow-x: hidden;*/
 }		
 	body {
 		color: #41434A; 
@@ -123,7 +127,7 @@ License URI:
 	small { font-size: 80%; }
 
 /*	Blockquotes  */
-	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; font-family: "Droid Serif","Georgia",serif; }
 	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
 	blockquote cite { display: block; font-size: 12px; color: #555; }
 	blockquote cite:before { content: "\2014 \0020"; }
@@ -135,7 +139,7 @@ License URI:
 		clear:both;
 		color:#ddd;
 		float:none;
-		height:.1em;
+		height: 1px;
 		margin:0 0 1.45em;
 		width:100%;
 }
@@ -309,7 +313,7 @@ License URI:
 	#wrapper {
 		background-color:transparent;
 		clear:both;
-		margin: 20px auto 20px auto;
+		margin: 20px auto;
 		padding: 0 20px 20px 20px;
 		position:relative;
 }
@@ -317,7 +321,6 @@ License URI:
 		margin: 0;
 }
 	#footer {
-  		/*width: 960px;*/
   		margin: 45px auto;
   		padding: 35px 0 36px;
   		border-top: 1px solid #e5e5e5;
@@ -330,7 +333,7 @@ License URI:
 		margin:.8em 0;
 }
 
-	hr, p, ul, ol, dl, pre, blockquote, address, table, form {
+	p, ul, ol, dl, pre, blockquote, address, table, form {
 		margin-bottom:1.6em;
 }
 
@@ -453,12 +456,11 @@ License URI:
 /* Primary Navigation */
 	.main-nav {
 		clear:both;
-		margin:0 auto;
+		margin:0 20px;
 }
 	.main-nav, .main-nav ul {
 		display:block;
 		list-style-type:none;
-		margin:0;
 		padding:0;
 }
 	.main-nav li {
@@ -480,7 +482,7 @@ License URI:
 		color: #377687; 
 		display:block;
 		font-size:13px;
-		font-weight:700;
+/*		font-weight:700;*/
 		height:45px;
 		line-height:45px;
 		margin:0;
@@ -539,7 +541,7 @@ License URI:
 		background-image: url(images/menu-bg.png);
 }
 	.main-nav ul {
-		min-width:15em;
+		min-width:12em;
 		width:auto;
 }
 	.main-nav li li {
@@ -751,7 +753,6 @@ License URI:
 		letter-spacing: -1px;
 		line-height: 1;
 		margin: 0;
-		padding-left: 250px;
 		text-shadow: 0 0 1px #3F544E;
 		position: fixed;
 		top: 380px;
@@ -817,7 +818,7 @@ License URI:
 		line-height:23px;
 		margin:0;
 		padding:20px 20px 0 20px;
-		text-align:center;
+		/*text-align:center;*/
 }
 	.widget-title a {
 		border-bottom:none;
@@ -965,9 +966,9 @@ License URI:
 
 /* 11 - Footer
 ================================================== */
-	#widgets-footer,
+	/*#widgets-footer,*/
 	#copyright {
-			padding:0;
+			padding:10px;
 			position: relative;
 }
 	.copyright { text-align:left; }
@@ -976,10 +977,7 @@ License URI:
 
 /* 12 - Misc
 ================================================== */
-	.remove-bottom { margin-bottom: 0 !important; }
-	.half-bottom { margin-bottom: 10px !important; }
-	.add-bottom { margin-bottom: 20px !important; }
-	
+
 /*	WordPress Generated Classes */	
 	
 	.aligncenter { display: block; margin: 0 auto; }
@@ -1005,9 +1003,6 @@ License URI:
 		max-height:0;
 		overflow:hidden;
 		visibility:hidden;
-}
-	.clearfix, #container {
-		display:inline-block;
 }
 	*html .clearfix, *html #container {
 		height:1%;

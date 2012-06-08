@@ -25,6 +25,8 @@
             <small><?php esc_attr_e('&copy;', 'pilotfish'); ?> <?php _e(date('Y')); ?><a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                 <?php bloginfo('name'); ?>
             </a></small>
+            <small>Cover Photo from <a href="http://www.ks-image.com/" target="_blank">Kimmo Savolainen</a>, licensed under Creative Commons.</small>
+            <small>Designed and built by Daniel Zhao.</small>
         </div><!-- end of .copyright -->
         
         <div class="row span4 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'pilotfish' ); ?>"><?php _e( '&uarr;', 'pilotfish' ); ?></a></div><!-- end of .scroll-top -->
