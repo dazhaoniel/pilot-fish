@@ -17,7 +17,6 @@
 		<?php while (have_posts()) : the_post(); ?>
         
             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <hr>
 		<h1><?php the_title(); ?></h1>
  		<hr>
                 <?php if ( comments_open() ) : ?>               

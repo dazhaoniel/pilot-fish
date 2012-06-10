@@ -26,7 +26,7 @@
                 <?php bloginfo('name'); ?>
             </a>powered by <a href="<?php echo esc_url(__('http://wordpress.org','pilotfish')); ?>" title="<?php esc_attr_e('WordPress', 'pilotfish'); ?>">
                     <?php printf('WordPress'); ?></a></small><br />
-            <small>Cover Photo from <a href="http://www.ks-image.com/" target="_blank">Kimmo Savolainen</a>, licensed under Creative Commons.</small><br />
+            <small>Cover Photo from <a href="<?php echo esc_url(__('http://www.ks-image.com/','pilotfish')); ?>" target="_blank">Kimmo Savolainen</a>, licensed under Creative Commons.</small><br />
             <small>Designed and built by Daniel Zhao.</small>
         </div><!-- end of .copyright -->
         

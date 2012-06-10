@@ -99,7 +99,7 @@ License URI:
 }
 	h1,
 	h1 a {
-		line-height: 1.1em;
+		line-height: 1.5em;
 }	
 	h2 {
 		color: #8ca1a1;
@@ -735,9 +735,9 @@ License URI:
 		background-image: url(images/home_banner.jpg);
 		background-repeat: no-repeat;
 		background-position: center top;
+		background-color: #000;
 		height: 380px;
 		display: block;
-		/*position: relative;*/
 		text-align: center;
 }
 	#featured p {
@@ -809,8 +809,7 @@ License URI:
 		top:4px;
 		width:11px;
 }
-/* =Titles
--------------------------------------------------------------- */
+/*	Titles */
 	.widget-inner h3 {  
 		color: #377687;
 		display:block;
@@ -870,29 +869,31 @@ License URI:
 	
 /* 09 - Comments
 ================================================== */	
-	#respond {
-	    background: none repeat scroll 0 0 transparent;
-	    border: medium none;
-	    clear: both;
-	    color: inherit;
-	    float: none;
-	    font-family: Arial,Helvetica,Tahoma,Verdana,sans-serif;
-	    font-weight: normal;
-	    margin: 0 0 15px;
-	    overflow: hidden;
-	    padding: 15px 0;
-	    width: auto;
+	#comments, 
+	#submit { 
+		clear: both; 
+		display: block; 
 }
-	#comments, #respond, #submit { clear: both; display: block; }
-	ol.commentlist img.avatar { float: left; margin-right: 10px; }
+	.commentlist .avatar { 
+		margin-right: 10px;
+		float: left;
+}
+	ol.commentlist {
+		list-style: none;
+}
+	ol.commentlist li.comment {
+/*		border-bottom: 1px solid #CCCCCC;
+		padding-left: 68px;*/
+}
 
 /* Comment Form */
-	h3 #reply-title {
-		font-size: 1.4em;
+	h6 #reply-title {
+		margin-top: 30px;
+		font-size: 1em;
 }
 	#commentform {
 		position: relative;
-		margin: 30px 0 30px 0px;
+		margin: 10px 0 30px 0px;
 }
 	#comments #respond {
 		position: relative;
@@ -915,7 +916,6 @@ License URI:
 		width: 90% !important;
 }
 	#comments input[type="text"] {
-		/*width: 50%;*/
 		margin-right: 20px;
 }
 	
@@ -967,23 +967,34 @@ License URI:
 
 /* 11 - Footer
 ================================================== */
-	/*#widgets-footer,*/
 	#copyright {
 			padding:10px;
 			position: relative;
 }
-	.copyright { text-align:left; line-height: 1; }
-	.scroll-top { text-align:right; }
+	.copyright { 
+		text-align:left; 
+		line-height: 1; 
+}
+	.scroll-top { 
+		text-align:right; 
+}
 
 /* 12 - Misc
 ================================================== */
 
-/*	WordPress Generated Classes */	
-	
-	.aligncenter { display: block; margin: 0 auto; }
-	.alignleft { margin: 0 20px 20px 0; float: left; }
-	.alignright { margin: 0 0 20px 20px; float: right; }
-
+/*	WordPress Generated Classes */		
+	.aligncenter { 
+		display: block; 
+		margin: 0 auto; 
+}
+	.alignleft { 
+		margin: 0 20px 20px 0; 
+		float: left; 
+}
+	.alignright { 
+		margin: 0 0 20px 20px; 
+		float: right; 
+}
 	.left {
 		float:left;
 }
@@ -992,6 +1003,8 @@ License URI:
 }
 	.center {
 		text-align:center;
+}
+	.gallery-caption {
 }
 /*	Clearfix */
 

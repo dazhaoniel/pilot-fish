@@ -17,15 +17,15 @@ function pilotfish_scripts() {
     wp_enqueue_script('comment-reply');
   }
 
-  wp_register_script('pilotfish_modernizr', get_template_directory_uri() . '/js/modernizr.js', false, null, false);
-  wp_register_script('pilotfish_main', get_template_directory_uri() . '/js/main.js', false, null, true);
-  wp_register_script('pilotfish_respond', get_template_directory_uri() . '/js/respond.min.js', false, null, true);
+  wp_register_script('pilotfish_modernizr', get_template_directory_uri() . '/js/modernizr.js', array('jquery'), null, false);
+  wp_register_script('pilotfish_main', get_template_directory_uri() . '/js/main.js', array('jquery'), null, true);
+  wp_register_script('pilotfish_watermark', get_template_directory_uri() . '/js/jquery.watermark.min.js', array('jquery'), null, true);
   wp_enqueue_script('pilotfish_modernizr');
-  wp_enqueue_script('pilotfish_respond');
+  wp_enqueue_script('pilotfish_watermark');
   wp_enqueue_script('pilotfish_main');
 }
 
-add_action('wp_enqueue_scripts', 'pilotfish_scripts', 100);
+add_action('wp_enqueue_scripts', 'pilotfish_scripts');
 
 /**
  * 
@@ -86,4 +86,24 @@ if (!function_exists('create_post_type')):
 	
 	endif;
 
-register_taxonomy("Skills", array("project"), array("hierarchical" => true, "label" => "Skills", "singular_label" => "Skill", "rewrite" => true));	
+register_taxonomy("Skills", array("project"), array("hierarchical" => true, "label" => "Skills", "singular_label" => "Skill", "rewrite" => true));
+
+/**
+ *
+ * Show Home and Portfolio Links in the Primary Navigation 
+ *
+ */
+   /*
+  add_filter( 'wp_nav_menu_items', 'add_portfolio_link', 10, 2 );
+  
+  function add_portfolio_link( $items, $args ) {
+    	if ( $args->theme_location == 'primary-navigation' ) {
+        	$items .= '<li><a href="'.home_url('/').'project/">Portfolio</a></li>';
+    	}
+    	return $items;
+  }*/
+function portfolio_page_menu_args( $args ) {
+	$args['show_home'] = true;
+	return $args;
+}
+add_filter( 'wp_page_menu_args', 'portfolio_page_menu_args' );	

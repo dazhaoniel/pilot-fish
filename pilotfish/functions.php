@@ -6,11 +6,10 @@
 if (!defined('__DIR__')) { define('__DIR__', dirname(__FILE__)); }
 
 require ( get_template_directory() . '/includes/scripts.php' );
-//require ( get_template_directory() . '/includes/theme-options.php' );
 require ( get_template_directory() . '/includes/hooks.php' );
 require ( get_template_directory() . '/includes/template-tags.php' );
 require ( get_template_directory() . '/includes/widgets.php' );
-require ( get_template_directory() . '/includes/theme-options.php' );
+//require ( get_template_directory() . '/includes/theme-options.php' );
 
 // Set the content width based on the theme's design and stylesheet
 if (!isset($content_width)) { $content_width = 960; }
@@ -31,7 +30,7 @@ function pilotfish_setup() {
    set_post_thumbnail_size(306, 175, false);
 
   // Add post formats 
-  //add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
+/*  add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat')); */
    
   add_editor_style();
   
@@ -58,7 +57,6 @@ function pilotfish_setup() {
         </style><?php
   }
   add_custom_image_header('', 'pilotfish_admin_header_style');
-
 }
 endif;
 

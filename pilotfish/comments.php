@@ -11,11 +11,10 @@
 ?>
 <?php if (post_password_required()) { ?>
     <p class="nocomments"><?php _e('This post is password protected. Enter the password to view any comments.', 'pilotfish'); ?></p>
-    
 	<?php return; } ?>
 
 <?php if (have_comments()) : ?>
-    <h6 id="comments"><?php comments_number(__('No Comments &#187;', 'pilotfish'), __('1 Comment &#187;', 'pilotfish'), __('% Comments &#187;', 'pilotfish')); ?> for <?php the_title(); ?></h6>
+    <h6 id="comments"><?php comments_number(__('No Response', 'pilotfish'), __('One Response', 'pilotfish'), __('% Responses', 'pilotfish')); ?> to <i><?php the_title(); ?></i></h6>
 
     <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
     <nav class="pager">
@@ -25,7 +24,7 @@
     <?php endif; ?>
 
     <ol class="commentlist">
-        <?php wp_list_comments('avatar_size=60&type=comment'); ?>
+        <?php wp_list_comments('avatar_size=60'); ?> 
     </ol>
     
     <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
@@ -37,19 +36,6 @@
 
 <?php else : ?>
 
-<?php endif; ?>
-
-<?php
-if (!empty($comments_by_type['pings'])) : // let's seperate pings/trackbacks from comments
-    $count = count($comments_by_type['pings']);
-    ($count !== 1) ? $txt = __('Pings&#47;Trackbacks','pilotfish') : $txt = __('Pings&#47;Trackbacks','pilotfish');
-?>
-
-    <h6 id="pings"><?php echo $count . " " . $txt; ?> <?php _e('for','pilotfish'); ?> "<?php the_title(); ?>"</h6>
-
-    <ol class="commentlist">
-        <?php wp_list_comments('type=pings&max_depth=<em>'); ?>
-    </ol>
 <?php endif; ?>
 
 <?php if (comments_open()) : ?>
