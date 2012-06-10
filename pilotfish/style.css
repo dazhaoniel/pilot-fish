@@ -6,7 +6,7 @@ Description: minimal, full width, portfolio, responsive design with one custom p
 Author: Daniel Zhao
 Author URI: http://danielatwork.com/
 Version: 0.2 
-Tags: white, blue, gray, light, custom-menu, custom-header, custom-background, one-column, flexible-width, full-width-template
+Tags: white, blue, gray, light, custom-menu, custom-header, custom-background, one-column, flexible-width, full-width-template, theme-options
 	
 License: 
 License URI:	
@@ -753,7 +753,7 @@ License URI:
 		letter-spacing: -1px;
 		line-height: 1;
 		margin: 0;
-		padding-left: 30%;
+		padding-left: 20%;
 		text-shadow: 0 0 1px #3F544E;
 		position: fixed;
 		top: 380px;

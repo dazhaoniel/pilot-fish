@@ -10,6 +10,7 @@ require ( get_template_directory() . '/includes/scripts.php' );
 require ( get_template_directory() . '/includes/hooks.php' );
 require ( get_template_directory() . '/includes/template-tags.php' );
 require ( get_template_directory() . '/includes/widgets.php' );
+require ( get_template_directory() . '/includes/theme-options.php' );
 
 // Set the content width based on the theme's design and stylesheet
 if (!isset($content_width)) { $content_width = 960; }
