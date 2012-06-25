@@ -55,7 +55,6 @@ jQuery(document).ready(function(){
 	
 jQuery(document).ready(function(){
 	jQuery( '#commentform label' ).hide();
-	jQuery( '.comment-notes').hide();
 	jQuery( '#commentform .required' ).hide();
 	jQuery( '#comment-form-author' ).hide();
 	jQuery( '#comment-form-email' ).hide();
@@ -63,7 +62,7 @@ jQuery(document).ready(function(){
 	jQuery( '#commentform .form-submit' ).hide();
 	
 	jQuery( '.comment-form-comment' ).click(function(){
-		if( jQuery('#comment-form-author').is(':hidden') ) {
+		if( jQuery('#comment-form-email').is(':hidden') ) {
 			jQuery( '#comment-form-author' ).slideDown();
 			jQuery( '#comment-form-email' ).slideDown();
 			jQuery( '#comment-form-url' ).slideDown();
