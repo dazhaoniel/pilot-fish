@@ -91,7 +91,7 @@ register_taxonomy("Skills", array("project"), array("hierarchical" => true, "lab
  * Show Home and Portfolio Links in the Primary Navigation 
  *
  */
-   /*
+/*   
   add_filter( 'wp_nav_menu_items', 'add_portfolio_link', 10, 2 );
   
   function add_portfolio_link( $items, $args ) {

@@ -8,8 +8,9 @@
  * @filesource     wp-content/themes/pilotfish/page.php
  * @since          Pilot Fish 0.1
  */
-?>
-<?php get_header(); ?>
+
+get_header(); ?>
+
         <div id="content-full" class="row span12">
         
 <?php if (have_posts()) : ?>

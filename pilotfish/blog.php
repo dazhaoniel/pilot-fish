@@ -9,9 +9,9 @@
  * @filesource     wp-content/themes/pilotfish/blog.php
  * @since          Pilot Fish 0.1
  */
-?>
 
-<?php get_header(); ?>
+get_header(); ?>
+
 <?php global $more; $more = 0; ?>
         <div id="content-blog" class="row span8"> 
 <?php

@@ -8,9 +8,9 @@
  * @filesource     wp-content/themes/pilotfish/single-project.php
  * @since          Pilot Fish 0.2
  */
-?>
 
-<?php get_header(); ?>
+get_header(); ?>
+
         <div id="project" class="row span12">        
 <?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?> 

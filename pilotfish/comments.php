@@ -9,6 +9,7 @@
  * @since          Pilot Fish 0.1
  */
 ?>
+
 <?php if (post_password_required()) { ?>
     <p class="nocomments"><?php _e('This post is password protected. Enter the password to view any comments.', 'pilotfish'); ?></p>
 	<?php return; } ?>

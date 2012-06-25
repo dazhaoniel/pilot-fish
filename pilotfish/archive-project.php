@@ -8,9 +8,9 @@
  * @filesource     wp-content/themes/pilotfish/archive-project.php
  * @since          Pilot Fish 0.2
  */
-?>
 
-<?php get_header(); ?>
+get_header(); ?>
+
         <div id="project-archive" class="row span12"> 
         <?php if (have_posts()) : ?>
         <div id="thumbnail">

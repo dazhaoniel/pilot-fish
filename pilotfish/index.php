@@ -8,8 +8,8 @@
  * @filesource     wp-content/themes/pilotfish/index.php
  * @since          Pilot Fish 0.1
  */
-?>
-<?php get_header(); ?>
+
+get_header(); ?>
 
         <div id="content-full" class="row span12"> 
         

@@ -9,6 +9,7 @@
  * @since          Pilot Fish 0.1
  */
 ?>
+
     </div><!-- end of #wrapper -->
     <?php pilotfish_wrapper_end(); // after wrapper hook ?>
 </div><!-- end of #container -->

@@ -8,12 +8,12 @@
  * @filesource     wp-content/themes/pilotfish/search.php
  * @since          Pilot Fish 0.1
  */
-?>
-<?php get_header(); ?>
+
+get_header(); ?>
 
         <div id="search-results" class="row span8">
             <h6><?php _e('We found','pilotfish'); ?> 
-			<?php
+		<?php
                 $allsearch = &new WP_Query("s=$s&showposts=-1");
                 $key = esc_html($s, 1);
                 $count = $allsearch->post_count;

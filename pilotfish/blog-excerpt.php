@@ -9,9 +9,10 @@
  * @filesource     wp-content/themes/pilotfish/blog-excerpt.php
  * @since          Pilot Fish 0.1
  */
-?>
-<?php get_header(); ?>
-        <div id="content-blog" class="row span8">
+
+get_header(); ?>
+
+    <div id="content-blog" class="row span8">
 <?php
     $limit = get_option('posts_per_page');
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
