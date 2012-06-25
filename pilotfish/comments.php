@@ -43,11 +43,11 @@
     <?php
     $fields = array(
         'author' => '<p id="comment-form-author">' . '<label for="author">' . __('Name','pilotfish') . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
-        '<input id="author" name="author" type="text" value="' . esc_attr($commenter['comment_author']) . '" size="30" /></p>',
+        '<input id="author" name="author" placeholder="name(required)" type="text" value="' . esc_attr($commenter['comment_author']) . '" size="30" /></p>',
         'email' => '<p id="comment-form-email"><label for="email">' . __('E-mail','pilotfish') . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
-        '<input id="email" name="email" type="text" value="' . esc_attr($commenter['comment_author_email']) . '" size="30" /></p>',
+        '<input id="email" name="email" placeholder="email(required)" type="text" value="' . esc_attr($commenter['comment_author_email']) . '" size="30" /></p>',
         'url' => '<p id="comment-form-url"><label for="url">' . __('Website','pilotfish') . '</label>' .
-        '<input id="url" name="url" type="text" value="' . esc_attr($commenter['comment_author_url']) . '" size="30" /></p>',
+        '<input id="url" name="url" placeholder="website" type="text" value="' . esc_attr($commenter['comment_author_url']) . '" size="30" /></p>',
     );
 
     $defaults = array('fields' => apply_filters('comment_form_default_fields', $fields));

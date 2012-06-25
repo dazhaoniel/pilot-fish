@@ -36,10 +36,15 @@ function pilotfish_setup() {
   
   add_theme_support('automatic-feed-links');
   
-  add_custom_background();
+  add_theme_support( 'custom-background', array(
+		// Let WordPress know what our default background color is.
+		// This is dependent on our current color scheme.
+		'default-color' => 'ffffff',
+	) );
+
 
   //Add custom header image
-  define('HEADER_TEXTCOLOR', '');
+/*  define('HEADER_TEXTCOLOR', '');
   define('HEADER_IMAGE', ''); // 
   define('HEADER_IMAGE_WIDTH', 400); // use width and height appropriate for your theme
   define('HEADER_IMAGE_HEIGHT', 125);
@@ -56,7 +61,25 @@ function pilotfish_setup() {
         }
         </style><?php
   }
-  add_custom_image_header('', 'pilotfish_admin_header_style');
+  add_theme_support('custom-header', 'pilotfish_admin_header_style');*/
+  
+  // Add support for custom headers.
+  $custom_header_support = array(
+		// The default header text color.
+		'default-text-color' => '',
+		// The height and width of our custom header.
+		'width' => apply_filters( 'pilotfish_header_image_width', 400 ),
+		'height' => apply_filters( 'pilotfish_header_image_height', 125 ),
+		// Callback for styling the header.
+		'wp-head-callback' => 'pilotfish_header_style',
+		// Callback for styling the header preview in the admin.
+		'admin-head-callback' => 'pilotfish_admin_header_style',
+		// Callback used to display the header preview in the admin.
+		'admin-preview-callback' => 'pilotfish_admin_header_image',
+	);
+	
+  add_theme_support( 'custom-header', $custom_header_support );
+
 }
 endif;
 

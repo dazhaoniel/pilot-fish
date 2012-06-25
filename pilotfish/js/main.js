@@ -62,10 +62,6 @@ jQuery(document).ready(function(){
 	jQuery( '#comment-form-url' ).hide();
 	jQuery( '#commentform .form-submit' ).hide();
 	
-	jQuery( 'input #author' ).watermark('name(required)');
-	jQuery( 'input #email' ).watermark('email(required)');
-	jQuery( 'input #url' ).watermark('website');
-
 	jQuery( '.comment-form-comment' ).click(function(){
 		if( jQuery('#comment-form-author').is(':hidden') ) {
 			jQuery( '#comment-form-author' ).slideDown();
