@@ -74,10 +74,10 @@ License URI:
 		-webkit-overflow-y: scroll;
 		-moz-overflow-y: scroll;
 		-o-overflow-y: scroll;
-/*		overflow-x: hidden;
+		overflow-x: hidden;
 		-webkit-overflow-x: hidden;
 		-moz-overflow-x: hidden;
-		-o-overflow-x: hidden;*/
+		-o-overflow-x: hidden;
 }		
 	body {
 		color: #41434A; 
@@ -102,8 +102,8 @@ License URI:
 /*		font-size:1.6em;*/
 }
 	h3 {
-/*		font-size:1.5em;*/
-		line-height:1.2;
+/*		font-size:1.5em;
+		line-height:1.2;*/
 }
 	h4 {
 /*		font-size:1.3em;*/
@@ -808,6 +808,7 @@ License URI:
 		top:4px;
 		width:11px;
 }
+
 /*	Titles */
 	.widget-inner h3 {  
 		color: #377687;

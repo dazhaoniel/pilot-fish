@@ -18,7 +18,7 @@ if (!function_exists('pilotfish_setup')):
 function pilotfish_setup() {
 
   // Make theme available for translation
-  //load_theme_textdomain('pilotfish', get_template_directory() . '/languages');
+  load_theme_textdomain('pilotfish', get_template_directory() . '/languages');
 
   // Register wp_nav_menu() menus 
   register_nav_menus(array(

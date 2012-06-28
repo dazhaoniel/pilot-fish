@@ -16,7 +16,7 @@
 }
 .span3, .span4, .span6, .span8 {
 	display: inline;
-	margin-right: 20px;
+	margin-right: 2.083%;
 }
 
 .span3 {
@@ -94,7 +94,7 @@
     padding-right: 10px;
     padding-left: 10px;
   }
-  .modal {
+/*  .modal {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -111,7 +111,7 @@
   }
   .carousel-caption {
     position: static;
-  }
+  }*/
 }
 
 
@@ -130,12 +130,13 @@
   .dl-horizontal dd {
     margin-left: 0;
   }
-  .container {
+  #container,
+  #footer {
     width: auto;
   }
-  .row-fluid {
+/*  .row-fluid {
     width: 100%;
-  }
+  }*/
   .row,
   .thumbnails {
     margin-left: 0;

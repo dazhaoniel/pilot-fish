@@ -11,10 +11,26 @@ function pilotfish_widgets_init() {
     'after_title' => '</h3>',
   ));
   register_sidebar(array(
-    'name' => __('Footer', 'pilotfish'),
-    'id' => 'sidebar-footer',
-    'before_widget' => '<div class="row span3"><section id="%1$s" class="widget %2$s"><div class="widget-inner">',
-    'after_widget' => '</div></section></div>',
+    'name' => __('Footer One', 'pilotfish'),
+    'id' => 'sidebar-footer-1',
+    'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner">',
+    'after_widget' => '</div></section>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  ));
+  register_sidebar(array(
+    'name' => __('Footer Two', 'pilotfish'),
+    'id' => 'sidebar-footer-2',
+    'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner">',
+    'after_widget' => '</div></section>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  ));
+  register_sidebar(array(
+    'name' => __('Footer Three', 'pilotfish'),
+    'id' => 'sidebar-footer-3',
+    'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner">',
+    'after_widget' => '</div></section>',
     'before_title' => '<h3>',
     'after_title' => '</h3>',
   ));

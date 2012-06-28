@@ -24,7 +24,7 @@ get_header(); ?>
 		<?php while (have_posts()) : the_post(); ?>
         	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 
-                <h3><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'pilotfish'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h3> 
+                <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'pilotfish'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h1> 
                 <div class="post-meta">
                 <?php pilotfish_entry_meta(); ?>
 				    <?php if ( comments_open() ) : ?>

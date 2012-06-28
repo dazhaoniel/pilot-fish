@@ -17,11 +17,29 @@
 
 <div id="footer" class="clearfix">
 <?php pilotfish_in_footer(); ?>
-    <div id="widgets-footer" class="row span12 aligncenter">
-    <?php dynamic_sidebar('sidebar-footer'); ?>
+    <div id="widgets-footer">
+    
+    <div class="row span4">
+    <?php pilotfish_widgets(); // before widgets hook ?> 
+    	<?php dynamic_sidebar('sidebar-footer-1'); ?>
+    <?php pilotfish_widgets_end(); // after widgets hook ?>
+    </div>
+    
+    <div class="row span4">
+    <?php pilotfish_widgets(); // before widgets hook ?> 
+    	<?php dynamic_sidebar('sidebar-footer-2'); ?>
+    <?php pilotfish_widgets_end(); // after widgets hook ?>
+    </div>
+    
+    <div class="row span4 last">
+    <?php pilotfish_widgets(); // before widgets hook ?> 
+    	<?php dynamic_sidebar('sidebar-footer-3'); ?>
+    <?php pilotfish_widgets_end(); // after widgets hook ?>
+    </div>
+    
     </div> <!-- end of #widgets-footer --> 
            
-    <div id="copyright" class="row span12 aligncenter">    
+    <div id="copyright" class="row span12">    
         <div class="row span6 copyright">
             <small><?php esc_attr_e('&copy;', 'pilotfish'); ?> <?php _e(date('Y')); ?><a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                 <?php bloginfo('name'); ?>
