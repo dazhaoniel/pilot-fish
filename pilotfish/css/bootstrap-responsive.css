@@ -10,33 +10,33 @@
  */
  
 .row {
-	float:left;
-	margin-bottom:2.083%;
-	padding-top:0;
+	float: left;
+	margin-bottom: 2.083%;
+	padding-top: 0;
 }
 .span3, .span4, .span6, .span8 {
-	display:inline;
-	margin-right:2.083%;
+	display: inline;
+	margin-right: 20px;
 }
 
 .span3 {
-	width:23.40425%;
+	width: 220px;
 }
 
 .span4 {
-	width:31.91489%;
+	width: 300px;
 }
 
 .span6 {
-	width:48.82978%;
+	width: 460px;
 }
 
 .span8 {
-	width:65.95744%;
+	width: 620px;
 }
 
 .span12 {
-	width:100%;
+	width: 940px;
 }
 
 /* .last to keep the last item inline */
@@ -243,22 +243,22 @@
   }
   #container,
   #footer {
-    width:1000px;
+    width:980px;
     padding: 0;
   }
   .span12 {
-    width: 99.9468085036383%;
+    width: 940px;
   }
   .span8 {
-    width: 65.6926648596383%;
+    width: 620px;
   }
   .span6 {
-    width: 48.5655930376383%;
+    width: 460px;
   }
   .span4 {
-    width: 31.4385212156383%;
+    width: 300px;
   }
   .span3 {
-    width: 22.874985304638297%;
+    width: 220px;
   }
 }
