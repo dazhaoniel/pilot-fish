@@ -19,7 +19,6 @@ get_header(); ?>
           
             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<h1><?php the_title(); ?></h1> <!-- Post Title -->
-		<hr>
                 <div class="post-meta">
                 <?php pilotfish_entry_meta(); ?>
 		<?php if ( comments_open() ) : ?>

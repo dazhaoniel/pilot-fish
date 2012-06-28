@@ -11,13 +11,12 @@
 
 get_header(); ?>
 
-        <div id="project" class="row span12">        
+        <div id="project" class="row span12">
+                
 <?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?> 
             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<hr>
                 <h1 class="center"><?php the_title(); ?></h1> <!-- Post Title -->
-		<hr>
 
                 <div class="post-meta">
                 <?php pilotfish_entry_meta(); ?>
@@ -45,7 +44,8 @@ get_header(); ?>
 
             <div class="post-edit"><?php edit_post_link(__('Edit', 'pilotfish')); ?></div>             
             </div><!-- end of #post-<?php the_ID(); ?> -->
-        <?php endwhile; ?> 
+        <?php endwhile; ?>
+         
         <?php if ($wp_query->max_num_pages > 1) { ?>
 		  <nav id="post-nav" class="pager">
 		    <div class="previous"><?php next_posts_link(__('&larr; previous', 'pilotfish')); ?></div>

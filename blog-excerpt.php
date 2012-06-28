@@ -9,9 +9,10 @@
  * @filesource     wp-content/themes/pilotfish/blog-excerpt.php
  * @since          Pilot Fish 0.1
  */
-?>
-<?php get_header(); ?>
-        <div id="content-blog" class="row span8">
+
+get_header(); ?>
+
+    <div id="content-blog" class="row span8">
 <?php
     $limit = get_option('posts_per_page');
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -21,7 +22,7 @@
 <?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'pilotfish'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h1>
+                <h3><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'pilotfish'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h3>
                 <div class="post-meta">
                 <?php pilotfish_entry_meta(); ?>
 				    <?php if ( comments_open() ) : ?> 

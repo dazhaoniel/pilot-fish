@@ -24,7 +24,7 @@ get_header(); ?>
 		<?php while (have_posts()) : the_post(); ?>
         	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 
-                <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'pilotfish'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h1> 
+                <h3><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'pilotfish'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h3> 
                 <div class="post-meta">
                 <?php pilotfish_entry_meta(); ?>
 				    <?php if ( comments_open() ) : ?>
@@ -40,7 +40,7 @@ get_header(); ?>
                     <?php the_post_thumbnail(); ?>
                         </a>
                     <?php endif; ?>
-                    <?php the_content(__('Read more &#8250;', 'pilotfish')); ?>
+                    <?php the_content(__('Continue Reading &#8250;', 'pilotfish')); ?>
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'pilotfish'), 'after' => '</div>')); ?>
                 </div><!-- end of .post-entry -->
                 
