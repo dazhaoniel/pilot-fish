@@ -122,7 +122,12 @@ License URI:
 	em { font-style: italic; }
 	strong { font-weight: bold; color: #333; }
 	small { font-size: 80%; }
-
+	.example h2 {
+		font-size:1.6em;
+}
+	.example h3 {
+		font-size:1.5em;
+}
 /*	Blockquotes  */
 	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; font-family: "Droid Serif","Georgia",serif; }
 	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }

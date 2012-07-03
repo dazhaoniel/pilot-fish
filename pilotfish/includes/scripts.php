@@ -103,6 +103,19 @@ function portfolio_page_menu_args( $args ) {
 }
 add_filter( 'wp_page_menu_args', 'portfolio_page_menu_args' );	
 
+/**
+ * Where the post has no post title, but must still display a link to the single-page post view.
+ */
+
+
+function pilotfish_title($title) {
+        if ($title == '') {
+            return __('Untitled','pilotfish');
+        } else {
+            return $title;
+        }
+}
+add_filter('the_title', 'pilotfish_title');
 
 /**
  * Display navigation to next/previous pages when applicable

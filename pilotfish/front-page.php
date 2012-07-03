@@ -18,7 +18,7 @@ get_header(); ?>
         </div><!-- end of #featured -->
         
         <hr>      
-	<div class="center"><h2>What I Do</h2></div>
+	<div class="center example"><h2>What I Do</h2></div>
 	<hr>
 	
 <?php get_sidebar('home'); ?>

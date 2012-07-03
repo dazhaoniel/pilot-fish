@@ -17,9 +17,9 @@ get_header(); ?>
 			<?php $var = 1; ?>
 			<?php while (have_posts()) : the_post(); ?>
 				<?php if ($var%3 == 0): ?>
-					<div class="row span4 last"><div id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+					<div class="row span4-fixed last"><div id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 				<?php else : ?>
-					<div class="row span4"><div id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+					<div class="row span4-fixed"><div id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 				<?php endif; ?>
 				<a href="<?php the_permalink() ?>" rel="bookmark"><span class="title-overlay" style="display: inline;"><span><?php the_title(); ?></span></span><?php pilotfish_the_thumbnail(); ?></a>
 				</div>

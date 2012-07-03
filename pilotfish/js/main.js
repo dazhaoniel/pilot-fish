@@ -52,7 +52,7 @@ jQuery(document).ready(function(){
 ///////////////////////////////
 // Slide Down Comment Forms
 ///////////////////////////////
-	
+/*	
 jQuery(document).ready(function(){
 	jQuery( '#commentform label' ).hide();
 	jQuery( '#commentform .required' ).hide();
@@ -70,7 +70,7 @@ jQuery(document).ready(function(){
 		}
 	});
 });
-
+*/
 ///////////////////////////////
 // Remove Title of Images
 ///////////////////////////////

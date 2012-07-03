@@ -14,7 +14,7 @@
 	margin-bottom: 2.083%;
 	padding-top: 0;
 }
-.span3, .span4, .span6, .span8 {
+.span3, .span4, .span4-fixed, .span6, .span8 {
 	display: inline;
 	margin-right: 2.083%;
 }
@@ -23,7 +23,8 @@
 	width: 220px;
 }
 
-.span4 {
+.span4,
+.span4-fixed {
 	width: 300px;
 }
 
@@ -94,24 +95,6 @@
     padding-right: 10px;
     padding-left: 10px;
   }
-/*  .modal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    left: 10px;
-    width: auto;
-    margin: 0;
-  }
-  .modal.fade.in {
-    top: auto;
-  }
-  .modal-header .close {
-    padding: 10px;
-    margin: -10px;
-  }
-  .carousel-caption {
-    position: static;
-  }*/
 }
 
 
@@ -134,12 +117,8 @@
   #footer {
     width: auto;
   }
-/*  .row-fluid {
-    width: 100%;
-  }*/
-  .row,
-  .thumbnails {
-    margin-left: 0;
+  #thumbnail .last {
+	margin-right:2.083% !important;
   }
   .input-large,
   .input-xlarge,
@@ -197,6 +176,9 @@
   #footer {
     width: 724px;
   }
+  #thumbnail .last {
+	margin-right:2.083% !important;
+  }
   .span12 {
     width: 99.9468085036383%;
   }
@@ -208,6 +190,9 @@
   }
   .span4 {
     width: 31.4385212156383%;
+  }
+  .span4-fixed{
+    width: 300px;
   }
   .span3 {
     width: 22.874985304638297%;
@@ -256,7 +241,8 @@
   .span6 {
     width: 460px;
   }
-  .span4 {
+  .span4,
+  .span4-fixed {
     width: 300px;
   }
   .span3 {
