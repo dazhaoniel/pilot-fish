@@ -7,6 +7,7 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  *
+ * with modifications
  */
  
 .row {
@@ -75,9 +76,29 @@
     display: block;
     line-height: 18px;
   }
+  #container,
+  #footer {
+    width: auto;
+  }
+  .span12, 
+  .span8,
+  .span6,
+  .span4,
+  .span3 {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   input[type="checkbox"],
   input[type="radio"] {
     border: 1px solid #ccc;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 90% !important;
   }
   .form-horizontal .control-group > label {
     float: none;
@@ -117,8 +138,24 @@
   #footer {
     width: auto;
   }
+  .span12, 
+  .span8,
+  .span6,
+  .span4,
+  .span3 {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   #thumbnail .last {
 	margin-right:2.083% !important;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 90% !important;
   }
   .input-large,
   .input-xlarge,

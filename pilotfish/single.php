@@ -17,8 +17,8 @@ get_header(); ?>
 
 		<?php while (have_posts()) : the_post(); ?> 
           
-            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<h1><?php the_title(); ?></h1> <!-- Post Title -->
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<header><h1><?php the_title(); ?></h1></header> <!-- Post Title -->
                 <div class="post-meta">
                 <?php pilotfish_entry_meta(); ?>
 		<?php if ( comments_open() ) : ?>
@@ -44,24 +44,22 @@ get_header(); ?>
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'pilotfish'), 'after' => '</div>')); ?>
                 </div><!-- end of .post-entry -->
                 
-                <div class="post-data">
-				    <?php the_tags(__('Tagged with:', 'pilotfish') . ' ', ', ', '<br />'); ?> 
-					<?php printf(__('Posted in %s', 'pilotfish'), get_the_category_list(', ')); ?> 
-                </div><!-- end of .post-data -->             
+                <footer class="post-data">  
+			<?php the_tags(__('TAGS:', 'pilotfish') . ' ', ', ', '<br />'); ?>
+			<?php printf(__('FILED UNDER: %s', 'pilotfish'), get_the_category_list(', ')); ?>
+                </footer><!-- end of .post-data -->             
 
             <div class="post-edit"><?php edit_post_link(__('Edit', 'pilotfish')); ?></div>             
-            </div><!-- end of #post-<?php the_ID(); ?> -->
+            </article><!-- end of #post-<?php the_ID(); ?> -->
             
 			<?php comments_template( '', true ); ?>
             
         <?php endwhile; ?> 
 
-        <?php if ($wp_query->max_num_pages > 1) { ?>
-		  <nav id="post-nav" class="pager">
-		    <div class="previous"><?php next_posts_link(__('&larr; previous', 'pilotfish')); ?></div>
-		    <div class="next"><?php previous_posts_link(__('next &rarr;', 'pilotfish')); ?></div>
-		  </nav>
-		<?php } ?>
+	<nav id="post-nav" class="pager">
+	<span class="previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> previous post', 'pilotfish' ) ); ?></span>
+	<span class="next"><?php next_post_link( '%link', __( 'next post <span class="meta-nav">&rarr;</span>', 'pilotfish' ) ); ?></span>
+	</nav>
 <?php endif; ?>  
         </div><!-- end of #post -->
 

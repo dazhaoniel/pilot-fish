@@ -17,8 +17,8 @@ get_header(); ?>
 
 		<?php while (have_posts()) : the_post(); ?>
         
-            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'pilotfish'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h1>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <header><h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'pilotfish'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h1></header>
                 
                 <div class="post-meta">
                 <?php pilotfish_entry_meta(); ?>
@@ -40,13 +40,13 @@ get_header(); ?>
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'pilotfish'), 'after' => '</div>')); ?>
                 </div><!-- end of .post-entry -->
                 
-                <div class="post-data">
-				    <?php the_tags(__('Tagged with:', 'pilotfish') . ' ', ', ', '<br />'); ?> 
-					<?php printf(__('Posted in %s', 'pilotfish'), get_the_category_list(', ')); ?> 
-                </div><!-- end of .post-data -->             
+                <footer class="post-data">
+				    <?php the_tags(__('TAGS:', 'pilotfish') . ' ', ', ', '<br />'); ?> 
+					<?php printf(__('FILED UNDER: %s', 'pilotfish'), get_the_category_list(', ')); ?> 
+                </footer><!-- end of .post-data -->             
 
             <div class="post-edit"><?php edit_post_link(__('Edit', 'pilotfish')); ?></div>               
-            </div><!-- end of #post-<?php the_ID(); ?> -->
+            </article><!-- end of #post-<?php the_ID(); ?> -->
             
         <?php endwhile; ?> 
         

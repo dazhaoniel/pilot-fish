@@ -42,9 +42,17 @@ get_header(); ?>
         	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header>
 				<h1><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h1>
-				<?php pilotfish_entry_meta(); ?>
-		      	</header>
-		      
+			</header>
+			<div class="post-meta">
+                	<?php pilotfish_entry_meta(); ?>
+				    <?php if ( comments_open() ) : ?>
+                        <span class="comments-link">
+                        <span class="mdash">&mdash;</span>
+                    	<?php comments_popup_link(__('No Comments &darr;', 'pilotfish'), __('1 Comment &darr;', 'pilotfish'), __('% Comments &darr;', 'pilotfish')); ?>
+                        </span>
+                    	<?php endif; ?> 
+                	</div><!-- end of .post-meta -->    
+		      	
 		      	<div class="entry-content">
 				<?php if (is_archive() || is_search()) { ?>
 			  		<?php the_excerpt(); ?>
@@ -53,9 +61,10 @@ get_header(); ?>
 				<?php } ?>
 		      	</div>
 		      
-		      	<footer>
-				<?php $tags = get_the_tags(); if ($tags) { ?><p><?php the_tags(); ?></p><?php } ?>
-		      	</footer>
+		      	<footer class="post-data">  
+			<?php the_tags(__('TAGS:', 'pilotfish') . ' ', ', ', '<br />'); ?>
+			<?php printf(__('FILED UNDER: %s', 'pilotfish'), get_the_category_list(', ')); ?>
+                	</footer><!-- end of .post-data -->
 		</article>
 		<?php endwhile; /* End loop */ ?>
 <?php endif; ?>

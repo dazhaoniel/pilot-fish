@@ -95,24 +95,15 @@ License URI:
 }
 	h1 { 
 		color: #593e37;
-/*		font-size: 2em;*/
+		font-size: 2em;
 }
 	h2 {
 		color: #8ca1a1;
-/*		font-size:1.6em;*/
 }
-	h3 {
-/*		font-size:1.5em;
-		line-height:1.2;*/
-}
-	h4 {
-/*		font-size:1.3em;*/
-}
-	h5 {
-/*		font-size:1.2em;*/
-}
+	h3 { }
+	h4 { }
+	h5 { }
 	h6 {
-/*		font-size:1em;*/
 		text-transform:uppercase;
 }
 	p { margin: 0 0 20px 0; }
@@ -272,7 +263,7 @@ License URI:
 		font: 13px "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #777;
 		margin: 0;
-		width: 40%; /* 210px */
+		width: 50%;
 		max-width: 100%;
 		display: block;
 		margin-bottom: 20px;
@@ -616,9 +607,15 @@ License URI:
 }
 	#content .bypostauthor {
 }
+	#content-blog article,
+	#content-archive article {
+		padding-bottom: 37px;
+		border-bottom: 1px solid whiteSmoke;
+		margin-bottom: 30px;
+}
 /*	Post	*/
-	.hentry header { }
-	.hentry h1 a { text-decoration: none; }
+	.hentry header { line-height: 1.5; }
+	.hentry h1 a { text-decoration: none; line-height: 1.5; }
 	.hentry time { display: block; }
 	.hentry p.byline { }
 	.hentry footer { clear: both; }
@@ -627,8 +624,8 @@ License URI:
 		font-size:12px;
 }
 
-#cancel-comment-reply-link {
-	color:#900;
+	#cancel-comment-reply-link {
+		color:#900;
 }
 	.post-data {
 		clear:both;
@@ -784,7 +781,7 @@ License URI:
 		list-style: none;
 }
 	#widgets #s {
-		width:70%;
+		width:95%;
 }
 	#widgets ul li {
 		margin-left:15px;
@@ -813,17 +810,17 @@ License URI:
 		top:4px;
 		width:11px;
 }
+	#widgets-footer {
+		margin-left: 2.083%;
+}
 
 /*	Titles */
 	.widget-inner h3 {  
 		color: #377687;
 		display:block;
-/*		font-size:24px;
-		font-weight:700;*/
 		line-height:23px;
 		margin:0;
 		padding:20px 20px 0 20px;
-/*		text-align:center;*/
 }
 	.widget-title a {
 		border-bottom:none;
@@ -905,6 +902,9 @@ License URI:
 		padding: 0 0 0;
 		margin: 0;
 }
+	.comment-notes {
+		display: none;
+}
 	#respond .form-allowed-tags {
 		display: none;
 }
@@ -918,7 +918,7 @@ License URI:
 		margin: 5px 90px 0 0;
 }
 	#comments textarea {
-		width: 90% !important;
+		width: 90%;
 }
 	#comments input[type="text"] {
 		margin-right: 20px;
@@ -947,15 +947,9 @@ License URI:
 	.pager a {
 		  display: inline-block;
 		  padding: 5px 14px;
-/*		  background-color: #fff;
-		  border: 1px solid #ddd;
-		  -webkit-border-radius: 15px;
-		     -moz-border-radius: 15px;
-			  border-radius: 15px;*/
 }
 	.pager a:hover {
 		  text-decoration: none;
-/*		  background-color: #f5f5f5;*/
 }
 	.pager .next a {
 	  	float: right;

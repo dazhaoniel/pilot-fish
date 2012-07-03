@@ -11,8 +11,8 @@
 
 get_header(); ?>
 
-        <div id="project-archive"> 
-        <?php if (have_posts()) : ?>
+<div id="project-archive"> 
+<?php if (have_posts()) : ?>
         <div id="thumbnail">
 			<?php $var = 1; ?>
 			<?php while (have_posts()) : the_post(); ?>
@@ -27,7 +27,7 @@ get_header(); ?>
 				<?php $var++; ?>
 			<?php endwhile; // no CR conform CSS ?> 
  		</div><!-- end of #thumbnail -->
-	<?php endif; ?>
+<?php endif; ?>
         <?php /* Display navigation to next/previous pages when applicable */ ?>
 		<?php if ($wp_query->max_num_pages > 1) { ?>
 		  <nav id="project-nav" class="pager">
@@ -36,5 +36,5 @@ get_header(); ?>
 		  </nav>
 		<?php } ?>
 	    
-        </div><!-- end of #project-archive -->
+</div><!-- end of #project-archive -->
 <?php get_footer(); ?>

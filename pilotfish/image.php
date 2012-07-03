@@ -17,8 +17,8 @@
 
 		<?php while (have_posts()) : the_post(); ?>
           
-            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <h1><?php the_title(); ?></h1>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <header><h1><?php the_title(); ?></h1></header>
                 <p><?php _e('&#8249; Return to', 'pilotfish'); ?> <a href="<?php echo get_permalink($post->post_parent); ?>" rel="gallery"><?php echo get_the_title($post->post_parent); ?></a></p>
 
                 <div class="post-meta">
@@ -44,14 +44,14 @@
 		       </div><!-- end of .navigation -->
                         
                 <?php if ( comments_open() ) : ?>
-                <div class="post-data">
+                <footer class="post-data">
 				    <?php the_tags(__('Tagged with:', 'pilotfish') . ' ', ', ', '<br />'); ?> 
                     <?php the_category(__('Posted in %s', 'pilotfish') . ', '); ?> 
-                </div><!-- end of .post-data -->
+                </footer><!-- end of .post-data -->
                 <?php endif; ?>             
 
             <div class="post-edit"><?php edit_post_link(__('Edit', 'pilotfish')); ?></div>             
-            </div><!-- end of #post-<?php the_ID(); ?> -->
+            </article><!-- end of #post-<?php the_ID(); ?> -->
             
 			<?php comments_template( '', true ); ?>
             
