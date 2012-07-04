@@ -40,7 +40,7 @@ get_header(); ?>
                 </div><!-- end of .post-meta -->
                                 
                 <div class="post-entry">
-                    <?php the_content(__('Read more &raquo;', 'pilotfish')); ?>
+                    <?php the_content(__('Continue Reading &raquo;', 'pilotfish')); ?>
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'pilotfish'), 'after' => '</div><!-- end of .pagination -->')); ?>
                 </div><!-- end of .post-entry -->
                 
@@ -48,7 +48,7 @@ get_header(); ?>
 				    <?php the_tags(__('Tagged with:', 'pilotfish') . ' ', ', ', '<br />'); ?> 
 					<?php printf(__('Posted in %s', 'pilotfish'), get_the_category_list(', ')); ?> | 
 					<?php edit_post_link(__('Edit', 'pilotfish'), '', ' &#124; '); ?>  
-					<?php comments_popup_link(__('No Comments &darr;', 'pilotfish'), __('1 Comment &darr;', 'pilotfish'), __('% Comments &darr;', 'pilotfish')); ?>
+					<?php comments_popup_link(__('No Response &darr;', 'pilotfish'), __('One Response &darr;', 'pilotfish'), __('% Responses &darr;', 'pilotfish')); ?>
                 </footer><!-- end of .post-data -->             
             
             </article><!-- end of #post-<?php the_ID(); ?> -->

@@ -34,7 +34,7 @@
                 <div class="attachment-entry">
                     <a href="<?php echo wp_get_attachment_url($post->ID); ?>"><?php echo wp_get_attachment_image( $post->ID, 'large' ); ?></a>
 					<?php if ( !empty($post->post_excerpt) ) the_excerpt(); ?>
-                    <?php the_content(__('Read more &#8250;;', 'pilotfish')); ?>
+                    <?php the_content(__('Continue Reading &#8250;;', 'pilotfish')); ?>
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'pilotfish'), 'after' => '</div>')); ?>
                 </div><!-- end of .post-entry -->
 
@@ -45,8 +45,8 @@
                         
                 <?php if ( comments_open() ) : ?>
                 <footer class="post-data">
-				    <?php the_tags(__('Tagged with:', 'pilotfish') . ' ', ', ', '<br />'); ?> 
-                    <?php the_category(__('Posted in %s', 'pilotfish') . ', '); ?> 
+				    <?php the_tags(__('TAGS:', 'pilotfish') . ' ', ', ', '<br />'); ?> 
+                    <?php the_category(__('Filed Under: %s', 'pilotfish') . ', '); ?> 
                 </footer><!-- end of .post-data -->
                 <?php endif; ?>             
 

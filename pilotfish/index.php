@@ -36,7 +36,7 @@ get_header(); ?>
                     <?php the_post_thumbnail(); ?>
                         </a>
                     <?php endif; ?>
-                    <?php the_content(__('Read more &#8250;', 'pilotfish')); ?>
+                    <?php the_content(__('Continue Reading &#8250;', 'pilotfish')); ?>
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'pilotfish'), 'after' => '</div>')); ?>
                 </div><!-- end of .post-entry -->
                 

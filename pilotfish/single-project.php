@@ -23,7 +23,7 @@ get_header(); ?>
                 </div><!-- end of .post-meta -->
                                 
                 <div class="post-entry">
-                    <?php the_content(__('Read more &#8250;', 'pilotfish')); ?>
+                    <?php the_content(__('Continue Reading &#8250;', 'pilotfish')); ?>
            
                     <?php if ( get_the_author_meta('description') != '' ) : ?>
                     

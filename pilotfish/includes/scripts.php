@@ -15,8 +15,10 @@ function pilotfish_scripts() {
     		wp_enqueue_script('comment-reply');
   	}
 
+  	//wp_register_script('pilotfish_bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), null, true);
   	wp_register_script('pilotfish_modernizr', get_template_directory_uri() . '/js/modernizr.js', array('jquery'), null, false);
   	wp_register_script('pilotfish_main', get_template_directory_uri() . '/js/main.js', array('jquery'), null, true);
+  	//wp_enqueue_script('pilotfish_bootstrap');
   	wp_enqueue_script('pilotfish_modernizr');
   	wp_enqueue_script('pilotfish_main');
 }
@@ -117,23 +119,6 @@ function pilotfish_title($title) {
 }
 add_filter('the_title', 'pilotfish_title');
 
-/**
- * Display navigation to next/previous pages when applicable
- */
-if ( ! function_exists( 'pilotfish_content_nav' ) ) :
-
-function pilotfish_content_nav( $nav_id ) {
-	global $wp_query;
-
-	if ( $wp_query->max_num_pages > 1 ) : ?>
-		<nav id="<?php echo $nav_id; ?>">
-			<h3 class="assistive-text"><?php _e( 'Post navigation', 'pilotfish' ); ?></h3>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> previous', 'pilotfish' ) ); ?></div>
-			<div class="nav-next"><?php previous_posts_link( __( 'next <span class="meta-nav">&rarr;</span>', 'pilotfish' ) ); ?></div>
-		</nav><!-- #nav-above -->
-	<?php endif;
-}
-endif;
 
 /**
  * Sets the post excerpt length to 60 words.

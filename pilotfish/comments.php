@@ -25,13 +25,6 @@
 <?php if (have_comments()) : ?>
     <h6 id="comments"><?php comments_number(__('No Response', 'pilotfish'), __('One Response', 'pilotfish'), __('% Responses', 'pilotfish')); ?> to <i><?php the_title(); ?></i></h6>
 
-    <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
-    <nav class="pager">
-        <div class="previous"><?php previous_comments_link(__( '&#8249; previous','pilotfish' )); ?></div><!-- end of .previous -->
-        <div class="next"><?php next_comments_link(__( 'next &#8250;','pilotfish', 0 )); ?></div><!-- end of .next -->
-    </nav><!-- end of.pager -->
-    <?php endif; ?>
-
     <ol class="commentlist">
         <?php wp_list_comments('avatar_size=60'); ?> 
     </ol>

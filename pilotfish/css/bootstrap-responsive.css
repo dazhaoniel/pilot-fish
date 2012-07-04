@@ -69,220 +69,186 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  .nav-collapse {
-    -webkit-transform: translate3d(0, 0, 0);
-  }
-  .page-header h1 small {
-    display: block;
-    line-height: 18px;
-  }
-  #container,
-  #footer {
-    width: auto;
-  }
-  .span12, 
-  .span8,
-  .span6,
-  .span4,
-  .span3 {
-    width: 96%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  input[type="checkbox"],
-  input[type="radio"] {
-    border: 1px solid #ccc;
-  }
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  textarea,
-  select {
-    width: 90% !important;
-  }
-  .form-horizontal .control-group > label {
-    float: none;
-    width: auto;
-    padding-top: 0;
-    text-align: left;
-  }
-  .form-horizontal .controls {
-    margin-left: 0;
-  }
-  .form-horizontal .control-list {
-    padding-top: 0;
-  }
-  .form-horizontal .form-actions {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
+  	.page-header h1 small {
+    		display: block;
+    		line-height: 18px;
+  	}
+  	#container,
+  	#footer {
+    		width: auto;
+  	}
+  	.span12, 
+  	.span8,
+  	.span6,
+  	.span4,
+  	.span3 {
+    		width: 96%;
+    		margin-left: auto;
+    		margin-right: auto;
+  	}
+  	.main-nav li {
+    		float:none !important;
+  	}
+  	.main-nav ul {
+		position:relative !important;
+		top: auto !important;
+		visibility: visible !important;
+	}
+  	input[type="checkbox"],
+  	input[type="radio"] {
+    		border: 1px solid #ccc;
+  	}
+  	input[type="text"],
+  	input[type="password"],
+  	input[type="email"],
+  	textarea,
+  	select {
+    		width: 90% !important;
+  	}
+  	.size-full,
+  	.wp-caption-text {
+    		max-width: 400px;
+  	}
 }
 
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  body {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .dl-horizontal dt {
-    float: none;
-    width: auto;
-    clear: none;
-    text-align: left;
-  }
-  .dl-horizontal dd {
-    margin-left: 0;
-  }
-  #container,
-  #footer {
-    width: auto;
-  }
-  .span12, 
-  .span8,
-  .span6,
-  .span4,
-  .span3 {
-    width: 96%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #thumbnail .last {
-	margin-right:2.083% !important;
-  }
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  textarea,
-  select {
-    width: 90% !important;
-  }
-  .input-large,
-  .input-xlarge,
-  .input-xxlarge,
-  input[class*="span"],
-  select[class*="span"],
-  textarea[class*="span"],
-  .uneditable-input {
-    display: block;
-    width: 100%;
-    min-height: 28px;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-        -ms-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .input-prepend input,
-  .input-append input,
-  .input-prepend input[class*="span"],
-  .input-append input[class*="span"] {
-    display: inline-block;
-    width: auto;
-  }
-    .visible-phone {
-    display: inherit !important;
-  }
-  .hidden-phone {
-    display: none !important;
-  }
-  .hidden-desktop {
-    display: inherit !important;
-  }
-  .visible-desktop {
-    display: none !important;
-  }
+  	body {
+    		padding-right: 20px;
+    		padding-left: 20px;
+  	}
+  	#container,
+  	#footer {
+    		width: auto;
+  	}
+  	.span12, 
+  	.span8,
+  	.span6,
+  	.span4,
+  	.span3 {
+    		width: 96%;
+    		margin-left: auto;
+    		margin-right: auto;
+  	}
+  	#thumbnail .last {
+		margin-right:2.083% !important;
+  	}
+  	input[type="text"],
+  	input[type="password"],
+  	input[type="email"],
+  	textarea,
+  	select {
+    		width: 90% !important;
+  	}
+  	.size-full,
+  	.wp-caption-text {
+    		width: auto;
+  	}
+  	.visible-phone {
+    		display: inherit !important;
+  	}
+  	.hidden-phone {
+    		display: none !important;
+  	}
+  	.hidden-desktop {
+    		display: inherit !important;
+  	}
+  	.visible-desktop {
+    		display: none !important;
+  	}
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  .row {
-    *zoom: 1;
-  }
-  .row:before,
-  .row:after {
-    display: table;
-    content: "";
-  }
-  .row:after {
-    clear: both;
-  }
-  [class*="span"] {
-    float: left;
-  }
-  #container,
-  #footer {
-    width: 724px;
-  }
-  #thumbnail .last {
-	margin-right:2.083% !important;
-  }
-  .span12 {
-    width: 99.9468085036383%;
-  }
-  .span8 {
-    width: 65.6926648596383%;
-  }
-  .span6 {
-    width: 48.5655930376383%;
-  }
-  .span4 {
-    width: 31.4385212156383%;
-  }
-  .span4-fixed{
-    width: 300px;
-  }
-  .span3 {
-    width: 22.874985304638297%;
-  }
-  .visible-tablet {
-    display: inherit !important;
-  }
-  .hidden-tablet {
-    display: none !important;
-  }
-  .hidden-desktop {
-    display: inherit !important;
-  }
-  .visible-desktop {
-    display: none !important ;
-  }
+  	.row {
+    		*zoom: 1;
+  	}
+  	.row:before,
+  	.row:after {
+    		display: table;
+    		content: "";
+  	}
+  	.row:after {
+    		clear: both;
+  	}
+  	[class*="span"] {
+    		float: left;
+  	}
+  	#container,
+  	#footer {
+    		width: 724px;
+  	}
+  	#thumbnail .last {
+		margin-right:2.083% !important;
+  	}
+  	.span12 {
+    		width: 99.9468085036383%;
+  	}
+  	.span8 {
+    		width: 65.6926648596383%;
+  	}
+  	.span6 {
+    		width: 48.5655930376383%;
+  	}
+  	.span4 {
+    		width: 31.4385212156383%;
+  	}
+  	.span4-fixed{
+    		width: 300px;
+  	}
+  	.span3 {
+    		width: 22.874985304638297%;
+  	}
+  	.visible-tablet {
+    		display: inherit !important;
+  	}
+  	.hidden-tablet {
+    		display: none !important;
+  	}
+  	.hidden-desktop {
+    		display: inherit !important;
+  	}
+  	.visible-desktop {
+    		display: none !important ;
+  	}
 }
 
 /* Large desktop */
 @media (min-width: 1200px) {
-  .row {
-    *zoom: 1;
-  }
-  .row:before,
-  .row:after {
-    display: table;
-    content: "";
-  }
-  .row:after {
-    clear: both;
-  }
-  [class*="span"] {
-    float: left;
-  }
-  #container,
-  #footer {
-    width:980px;
-    padding: 0;
-  }
-  .span12 {
-    width: 940px;
-  }
-  .span8 {
-    width: 620px;
-  }
-  .span6 {
-    width: 460px;
-  }
-  .span4,
-  .span4-fixed {
-    width: 300px;
-  }
-  .span3 {
-    width: 220px;
-  }
+  	.row {
+    		*zoom: 1;
+  	}
+  	.row:before,
+  	.row:after {
+    		display: table;
+    		content: "";
+  	}
+  	.row:after {
+    		clear: both;
+  	}
+  	[class*="span"] {
+    		float: left;
+  	}
+  	#container,
+  	#footer {
+    		width:980px;
+    		padding: 0;
+  	}
+  	.span12 {
+    		width: 940px;
+  	}
+  	.span8 {
+    		width: 620px;
+  	}
+  	.span6 {
+    		width: 460px;
+  	}
+  	.span4,
+  	.span4-fixed {
+    		width: 300px;
+  	}
+  	.span3 {
+    		width: 220px;
+  	}
 }
