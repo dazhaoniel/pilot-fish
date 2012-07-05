@@ -15,10 +15,8 @@ function pilotfish_scripts() {
     		wp_enqueue_script('comment-reply');
   	}
 
-  	//wp_register_script('pilotfish_bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), null, true);
   	wp_register_script('pilotfish_modernizr', get_template_directory_uri() . '/js/modernizr.js', array('jquery'), null, false);
   	wp_register_script('pilotfish_main', get_template_directory_uri() . '/js/main.js', array('jquery'), null, true);
-  	//wp_enqueue_script('pilotfish_bootstrap');
   	wp_enqueue_script('pilotfish_modernizr');
   	wp_enqueue_script('pilotfish_main');
 }

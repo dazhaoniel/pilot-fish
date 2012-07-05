@@ -11,5 +11,5 @@ To Do List:
 3. theme options page (NOT FOR THIS VERSION)
 6. say something in readme.txt
 17. pages have children
-19. style menus in max-480px layout
+19. style menus in max-480px layout (DONE)
 20. 

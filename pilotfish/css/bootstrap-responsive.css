@@ -69,6 +69,12 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  	html {
+  		overflow-x: auto;
+		-webkit-overflow-x: auto;
+		-moz-overflow-x: auto;
+		-o-overflow-x: auto;
+  	}
   	.page-header h1 small {
     		display: block;
     		line-height: 18px;
@@ -86,14 +92,9 @@
     		margin-left: auto;
     		margin-right: auto;
   	}
-  	.main-nav li {
+  	.menu li {
     		float:none !important;
   	}
-  	.main-nav ul {
-		position:relative !important;
-		top: auto !important;
-		visibility: visible !important;
-	}
   	input[type="checkbox"],
   	input[type="radio"] {
     		border: 1px solid #ccc;
@@ -177,7 +178,7 @@
   	}
   	#container,
   	#footer {
-    		width: 724px;
+    		width: 760px;
   	}
   	#thumbnail .last {
 		margin-right:2.083% !important;
@@ -215,7 +216,7 @@
 }
 
 /* Large desktop */
-@media (min-width: 1200px) {
+@media (min-width: 980px) {
   	.row {
     		*zoom: 1;
   	}
