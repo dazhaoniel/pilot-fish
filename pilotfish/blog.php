@@ -2,7 +2,7 @@
 /**
  * Blog Template
  *
- * Template Name: Blog (full posts)
+ * Template Name: Blog Posts
  *
  * @file           blog.php
  * @package        Pilot Fish

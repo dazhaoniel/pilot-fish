@@ -2,6 +2,7 @@
 /**
  * Archive Projects Template
  *
+ * Template Name: Projects Archive
  *
  * @file           archive-project.php
  * @package        Pilot Fish 

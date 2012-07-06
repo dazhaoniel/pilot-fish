@@ -484,7 +484,8 @@ License URI:
 	.menu, .menu ul {
 		min-height:0;
 	}
-	.menu ul {
+	.menu ul.sub-menu,
+	.menu ul.children {
 		left:0;
 		position:absolute;
 		top:0;
@@ -549,7 +550,7 @@ License URI:
 		left:100%;
 		top:0;
 	}
-	.menu > li:first-child > a {
+	.menu > li:first-child > a, .menu ul > li:first-child > a {
 		border-left:none;
 	}
 	.menu > li:first-child > a, .menu-container li + li + li li:first-child > a {
