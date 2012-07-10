@@ -24,12 +24,12 @@ get_header(); ?>
 		<?php if ( comments_open() ) : ?>
                         <span class="comments-link">
                         <span class="mdash">&mdash;</span>
-                    <?php comments_popup_link(__('No Comments &darr;', 'pilotfish'), __('1 Comment &darr;', 'pilotfish'), __('% Comments &darr;', 'pilotfish')); ?>
+                    <?php comments_popup_link(__('No Response &darr;', 'pilotfish'), __('One Response &darr;', 'pilotfish'), __('% Responses &darr;', 'pilotfish')); ?>
                         </span>
                     <?php endif; ?> 
                 </div><!-- end of .post-meta -->
                 <div class="post-entry">
-                    <?php the_content(__('Continue Reading &#8250;', 'pilotfish')); ?>
+                    <?php the_content(__('Continue Reading &rarr;', 'pilotfish')); ?>
                     
                     <?php if ( get_the_author_meta('description') != '' ) : ?>
                     

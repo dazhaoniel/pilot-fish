@@ -40,7 +40,7 @@ get_header(); ?>
                 </div><!-- end of .post-meta -->
                                 
                 <div class="post-entry">
-                    <?php the_content(__('Continue Reading &raquo;', 'pilotfish')); ?>
+                    <?php the_content(__('Continue Reading &rarr;', 'pilotfish')); ?>
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'pilotfish'), 'after' => '</div><!-- end of .pagination -->')); ?>
                 </div><!-- end of .post-entry -->
                 

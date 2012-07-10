@@ -20,5 +20,5 @@ get_header(); ?>
                 </div><!-- end of .post-entry -->
             </article><!-- end of #post-0 -->
         </div><!-- end of #content-full-->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
