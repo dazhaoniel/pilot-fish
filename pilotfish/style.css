@@ -8,8 +8,8 @@ Author URI: http://danielatwork.com/
 Version: 0.2.2 
 Tags: white, blue, gray, light, custom-menu, custom-header, custom-background, one-column, flexible-width, full-width-template
 	
-License: 
-License URI:	
+License: GNU General Public License (GPL)
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
  
  
   Table of Contents
@@ -65,6 +65,10 @@ License URI:
 		padding: 5px 0 0 0;
 		font-style: italic;
 }
+	caption, th, td {
+		font-weight: normal;
+		text-align: left;
+}
 
 /* 02 - Global Styles
 ================================================== */	
@@ -99,8 +103,19 @@ License URI:
 }
 	h2 {
 		color: #8ca1a1;
+		font-size: 1.6em;
+}
+	h3 {
+		font-size: 1.5em;
+}
+	h4 {
+		font-size: 1.3em;
+}
+	h5 {
+		font-size: 1.2em;
 }
 	h6 {
+		font-size: 1em;
 		text-transform:uppercase;
 }
 	p { margin: 0 0 20px 0; }
@@ -109,18 +124,31 @@ License URI:
 	em { font-style: italic; }
 	strong { font-weight: bold; color: #333; }
 	small { font-size: 80%; }
-	.example h2 {
-		font-size:1.6em;
-}
-	.example h3 {
-		font-size:1.5em;
-}
 /*	Blockquotes  */
 	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; font-family: "Droid Serif","Georgia",serif; }
 	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
 	blockquote cite { display: block; font-size: 12px; color: #555; }
 	blockquote cite:before { content: "\2014 \0020"; }
 	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+	code {
+	    	font-family: "Courier New", Courier, serif;
+		overflow: auto;
+		padding: 2px;
+		background: #fff;
+}
+
+	pre code {
+		background: none;
+}
+
+	pre {
+	    	font-family: "Courier New", Courier, serif;
+	    	margin: 0 0 20px;
+		padding: 10px;
+		background: #fff;
+		overflow: auto;	
+		border: 1px solid #e4e4e4;
+}
 /*	Horizontal Rule   */	
 	hr {
 		background:#ddd;
@@ -142,26 +170,48 @@ License URI:
 		text-decoration:underline;
 }
 /*	Lists	*/
-	ul, ol { margin-bottom: 20px; }
-	ul { list-style: none outside; }
-	ol { list-style: decimal; }
 	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
 	ul.square { list-style: square outside; }
 	ul.circle { list-style: circle outside; }
 	ul.disc { list-style: disc outside; }
 	ul ul, ul ol,
-	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+	ol ol, ol ul { margin: 4px 0 5px 30px; }
 	ul ul li, ul ol li,
 	ol ol li, ol ul li { margin-bottom: 6px; }
 	li { line-height: 18px; margin-bottom: 12px; }
 	ul.large li { line-height: 21px; }
 	li p { line-height: 21px; }
-
+	ul, ol {
+	margin: 0 0 1.625em 2.5em;
+}
+	ul {
+		list-style: square outside;
+}
+	ol {
+		list-style-type: decimal;
+}
+	ol ol {
+		list-style: upper-alpha;
+}
+	ol ol ol {
+		list-style: lower-roman;
+}
+	ol ol ol ol {
+		list-style: lower-alpha;
+}
+	dl {
+		margin: 0 1.625em;
+}
+	dt {
+		font-weight: bold;
+}
+	dd {
+		margin-bottom: 1.625em;
+}
 /*	Images	*/
 	img {
 		max-width: 100%;
 		height: auto; }
-
 /*	Buttons	*/
 	.button,
 	button,
@@ -239,7 +289,7 @@ License URI:
 	input::-moz-focus-inner {
 		    border: 0;
 		    padding: 0;
-			} 
+} 
 /*	Forms	*/
 	form {
 		margin-bottom: 20px; }
@@ -635,7 +685,27 @@ License URI:
 		clear:both;
 		text-align:center;
 }
-
+	.post-entry table,
+	.comment table {
+		border-bottom: 1px solid #ddd;
+		margin: 0 0 1.625em;
+		width: 100%;}
+	.post-entry th,
+	.comment th {
+		font-weight: 500;
+		letter-spacing: 0.1em;
+		line-height: 2.6em;
+		text-transform: uppercase;
+}
+	.post-entry td,
+	.comment td {
+		border-top: 1px solid #ddd;
+		padding: 6px 10px 6px 0;
+}
+	embed,
+	iframe {
+		max-width: 95%;
+}
 /*	Thumbnails List	*/
 	#thumbnail {
 		width: 100%;
@@ -738,7 +808,6 @@ License URI:
 }
 	.featured-subtitle {
 		text-align:center;
-		font-size:1.6em;
 }
 
 /* 07 - Sidebar
@@ -746,13 +815,14 @@ License URI:
 	#widgets {
 		margin-top:40px;
 }
-	#widgets a {
+	#widgets a,
+	#widgets-footer a {
 		display:inline-block;
 		margin:0;
 		padding:3px;
 		text-decoration:none;
 }
-	#widgets ul, #widgets .textwidget, #widgets .tagcloud, #widgets #searchform, #widgets #calendar_wrap {
+	#widgets ul, #widgets-footer ul, #widgets .textwidget, #widgets-footer .textwidget, #widgets .tagcloud, #widgets-footer .tagcloud, #widgets #searchform, #widgets-footer #searchform, #widgets #calendar_wrap, #widgets-footer #calendar_wrap {
 		font-size:13px;
 		margin:0 0 20px;
 		padding:20px;
@@ -761,27 +831,33 @@ License URI:
 	#widgets #s {
 		width:95%;
 }
-	#widgets ul li {
+	#widgets ul li,
+	#widgets-footer ul li {
 		margin-left:15px;
 }
-	#widgets ul li a {
+	#widgets ul li a,
+	#widgets-footer ul li a {
 		display:inline;
 		color: #4fa1ab; 
 		text-decoration:none;
 }
 	#widgets ul li a:hover {
 }
-	#widgets ul ul a {
+	#widgets ul ul a,
+	#widgets-footer ul ul a {
 		padding:3px 0 3px 18px;
 }
-	#widgets ul ul ul a {
+	#widgets ul ul ul a,
+	#widgets-footer ul ul ul a {
 		padding:3px 0 3px 18px;
 }
-	#widgets ul ul ul ul a {
+	#widgets ul ul ul ul a,
+	#widgets-footer ul ul ul ul a {
 		border:none;
 		padding:3px 0 3px 18px;
 }
-	#widgets .widget-title img {
+	#widgets .widget-title img,
+	#widgets-footer .widget-title img {
 		float:right;
 		height:11px;
 		position:relative;
@@ -854,9 +930,10 @@ License URI:
 		clear: both; 
 		display: block; 
 }
+	.comment ul.children { list-style: none; }
 	.comment-body {
 		clear:both;
-		color:#9f9f9f;
+/*		color:#9f9f9f;*/
 		font-size:13px;
 		margin-bottom:10px;
 }
@@ -868,7 +945,7 @@ License URI:
 		list-style: none;
 }
 	ol.commentlist li.comment {
-/*		border-bottom: 1px solid #CCCCCC;
+/*		border-top: 1px solid whiteSmoke;
 		padding-left: 68px;*/
 }
 
@@ -990,7 +1067,6 @@ License URI:
 	.gallery-caption {
 }
 /*	Clearfix */
-
 	.clearfix:after, #container:after {
 		clear:both;
 		content:"\0020";
