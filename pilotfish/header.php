@@ -21,7 +21,7 @@
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold" />
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Fredericka+the+Great">
 
-<title><?php wp_title('&#124;', true, 'right'); ?><?php bloginfo('name'); ?></title>
+<title><?php wp_title(); ?></title>
 <script>window.jQuery || document.write('<script src="http://code.jquery.com/jquery-1.7.2.min.js"><\/script>')</script>
 <?php pilotfish_head(); // head hook ?>
 <?php wp_head(); ?>

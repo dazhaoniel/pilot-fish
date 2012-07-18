@@ -87,15 +87,6 @@ register_taxonomy("Skills", array("project"), array("hierarchical" => true, "lab
 /**
  * Show Home and Portfolio Links in the Primary Navigation 
  */
-/*   
-add_filter( 'wp_nav_menu_items', 'add_portfolio_link', 10, 2 );
-  
-function add_portfolio_link( $items, $args ) {
-    	if ( $args->theme_location == 'primary-navigation' ) {
-        	$items .= '<li><a href="'.home_url('/').'project/">Portfolio</a></li>';
-    	}
-    	return $items;
-}*/
   
 function portfolio_page_menu_args( $args ) {
 	$args['show_home'] = true;
@@ -103,10 +94,12 @@ function portfolio_page_menu_args( $args ) {
 }
 add_filter( 'wp_page_menu_args', 'portfolio_page_menu_args' );	
 
+
+
+
 /**
  * Where the post has no post title, but must still display a link to the single-page post view.
  */
-
 
 function pilotfish_title($title) {
         if ($title == '') {
@@ -160,3 +153,35 @@ function pilotfish_custom_excerpt_more( $output ) {
 	return $output;
 }
 add_filter( 'get_the_excerpt', 'pilotfish_custom_excerpt_more' );
+
+
+
+// filter function for wp_title
+function pilotfish_filter_wp_title( $old_title, $sep, $sep_location ){
+ 
+	// add padding to the sep
+	$ssep = ' ' . $sep . ' ';
+	 
+	// find the type of index page this is
+	if( is_category() ) $insert = $ssep . 'Category';
+	elseif( is_tag() ) $insert = $ssep . 'Tag';
+	elseif( is_author() ) $insert = $ssep . 'Author';
+	elseif( is_year() || is_month() || is_day() ) $insert = $ssep . 'Archives';
+	else $insert = NULL;
+	 
+	// get the page number we're on (index)
+	if( get_query_var( 'paged' ) )
+	$num = $ssep . 'page ' . get_query_var( 'paged' );
+	 
+	// get the page number we're on (multipage post)
+	elseif( get_query_var( 'page' ) )
+	$num = $ssep . 'page ' . get_query_var( 'page' );
+	 
+	// else
+	else $num = NULL;
+	 
+	// concoct and return new title
+	return get_bloginfo( 'name' ) . $insert . $old_title . $num;
+}
+// call our custom wp_title filter, with normal (10) priority, and 3 args
+add_filter( 'wp_title', 'pilotfish_filter_wp_title', 10, 3 );

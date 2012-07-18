@@ -54,8 +54,7 @@
 
 </div><!-- end of #footer -->
 <?php pilotfish_footer_end(); // after footer hook ?>
-
-<?php wp_footer(); ?>
 <?php pilotfish_footer() ?>
+<?php wp_footer(); ?>
 </body>
 </html>

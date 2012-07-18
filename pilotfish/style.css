@@ -5,11 +5,11 @@ Description: minimal, full width, portfolio, responsive design with one custom p
 
 Author: Daniel Zhao
 Author URI: http://danielatwork.com/
-Version: 0.2.2 
+Version: 0.2.3 
 Tags: white, blue, gray, light, custom-menu, custom-header, custom-background, one-column, flexible-width, full-width-template
 	
 License: GNU General Public License (GPL)
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+License URI: license.txt
  
  
   Table of Contents
@@ -347,7 +347,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	#container {
 		margin:0 auto;
 		padding:0px 25px;
-		background-color:#fff;
+/*		background-color:#fff;*/
 }	
 	#wrapper {
 		background-color:transparent;
@@ -448,7 +448,6 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 ================================================== */
 	#header #logo {
 		float:left;
-		margin-left:10%;
 		margin-bottom: 20px;
 }
 	#header #logo .site-name {
@@ -494,6 +493,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	.menu li:hover {
 		white-space:normal;
 		z-index:10000;
+		background-image: url(images/menu-bg.png);
 }
 	.menu a {
 		font-family: "Droid Serif","Georgia",serif;
@@ -510,7 +510,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 		text-decoration:none;
 }
 	.menu a:hover {
-	    	background-image: url(images/menu-bg.png);
+/*	    	background-image: url(images/menu-bg.png);*/
 		text-decoration:none;
 		color: #377687;
 }
@@ -783,7 +783,6 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 		background-image: url(images/home_banner.jpg);
 		background-repeat: no-repeat;
 		background-position: center top;
-		background-color: #377687;
 		height: 380px;
 		display: block;
 		text-align: center;
@@ -822,7 +821,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 		padding:3px;
 		text-decoration:none;
 }
-	#widgets ul, #widgets-footer ul, #widgets .textwidget, #widgets-footer .textwidget, #widgets .tagcloud, #widgets-footer .tagcloud, #widgets #searchform, #widgets-footer #searchform, #widgets #calendar_wrap, #widgets-footer #calendar_wrap {
+	#widgets ul, #widgets-footer ul, #widgets .textwidget, #widgets-footer .textwidget, #widgets .tagcloud, #widgets-footer .tagcloud, #widgets #searchform, #widgets-footer #searchform, #widgets #calendar_wrap, #widgets-footer #calendar_wrap, #widgets-footer .vcard, #widgets .vcard {
 		font-size:13px;
 		margin:0 0 20px;
 		padding:20px;
@@ -933,7 +932,6 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	.comment ul.children { list-style: none; }
 	.comment-body {
 		clear:both;
-/*		color:#9f9f9f;*/
 		font-size:13px;
 		margin-bottom:10px;
 }
@@ -945,8 +943,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 		list-style: none;
 }
 	ol.commentlist li.comment {
-/*		border-top: 1px solid whiteSmoke;
-		padding-left: 68px;*/
+		padding-top: 30px;
 }
 
 /* Comment Form */

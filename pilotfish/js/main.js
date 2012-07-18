@@ -51,25 +51,12 @@ jQuery(document).ready(function(){
 });
 
 ///////////////////////////////
-// Slide Down Comment Forms
+// Hide Comment Form Elements
 ///////////////////////////////
 	
 jQuery(document).ready(function(){
 	jQuery( '#commentform label' ).hide();
 	jQuery( '#commentform .required' ).hide();
-/*	jQuery( '#comment-form-author' ).hide();
-	jQuery( '#comment-form-email' ).hide();
-	jQuery( '#comment-form-url' ).hide();
-	jQuery( '#commentform .form-submit' ).hide();*/
-	
-/*	jQuery( '.comment-form-comment' ).click(function(){
-		if( jQuery('#comment-form-email').is(':hidden') ) {
-			jQuery( '#comment-form-author' ).slideDown();
-			jQuery( '#comment-form-email' ).slideDown();
-			jQuery( '#comment-form-url' ).slideDown();
-			jQuery( '#commentform .form-submit' ).slideDown();
-		}
-	});*/
 });
 
 ///////////////////////////////
