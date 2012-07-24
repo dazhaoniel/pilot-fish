@@ -5,7 +5,7 @@ Description: minimal, full width, portfolio, responsive design with one custom p
 
 Author: Daniel Zhao
 Author URI: http://danielatwork.com/
-Version: 0.2.3 
+Version: 0.3.0 
 Tags: white, blue, gray, light, custom-menu, custom-header, custom-background, one-column, flexible-width, full-width-template
 	
 License: GNU General Public License (GPL)
@@ -233,6 +233,7 @@ License URI: license.txt
 	  border-radius: 3px;
 	  color: #444;
 	  display: inline-block;
+	  position: relative;
 	  font-size: 11px;
 	  font-weight: bold;
 	  text-decoration: none;
@@ -347,7 +348,6 @@ License URI: license.txt
 	#container {
 		margin:0 auto;
 		padding:0px 25px;
-/*		background-color:#fff;*/
 }	
 	#wrapper {
 		background-color:transparent;
@@ -472,16 +472,17 @@ License URI: license.txt
 		color: #8CA1A1;
 }
 /* Primary Navigation */
-	.menu {
+	#access .menu {
 		clear:both;
 		margin:0 20px;
 }
-	.menu, .menu ul {
+	#access .menu, 
+	#access .menu ul {
 		display:block;
 		list-style-type:none;
 		padding:0;
 }
-	.menu li {
+	#access .menu li {
 		border:0;
 		display:block;
 		float:left;
@@ -490,12 +491,12 @@ License URI: license.txt
 		position:relative;
 		z-index:5;
 }
-	.menu li:hover {
+	#access .menu li:hover {
 		white-space:normal;
 		z-index:10000;
 		background-image: url(images/menu-bg.png);
 }
-	.menu a {
+	#access .menu a {
 		font-family: "Droid Serif","Georgia",serif;
 		border-left:1px solid #DEDCC3; 
 		color: #377687; 
@@ -509,21 +510,21 @@ License URI: license.txt
 		position:relative;
 		text-decoration:none;
 }
-	.menu a:hover {
-/*	    	background-image: url(images/menu-bg.png);*/
+	#access .menu a:hover {
 		text-decoration:none;
 		color: #377687;
 }
-	.menu .current_page_item a,
-	.menu .current-menu-item a {
+	#access .menu .current_page_item a,
+	#access .menu .current-menu-item a {
 		background-image: url(images/menu-bg.png);
 }
 /* Style Primary Navigation Specific to viewport width */
 @media (min-width: 481px) {
-	.menu li li {
+	#access .menu li li {
 		float:none;
 	}
-	.menu:after, .menu ul:after {
+	#access .menu:after, 
+	#access .menu ul:after {
 		clear:both;
 		content:".";
 		display: block;
@@ -531,41 +532,42 @@ License URI: license.txt
 		overflow:hidden;
 		visibility:hidden;
 	}
-	.menu, .menu ul {
+	#access .menu, 
+	#access .menu ul {
 		min-height:0;
 	}
-	.menu ul.sub-menu,
-	.menu ul.children {
+	#access .menu ul.sub-menu,
+	#access .menu ul.children {
 		left:0;
 		position:absolute;
 		top:0;
 		visibility:hidden;
 		z-index:10;
 	}
-	.menu li:hover > ul {
+	#access .menu li:hover > ul {
 		top:100%;
 		visibility:visible;
 	}
-	.menu li li:hover > ul {
+	#access .menu li li:hover > ul {
 		left:100%;
 		top:0;
 	}
-	.menu ul {
+	#access .menu ul {
 		margin:-10px 0 0 -30px;
 		padding:10px 30px 30px;
 	}
-	.menu ul ul {
+	#access .menu ul ul {
 		margin:-30px 0 0 -10px;
 		padding:30px 30px 30px 10px;
 	}
-	.menu ul li a:hover {
+	#access .menu ul li a:hover {
 		background-image: url(images/menu-bg.png);
 	}
-	.menu ul {
+	#access .menu ul {
 		min-width:12em;
 		width:auto;
 	}
-	.menu li li {
+	#access .menu li li {
 		background:#fff;
 		background-image:none;
 		border:1px solid #b2b2b2;
@@ -574,7 +576,7 @@ License URI: license.txt
 		filter:none;
 		width:auto;
 	}
-	.menu li li a {
+	#access .menu li li a {
 		border:none;
 		color:#444;
 		font-size:12px;
@@ -586,31 +588,35 @@ License URI: license.txt
 		text-shadow:none;
 		white-space:nowrap;
 	}
-	.menu li li a:hover {
+	#access .menu li li a:hover {
 		background:#f5f5f5;
 		background-image:none;
 		border:none;
 		color:#444;
 		filter:none;
 	}
-	.menu ul > li + li {
+	#access .menu ul > li + li {
 		border-top:0;
 	}
-	.menu li li:hover > ul {
+	#access .menu li li:hover > ul {
 		left:100%;
 		top:0;
 	}
-	.menu > li:first-child > a, .menu ul > li:first-child > a {
+	#access .menu > li:first-child > a, 
+	#access .menu ul > li:first-child > a {
 		border-left:none;
 	}
-	.menu > li:first-child > a, .menu-container li + li + li li:first-child > a {
+	#access .menu > li:first-child > a, 
+	#access .menu-container li + li + li li:first-child > a {
 	}
-	.menu ul.children a, .menu .current_page_ancestor, .menu .current_page_ancestor ul a {
+	#access .menu ul.children a, 
+	#access .menu .current_page_ancestor, 
+	#access .menu .current_page_ancestor ul a {
 		background:none;
 		background-image:none;
 		filter:none;
 	}
-	ul.sub-menu .current_page_item a {
+	#access  ul.sub-menu .current_page_item a {
 		background:transparent !important;
 	}
 }
@@ -899,7 +905,8 @@ License URI: license.txt
 		line-height:18px;
 		padding:6px 12px;
 }
-	#widgets .textwidget, #widgets .tagcloud {
+	#widgets .textwidget, 
+	#widgets .tagcloud {
 		display:block;
 		line-height:1.5em;
 		margin:0 0 20px;
@@ -908,7 +915,10 @@ License URI: license.txt
 	#widgets .textwidget a {
 		display:inline;
 }
-	#widgets ul .children {
+	#widgets ul .children,
+	#widgets ul.sub-menu,
+	#widgets-footer ul.sub-menu,
+	#widgets-footer ul .children {
 		border:none;
 		margin:0;
 		padding:0;

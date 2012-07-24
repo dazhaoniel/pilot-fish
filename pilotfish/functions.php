@@ -39,27 +39,6 @@ function pilotfish_setup() {
 		// This is dependent on our current color scheme.
 		'default-color' => 'ffffff',
 	) );
-
-
-//Add custom header image
-/*  	define('HEADER_TEXTCOLOR', '');
-  	define('HEADER_IMAGE', ''); // 
-  	define('HEADER_IMAGE_WIDTH', 400); // use width and height appropriate for your theme
-  	define('HEADER_IMAGE_HEIGHT', 125);
-
-  	define('NO_HEADER_TEXT', true);
-
-// gets included in the admin header
-  	function pilotfish_admin_header_style() {
-  		?><style type="text/css">
-  		#headimg {
-        	border: none !important;
-        	width: <?php echo HEADER_IMAGE_WIDTH; ?>px;
-        	height: <?php echo HEADER_IMAGE_HEIGHT; ?>px;
-        	}
-        	</style><?php
-  	}
-  	add_theme_support('custom-header', 'pilotfish_admin_header_style');*/
   
 // Add support for custom headers.
 	$custom_header_support = array(
