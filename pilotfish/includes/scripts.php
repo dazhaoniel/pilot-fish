@@ -2,6 +2,7 @@
 /**
  * Add Stylesheets and javascript files safely using wp_enqueue_style()
  */
+if (!function_exists('pilotfish_script')):
 function pilotfish_scripts() {
   	wp_enqueue_style('pilotfish_bootstrap_responsive_style', get_template_directory_uri() . '/css/bootstrap-responsive.css', false, null);
   	wp_enqueue_style('pilotfish_main_style', get_template_directory_uri() . '/style.css', false, null);
@@ -20,13 +21,14 @@ function pilotfish_scripts() {
   	wp_enqueue_script('pilotfish_modernizr');
   	wp_enqueue_script('pilotfish_main');
 }
-
+endif;
 add_action('wp_enqueue_scripts', 'pilotfish_scripts');
 
 
 /**
  * Show post thumbnail
- */ 
+ */
+if (!function_exists('pilotfish_the_thumbnail')): 
 function pilotfish_the_thumbnail() {
 	global $post;
 
@@ -40,7 +42,7 @@ function pilotfish_the_thumbnail() {
 		echo $html;
 	}
 }
-
+endif;
 
 /**
  * Register a Custom Post Type 
@@ -85,14 +87,15 @@ register_taxonomy("Skills", array("project"), array("hierarchical" => true, "lab
 
 
 /**
- * Show Home and Portfolio Links in the Primary Navigation 
+ * Show Home Link in the Primary Navigation 
  */
-  
-function portfolio_page_menu_args( $args ) {
+if (!function_exists('pilotfish_home_menu_args')):  
+function pilotfish_home_menu_args( $args ) {
 	$args['show_home'] = true;
 	return $args;
 }
-add_filter( 'wp_page_menu_args', 'portfolio_page_menu_args' );	
+endif;
+add_filter( 'wp_page_menu_args', 'pilotfish_home_menu_args' );	
 
 
 
@@ -100,7 +103,7 @@ add_filter( 'wp_page_menu_args', 'portfolio_page_menu_args' );
 /**
  * Where the post has no post title, but must still display a link to the single-page post view.
  */
-
+if (!function_exists('pilotfish_title')): 
 function pilotfish_title($title) {
         if ($title == '') {
             return __('Untitled','pilotfish');
@@ -108,6 +111,7 @@ function pilotfish_title($title) {
             return $title;
         }
 }
+endif;
 add_filter('the_title', 'pilotfish_title');
 
 
@@ -117,26 +121,31 @@ add_filter('the_title', 'pilotfish_title');
  * To override this length in a child theme, remove the filter and add your own
  * function tied to the excerpt_length filter hook.
  */
+if (!function_exists('pilotfish_excerpt_length')):
 function pilotfish_excerpt_length( $length ) {
 	return 60;
 }
+endif;
 add_filter( 'excerpt_length', 'pilotfish_excerpt_length' );
 
 
 /**
  * Returns a "Continue Reading" link for excerpts
  */
+if (!function_exists('pilotfish_continue_reading_link')):
 function pilotfish_continue_reading_link() {
 	return ' <a href="'. esc_url( get_permalink() ) . '">' . __( 'Continue Reading <span class="meta-nav">&rarr;</span>', 'pilotfish' ) . '</a>';
 }
-
+endif;
 
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and pilotfish_continue_reading_link().
  */
+if (!function_exists('pilotfish_auto_excerpt_more'))://
 function pilotfish_auto_excerpt_more( $more ) {
 	return ' &hellip;' . pilotfish_continue_reading_link();
 }
+endif;
 add_filter( 'excerpt_more', 'pilotfish_auto_excerpt_more' );
 
 
@@ -146,17 +155,22 @@ add_filter( 'excerpt_more', 'pilotfish_auto_excerpt_more' );
  * To override this link in a child theme, remove the filter and add your own
  * function tied to the get_the_excerpt filter hook.
  */
+if (!function_exists('pilotfish_custom_excerpt_more')):
 function pilotfish_custom_excerpt_more( $output ) {
 	if ( has_excerpt() && ! is_attachment() ) {
 		$output .= pilotfish_continue_reading_link();
 	}
 	return $output;
 }
+endif;
 add_filter( 'get_the_excerpt', 'pilotfish_custom_excerpt_more' );
 
 
 
-// filter function for wp_title
+/*
+ * filter function for wp_title
+ */
+if (!function_exists('pilotfish_filter_wp_title')):
 function pilotfish_filter_wp_title( $old_title, $sep, $sep_location ){
  
 	// add padding to the sep
@@ -183,5 +197,6 @@ function pilotfish_filter_wp_title( $old_title, $sep, $sep_location ){
 	// concoct and return new title
 	return get_bloginfo( 'name' ) . $insert . $old_title . $num;
 }
+endif;
 // call our custom wp_title filter, with normal (10) priority, and 3 args
 add_filter( 'wp_title', 'pilotfish_filter_wp_title', 10, 3 );
