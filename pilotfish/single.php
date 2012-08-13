@@ -2,16 +2,13 @@
 /**
  * Single Posts Template
  *
- *
  * @file           single.php
  * @package        Pilot Fish
  * @filesource     wp-content/themes/pilotfish/single.php
  * @since          Pilot Fish 0.1
  */
-
 get_header(); ?>
-
-        <div id="post" class="row span8">
+        <div id="post" class="row span8" role="main">
         
 <?php if (have_posts()) : ?>
 

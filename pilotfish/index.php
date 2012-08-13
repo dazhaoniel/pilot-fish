@@ -2,16 +2,14 @@
 /**
  * Index Template
  *
- *
  * @file           index.php
  * @package        Pilot Fish 
  * @filesource     wp-content/themes/pilotfish/index.php
  * @since          Pilot Fish 0.1
  */
-
 get_header(); ?>
 
-        <div id="content-full" class="row span12"> 
+        <div id="content" class="row span8" role="main"> 
         
 <?php if (have_posts()) : ?>
 
@@ -58,5 +56,6 @@ get_header(); ?>
 		<?php } ?>
 <?php endif; ?>  
       
-        </div><!-- end of #content-full -->
+        </div><!-- end of #content -->
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -9,11 +9,10 @@
  * @filesource     wp-content/themes/pilotfish/blog.php
  * @since          Pilot Fish 0.1
  */
-
 get_header(); ?>
 
 <?php global $more; $more = 0; ?>
-        <div id="content-blog" class="row span8"> 
+        <div id="content" class="row span8" role="main"> 
 <?php
     $limit = get_option('posts_per_page');
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;

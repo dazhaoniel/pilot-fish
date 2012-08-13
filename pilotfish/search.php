@@ -11,7 +11,7 @@
 
 get_header(); ?>
 
-        <div id="search-results" class="row span8">
+        <div id="search-results" class="row span8" role="main">
             <h6><?php _e('We found','pilotfish'); ?> 
 		<?php
                 $allsearch = &new WP_Query("s=$s&showposts=-1");

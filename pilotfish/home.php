@@ -11,8 +11,10 @@
 
 get_header(); ?>
     
-	<div id="featured" class="row span12 hidden-phone">     
-		<h1 class="featured-title">Hello World!</h1>
+	<div id="featured" class="row span12 hidden-phone">
+	<div id="banner-text" class="span12">     
+		<h1 class="featured-title"><?php echo __('Hello World!','pilotfish'); ?></h1>
+	</div>
 		<h2 class="featured-subtitle"><?php echo __('A Minimal, Responsive Portfolio Theme','pilotfish'); ?></h2>
             	<p><?php echo __('You can edit this section from home.php in the Edit Panel. Happy Blogging! ','pilotfish'); ?></p>
         </div><!-- end of #featured -->

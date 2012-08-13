@@ -2,7 +2,6 @@
 /**
  * Image Attachment Template
  *
- *
  * @file           image.php
  * @package        Pilot Fish 
  * @filesource     wp-content/themes/pilotfish/image.php

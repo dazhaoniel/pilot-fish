@@ -9,10 +9,9 @@
  * @filesource     wp-content/themes/pilotfish/archive-project.php
  * @since          Pilot Fish 0.2
  */
-
 get_header(); ?>
 
-<div id="project-archive"> 
+<div id="project-archive" class="row span12" role="main"> 
 <?php if (have_posts()) : ?>
         <div id="thumbnail">
 			<?php $var = 1; ?>
@@ -27,7 +26,7 @@ get_header(); ?>
 				</div>
 				<?php $var++; ?>
 			<?php endwhile; // no CR conform CSS ?> 
- 		</div><!-- end of #thumbnail -->
+ 	</div><!-- end of #thumbnail -->
 <?php endif; ?>
         <?php /* Display navigation to next/previous pages when applicable */ ?>
 		<?php if ($wp_query->max_num_pages > 1) { ?>
@@ -35,7 +34,6 @@ get_header(); ?>
 		    <div class="previous"><?php next_posts_link(__('&larr; previous', 'pilotfish')); ?></div>
 		    <div class="next"><?php previous_posts_link(__('next &rarr;', 'pilotfish')); ?></div>
 		  </nav>
-		<?php } ?>
-	    
+	<?php } ?>	    
 </div><!-- end of #project-archive -->
 <?php get_footer(); ?>

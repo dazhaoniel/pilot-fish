@@ -1,12 +1,12 @@
 /* 
 Theme Name: Pilot Fish 
-Theme URI: http://wordpress.danielatwork.com/
+Theme URI: http://wordpress.danielatwork.com/pilotfish
 Description: minimal, full width, portfolio, responsive design with one custom post type and parallax scrolling
 
 Author: Daniel Zhao
 Author URI: http://danielatwork.com/
-Version: 0.3.1 
-Tags: white, blue, gray, light, custom-menu, custom-header, custom-background, one-column, flexible-width, full-width-template
+Version: 0.3.2 
+Tags: white, blue, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, featured-images, flexible-width, full-width-template, theme-options
 	
 License: GNU General Public License (GPL)
 License URI: license.txt
@@ -394,7 +394,7 @@ License URI: license.txt
 		margin:1.6em 0 .8em;
 }
 	th, td {
-		padding:.8em;
+		padding:.5em;
 }
 	caption {
 		padding-bottom:.8em;
@@ -623,10 +623,8 @@ License URI: license.txt
 
 /* 06 - Content
 ================================================== */
-	#content,
-	#content-archive, 
-	#content-full, 
-	#content-blog, 
+	#content, 
+	#content-full,  
 	#post, 
 	#post-images, 
 	#project,
@@ -641,8 +639,7 @@ License URI: license.txt
 }
 	#content .bypostauthor {
 }
-	#content-blog article,
-	#content-archive article {
+	#content article {
 		padding-bottom: 37px;
 		border-bottom: 1px solid whiteSmoke;
 		margin-bottom: 30px;
@@ -800,16 +797,22 @@ License URI: license.txt
 		padding: 0 40px 0 40px;
 		text-align:center;
 }
+	#banner-text {
+    		position: fixed;
+    		text-align: center;
+    		top: 380px;
+/*    		width: 100%;*/
+}
 	.featured-title {
 		font-size: 60px;
 		color: #ffffff;
 		letter-spacing: -1px;
 		line-height: 1;
 		margin: 0;
-		padding-left: 15%;
+/*		padding-left: 15%;*/
 		text-shadow: 0 0 1px #3F544E;
-		position: fixed;
-		top: 380px;
+/*		position: fixed;
+		top: 380px;*/
 }
 	.featured-subtitle {
 		text-align:center;
@@ -887,8 +890,9 @@ License URI: license.txt
 }
 	.title-404 {
 		color:#6e9489;
-		font-size: 60px;
-		text-align: center;
+		font-size: 2em;
+		line-height: 1.5;
+/*		text-align: center;*/
 }
 
 /* 08 - Widgets
@@ -1091,4 +1095,260 @@ License URI: license.txt
 }
 	.clear {
 		clear:both;
+}
+
+/*!
+ * Bootstrap Responsive v2.0.4
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ *
+ * with modifications
+ */
+ 
+.row {
+	float: left;
+	margin-bottom: 2.083%;
+	padding-top: 0;
+}
+.span3, .span4, .span4-fixed, .span6, .span8 {
+	display: inline;
+	margin-right: 2.083%;
+}
+
+.span3 {
+	width: 220px;
+}
+
+.span4,
+.span4-fixed {
+	width: 300px;
+}
+
+.span6 {
+	width: 460px;
+}
+
+.span8 {
+	width: 620px;
+}
+
+.span12 {
+	width: 940px;
+}
+
+/* .last to keep the last item inline */
+.last {
+	margin-left:0;
+	margin-right:0!important;
+}
+
+.hidden {
+  	display: none;
+  	visibility: hidden;
+}
+
+.visible-phone {
+  	display: none !important;
+}
+
+.visible-tablet {
+  	display: none !important;
+}
+
+.hidden-desktop {
+  	display: none !important;
+}
+
+/* Media Queries
+==================================================*/
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  	html {
+  		overflow-x: auto;
+		-webkit-overflow-x: auto;
+		-moz-overflow-x: auto;
+		-o-overflow-x: auto;
+  	}
+  	.page-header h1 small {
+    		display: block;
+    		line-height: 18px;
+  	}
+  	#container,
+  	#footer {
+    		width: auto;
+  	}
+  	.span12, 
+  	.span8,
+  	.span6,
+  	.span4,
+  	.span3 {
+    		width: 96%;
+    		margin-left: auto;
+    		margin-right: auto;
+  	}
+  	.menu li {
+    		float:none !important;
+  	}
+  	input[type="checkbox"],
+  	input[type="radio"] {
+    		border: 1px solid #ccc;
+  	}
+  	input[type="text"],
+  	input[type="password"],
+  	input[type="email"],
+  	textarea,
+  	select {
+    		width: 90% !important;
+  	}
+  	.size-full,
+  	.wp-caption-text {
+    		max-width: 400px;
+  	}
+  	.hidden-phone {
+  		display: none !important;
+  	}
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  	body {
+/*    		padding-right: 20px;
+    		padding-left: 20px;*/
+  	}
+  	#container,
+  	#footer {
+    		width: 100%;
+  	}
+  	.span12, 
+  	.span8,
+  	.span6,
+  	.span4,
+  	.span3 {
+    		width: 96%;
+    		margin-left: auto;
+    		margin-right: auto;
+  	}
+  	#thumbnail .last {
+		margin-right:2.083% !important;
+  	}
+  	input[type="text"],
+  	input[type="password"],
+  	input[type="email"],
+  	textarea,
+  	select {
+    		width: 90% !important;
+  	}
+  	.size-full,
+  	.wp-caption-text {
+    		width: auto;
+  	}
+  	.visible-phone {
+    		display: inherit !important;
+  	}
+/*  	.hidden-phone {
+    		display: inherit !important;
+  	}*/
+  	.hidden-desktop {
+    		display: inherit !important;
+  	}
+  	.visible-desktop {
+    		display: none !important;
+  	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  	#container { width: 100%; padding-left:0; padding-right:0; }
+  	.row {
+    		*zoom: 1;
+  	}
+  	.row:before,
+  	.row:after {
+    		display: table;
+    		content: "";
+  	}
+  	.row:after {
+    		clear: both;
+  	}
+  	[class*="span"] {
+    		float: left;
+  	}
+  	#thumbnail .last {
+		margin-right:2.083% !important;
+  	}
+  	.span12 {
+    		width: 99.9468085036383%;
+  	}
+  	.span8 {
+    		width: 65.6926648596383%;
+  	}
+  	.span6 {
+    		width: 48.5655930376383%;
+  	}
+  	.span4 {
+    		width: 31.4385212156383%;
+  	}
+  	.span4-fixed{
+    		width: 300px;
+  	}
+  	.span3 {
+    		width: 22.874985304638297%;
+  	}
+  	.visible-tablet {
+    		display: inherit !important;
+  	}
+  	.hidden-tablet {
+    		display: none !important;
+  	}
+  	.hidden-desktop {
+    		display: inherit !important;
+  	}
+  	.visible-desktop {
+    		display: none !important ;
+  	}
+}
+
+/* Large desktop */
+@media (min-width: 980px) {
+  	.row {
+    		*zoom: 1;
+  	}
+  	.row:before,
+  	.row:after {
+    		display: table;
+    		content: "";
+  	}
+  	.row:after {
+    		clear: both;
+  	}
+  	[class*="span"] {
+    		float: left;
+  	}
+  	#container,
+  	#footer {
+    		width:980px;
+    		padding: 0;
+  	}
+  	.span12 {
+    		width: 940px;
+  	}
+  	.span8 {
+    		width: 620px;
+  	}
+  	.span6 {
+    		width: 460px;
+  	}
+  	.span4,
+  	.span4-fixed {
+    		width: 300px;
+  	}
+  	.span3 {
+    		width: 220px;
+  	}
 }

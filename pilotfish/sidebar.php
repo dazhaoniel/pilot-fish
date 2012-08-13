@@ -2,7 +2,6 @@
 /**
  * Main Widget Template
  *
- *
  * @file           sidebar.php
  * @package        Pilot Fish 
  * @filesource     wp-content/themes/pilotfish/sidebar.php

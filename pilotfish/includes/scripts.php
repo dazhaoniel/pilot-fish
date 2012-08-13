@@ -4,8 +4,8 @@
  */
 if (!function_exists('pilotfish_script')):
 function pilotfish_scripts() {
-  	wp_enqueue_style('pilotfish_bootstrap_responsive_style', get_template_directory_uri() . '/css/bootstrap-responsive.css', false, null);
-  	wp_enqueue_style('pilotfish_main_style', get_template_directory_uri() . '/style.css', false, null);
+//  	wp_enqueue_style('pilotfish_bootstrap_responsive_style', get_template_directory_uri() . '/css/bootstrap-responsive.css', false, null);
+  	wp_enqueue_style('pilotfish_main_style', get_template_directory_uri() . '/style.css', true, null);
 
   	if (!is_admin()) {
     		wp_deregister_script('jquery');
@@ -43,6 +43,7 @@ function pilotfish_the_thumbnail() {
 	}
 }
 endif;
+
 
 /**
  * Register a Custom Post Type 
@@ -82,7 +83,6 @@ if (!function_exists('create_post_type')):
 	}
 	
 endif;
-
 register_taxonomy("Skills", array("project"), array("hierarchical" => true, "label" => "Skills", "singular_label" => "Skill", "rewrite" => true));
 
 
@@ -96,8 +96,6 @@ function pilotfish_home_menu_args( $args ) {
 }
 endif;
 add_filter( 'wp_page_menu_args', 'pilotfish_home_menu_args' );	
-
-
 
 
 /**
@@ -166,7 +164,6 @@ endif;
 add_filter( 'get_the_excerpt', 'pilotfish_custom_excerpt_more' );
 
 
-
 /*
  * filter function for wp_title
  */
@@ -200,3 +197,13 @@ function pilotfish_filter_wp_title( $old_title, $sep, $sep_location ){
 endif;
 // call our custom wp_title filter, with normal (10) priority, and 3 args
 add_filter( 'wp_title', 'pilotfish_filter_wp_title', 10, 3 );
+
+/*
+ * Comment replu script
+ */
+function pilotfish_enqueue_comment_reply_script() {
+	if ( comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}
+add_action( 'comment_form_before', 'pilotfish_enqueue_comment_reply_script' );

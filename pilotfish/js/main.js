@@ -18,16 +18,16 @@ function isMobile(){
 ///////////////////////////////
 
 // Calcualte the home banner parallax scrolling
-  function scrollBanner() {
+function scrollBanner() {
     //Get the scoll position of the page
     scrollPos = jQuery(this).scrollTop();
 
     //Scroll and fade out the banner text
-    jQuery('h1.featured-title').css({
+    jQuery('.featured-title').css({
       'margin-top' : -(scrollPos/3)+"px",
       'opacity' : 1-(scrollPos/300)
     });
-  }
+}
 
 ///////////////////////////////
 // Initialize Parallax 
@@ -40,7 +40,7 @@ jQuery(document).ready(function(){
 		});
 	}
 	else {
-		jQuery('.featured-title').css({
+		jQuery('#banner-text').css({
 			'position': 'relative',
 			'text-align': 'center',
 			'margin': 'auto',

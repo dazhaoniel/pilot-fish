@@ -5,6 +5,7 @@
  
 if (!defined('__DIR__')) { define('__DIR__', dirname(__FILE__)); }
 
+require ( get_template_directory() . '/includes/theme-options.php' );
 require ( get_template_directory() . '/includes/scripts.php' );
 require ( get_template_directory() . '/includes/hooks.php' );
 require ( get_template_directory() . '/includes/template-tags.php' );

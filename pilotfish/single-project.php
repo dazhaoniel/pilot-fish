@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Single Projects Template for Portfolio
  *
@@ -8,11 +7,9 @@
  * @filesource     wp-content/themes/pilotfish/single-project.php
  * @since          Pilot Fish 0.2
  */
-
 get_header(); ?>
 
-        <div id="project" class="row span12">
-                
+        <div id="project" class="row span12" role="main">                
 <?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?> 
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -51,6 +48,5 @@ get_header(); ?>
 	<span class="next"><?php next_post_link( '%link', __( 'next project <span class="meta-nav">&rarr;</span>', 'pilotfish' ) ); ?></span>
 	</nav>
 <?php endif; ?>  
-      
-        </div><!-- end of #project -->
+	</div><!-- end of #project -->
 <?php get_footer(); ?>

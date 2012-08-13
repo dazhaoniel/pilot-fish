@@ -51,7 +51,7 @@
                 
                 <section id="sidebar-home-3" class="widgets-home">
                 <div class="widget-inner">
-                <img class="aligncenter" src="<?php echo get_stylesheet_directory_uri(); ?>/images/screw.png" alt="">
+                <img class="aligncenter" src="<?php echo get_stylesheet_directory_uri(); ?>/images/wrench.png" alt="">
                 <h3 class="center"><?php _e('develop', 'pilotfish'); ?></h3>
                 <div class="textwidget"><?php _e('I code clean, flexible, standards-compliant HTML/CSS/JS that loads quickly and works across browsers and devices.','pilotfish'); ?></div>
                 </div>

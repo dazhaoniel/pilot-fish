@@ -1,19 +1,15 @@
 <?php
-
 /**
  * Archive Template
- *
  *
  * @file           archive.php
  * @package        Pilot Fish 
  * @filesource     wp-content/themes/pilotfish/archive.php
  * @since          Pilot Fish 0.1
  */
-
 get_header(); ?>
 
-        <div id="content-archive" class="row span8">
-
+<div id="content" class="row span8" role="main">
 <?php if (have_posts()) : ?>
 	<h6>
 	<?php
@@ -66,7 +62,7 @@ get_header(); ?>
 			<?php printf(__('FILED UNDER: %s', 'pilotfish'), get_the_category_list(', ')); ?>
                 	</footer><!-- end of .post-data -->
 		</article>
-		<?php endwhile; /* End loop */ ?>
+	<?php endwhile; /* End loop */ ?>
 <?php endif; ?>
 
 		<?php /* Display navigation to next/previous pages when applicable */ ?>
@@ -76,7 +72,7 @@ get_header(); ?>
 		    <div class="next"><?php previous_posts_link(__('next &rarr;', 'pilotfish')); ?></div>
 		  </nav>
 		<?php } ?>
-        </div><!-- end of #content-archive -->
+</div><!-- end of #content -->
         
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

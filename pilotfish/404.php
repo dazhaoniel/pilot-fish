@@ -2,16 +2,14 @@
 /**
  * 404 Not Found Template
  *
- *
  * @file           404.php
  * @package        Pilot Fish
  * @filesource     wp-content/themes/pilotfish/404.php
  * @since          Pilot Fish 0.1
  */
-
 get_header(); ?>
 
-        <div id="content-full" class="row span12" role="main">
+        <div id="post" class="row span8" role="main">
             <article id="post-0" class="post error404 not-found">
                 <header></header>
                 <div class="post-entry">

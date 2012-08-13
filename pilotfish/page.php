@@ -2,16 +2,14 @@
 /**
  * Pages Template
  *
- *
  * @file           page.php
  * @package        Pilot Fish 
  * @filesource     wp-content/themes/pilotfish/page.php
  * @since          Pilot Fish 0.1
  */
-
 get_header(); ?>
 
-        <div id="content-full" class="row span12">
+        <div id="content-full" class="row span12" role="main">
         
 <?php if (have_posts()) : ?>
 
@@ -34,15 +32,37 @@ get_header(); ?>
                 <div class="post-entry">
                     <?php the_content(__('Continue Reading &rarr;', 'pilotfish')); ?>
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'pilotfish'), 'after' => '</div>')); ?>
-                </div><!-- end of .post-entry -->
-                
-                <?php if ( comments_open() ) : ?>
-                <footer class="post-data">
-				    <?php the_tags(__('TAGS:', 'pilotfish') . ' ', ', ', '<br />'); ?> 
-                    <?php the_category(__('FILED UNDER: %s', 'pilotfish') . ', '); ?> 
-                </footer><!-- end of .post-data -->
-                <?php endif; ?>             
-            
+	<!-- Display children if page has children -->             
+                <?php
+		//if the post has a parent
+		if($post->post_parent){
+		  //collect ancestor pages
+		  $relations = get_post_ancestors($post->ID);
+		  //get child pages
+		  $result = $wpdb->get_results( "SELECT ID FROM wp_posts WHERE post_parent = $post->ID AND post_type='page'" );
+		  if ($result){
+		    foreach($result as $pageID){
+		      array_push($relations, $pageID->ID);
+		    }
+		  }
+		  //add current post to pages
+		  array_push($relations, $post->ID);
+		  //get comma delimited list of children and parents and self
+		  $relations_string = implode(",",$relations);
+		  //use include to list only the collected pages. 
+		  $sidelinks = wp_list_pages("title_li=&echo=0&include=".$relations_string);
+		}else{
+		  // display only main level and children
+		  $sidelinks = wp_list_pages("title_li=&echo=0&depth=1&child_of=".$post->ID);
+		}
+
+		if ($sidelinks) { ?>
+		  <h3>Page Hierarchy: <?php the_title(); ?></h3>
+		  <ul>
+		    <?php //links in <li> tags
+		    echo $sidelinks; ?>
+		  </ul>         
+		<?php } ?>
             <div class="post-edit"><?php edit_post_link(__('Edit', 'pilotfish')); ?></div> 
             </article><!-- end of #post-<?php the_ID(); ?> -->
             
