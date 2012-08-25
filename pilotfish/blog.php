@@ -48,7 +48,7 @@ get_header(); ?>
 			<?php the_tags(__('TAGS:', 'pilotfish') . ' ', ', ', '<br />'); ?>
 			<?php printf(__('FILED UNDER: %s', 'pilotfish'), get_the_category_list(', ')); ?>
                 </footer><!-- end of .post-data -->             
-            <div class="post-edit"><?php edit_post_link(__('Edit', 'pilotfish')); ?></div>               
+            <div class="post-edit"><? /*php edit_post_link(__('Edit', 'pilotfish'));*/ ?></div>               
             </article><!-- end of #post-<?php the_ID(); ?> -->
         <?php endwhile; ?> 
 

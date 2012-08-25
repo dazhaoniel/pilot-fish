@@ -2,7 +2,6 @@
 /**
  * Home Widgets Template
  *
- *
  * @file           sidebar-home.php
  * @package        Pilot Fish
  * @filesource     wp-content/themes/pilotfish/sidebar-home.php
@@ -18,8 +17,8 @@
                 <section id="sidebar-home-1" class="widgets-home">
                 <div class="widget-inner">
                 <img class="aligncenter" src="<?php echo get_stylesheet_directory_uri(); ?>/images/bulb.png" alt="">
-                <h3 class="center"><?php _e('think', 'pilotfish'); ?></h3>
-                <div class="textwidget"><?php _e('I get inspirations from everything around me, so that\'s why I kept moving, to get to know people, places, experiences.','pilotfish'); ?></div>
+                <h3 class="center"><?php _e('featured one', 'pilotfish'); ?></h3>
+                <div class="textwidget"><?php _e('Replace the text here in the sidebar-home.php, or add widgets to Featured One area.','pilotfish'); ?></div>
                 </div>
                 </section>
                 
@@ -36,8 +35,8 @@
                 <section id="sidebar-home-2" class="widgets-home">
                 <div class="widget-inner">
                 <img class="aligncenter" src="<?php echo get_stylesheet_directory_uri(); ?>/images/wheel.png" alt="">
-                <h3 class="center"><?php _e('design', 'pilotfish'); ?></h3>
-                <div class="textwidget"><?php _e('I am addicted to details, so always wanted to control every variable to ensure perfection.','pilotfish'); ?></div>
+                <h3 class="center"><?php _e('featured two', 'pilotfish'); ?></h3>
+                <div class="textwidget"><?php _e('Replace the text here in the sidebar-home.php, or add widgets to Featured Two area.','pilotfish'); ?></div>
                 </div>
                 </section>
                             
@@ -52,8 +51,8 @@
                 <section id="sidebar-home-3" class="widgets-home">
                 <div class="widget-inner">
                 <img class="aligncenter" src="<?php echo get_stylesheet_directory_uri(); ?>/images/wrench.png" alt="">
-                <h3 class="center"><?php _e('develop', 'pilotfish'); ?></h3>
-                <div class="textwidget"><?php _e('I code clean, flexible, standards-compliant HTML/CSS/JS that loads quickly and works across browsers and devices.','pilotfish'); ?></div>
+                <h3 class="center"><?php _e('featured three', 'pilotfish'); ?></h3>
+                <div class="textwidget"><?php _e('Replace the text here in the sidebar-home.php, or add widgets to Featured Three area.','pilotfish'); ?></div>
                 </div>
                 </section>
                 

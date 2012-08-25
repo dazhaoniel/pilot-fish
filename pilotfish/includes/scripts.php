@@ -4,7 +4,6 @@
  */
 if (!function_exists('pilotfish_script')):
 function pilotfish_scripts() {
-//  	wp_enqueue_style('pilotfish_bootstrap_responsive_style', get_template_directory_uri() . '/css/bootstrap-responsive.css', false, null);
   	wp_enqueue_style('pilotfish_main_style', get_template_directory_uri() . '/style.css', true, null);
 
   	if (!is_admin()) {

@@ -32,7 +32,8 @@ get_header(); ?>
                 <div class="post-entry">
                     <?php the_content(__('Continue Reading &rarr;', 'pilotfish')); ?>
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'pilotfish'), 'after' => '</div>')); ?>
-	<!-- Display children if page has children -->             
+	<!-- Display children if page has children -->
+		<div class="page-hierarchy">             
                 <?php
 		//if the post has a parent
 		if($post->post_parent){
@@ -57,12 +58,13 @@ get_header(); ?>
 		}
 
 		if ($sidelinks) { ?>
-		  <h3>Page Hierarchy: <?php the_title(); ?></h3>
+		  <h5><?php _e('Page Hierarchy:', 'pilotfish'); ?> <?php the_title(); ?></h5>
 		  <ul>
 		    <?php //links in <li> tags
 		    echo $sidelinks; ?>
 		  </ul>         
 		<?php } ?>
+		</div>
             <div class="post-edit"><?php edit_post_link(__('Edit', 'pilotfish')); ?></div> 
             </article><!-- end of #post-<?php the_ID(); ?> -->
             

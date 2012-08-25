@@ -41,8 +41,8 @@
     <div id="copyright" class="clear">    
         <div class="row span6 copyright">
             <small><?php esc_attr_e('&copy;', 'pilotfish'); ?> <?php _e(date('Y')); ?> <a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"><?php bloginfo('name'); ?></a> powered by <a href="<?php echo esc_url(__('http://wordpress.org','pilotfish')); ?>" title="<?php esc_attr_e('WordPress', 'pilotfish'); ?>">
-                    <?php printf('WordPress'); ?></a></small><br /><small>Theme by <a href="<?php echo esc_url(__('http://danielatwork.com','pilotfish')); ?>" title="<?php esc_attr_e('Daniel Zhao', 'pilotfish'); ?>">
-                    <?php printf('Daniel Zhao'); ?></a></small>
+                    <?php _e('WordPress'); ?></a></small><br /><small><?php _e('Theme by','pilotfish') ?> <a href="<?php echo esc_url(__('http://danielatwork.com','pilotfish')); ?>" title="<?php esc_attr_e('Daniel Zhao', 'pilotfish'); ?>">
+                    <?php _e('Daniel Zhao'); ?></a></small>
         </div><!-- end of .copyright -->
         
         <div class="row span6 last scroll-top"><small><a href="#" title="<?php esc_attr_e( 'scroll to top', 'pilotfish' ); ?>"><?php _e( 'Back to Top', 'pilotfish' ); ?></a></small></div><!-- end of .scroll-top -->      

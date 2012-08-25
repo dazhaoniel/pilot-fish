@@ -45,8 +45,8 @@ get_header(); ?>
                 </div><!-- end of .post-entry -->
                 
                 <footer class="post-data">
-				    <?php the_tags(__('Tagged with:', 'pilotfish') . ' ', ', ', '<br />'); ?> 
-					<?php printf(__('Posted in %s', 'pilotfish'), get_the_category_list(', ')); ?> | 
+				    <?php the_tags(__('TAGS:', 'pilotfish') . ' ', ', ', '<br />'); ?> 
+					<?php printf(__('FILED UNDER: %s', 'pilotfish'), get_the_category_list(', ')); ?> | 
 					<?php edit_post_link(__('Edit', 'pilotfish'), '', ' &#124; '); ?>  
 					<?php comments_popup_link(__('No Response &darr;', 'pilotfish'), __('One Response &darr;', 'pilotfish'), __('% Responses &darr;', 'pilotfish')); ?>
                 </footer><!-- end of .post-data -->             

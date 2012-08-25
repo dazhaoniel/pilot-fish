@@ -45,7 +45,7 @@
                 <?php if ( comments_open() ) : ?>
                 <footer class="post-data">
 				    <?php the_tags(__('TAGS:', 'pilotfish') . ' ', ', ', '<br />'); ?> 
-                    <?php the_category(__('Filed Under: %s', 'pilotfish') . ', '); ?> 
+                    <?php the_category(__('FILED UNDER: %s', 'pilotfish') . ', '); ?> 
                 </footer><!-- end of .post-data -->
                 <?php endif; ?>             
 
