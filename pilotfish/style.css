@@ -1,6 +1,6 @@
 /* 
 Theme Name: Pilot Fish 
-Theme URI: http://wordpress.danielatwork.com/pilotfish
+Theme URI: http://wordpress.danielatwork.com/project/pilot-fish/
 Description: *EDIT*, Minimal, full width, portfolio, responsive design with one custom post type and parallax scrolling. Version 0.3.2 has include Chinese, Japanese and Spanish translations.
 
 Author: Daniel Zhao
@@ -661,7 +661,8 @@ License URI: license.txt
 	.post-data {
 		clear:both;
 		font-size:11px;
-		margin-top:20px;
+		margin-top:30px;
+		color:#9f9f9f;
 }
 	.post-entry {
 		clear:both;
@@ -676,16 +677,11 @@ License URI: license.txt
     		margin-right: 20px;
     		padding: 5px;
 }
-	.post-entry p {
-/*		float: left;*/
-}
 	.post-meta,
 	.logged-in-as,
 	.pagination {
 		clear:both;
 		color:#9f9f9f;
-		font-size:13px;
-		margin-bottom:10px;
 }
 	.post-edit,
 	.read-more {
@@ -723,58 +719,67 @@ License URI: license.txt
 }
 	embed,
 	iframe {
-		max-width: 95%;
+		max-width: 600px;
+		max-height: 338px;
 }
+
 /* 	Aside Format 	*/
 /* 	Gallery Format 	*/
-	.format-aside header,
-	#content .format-gallery .post-meta {
+	#content .format-aside header {
 		display: none;
 }
 
 /* 	Quote Format 	*/
-	#content .format-quote header,
-	#content .format-quote .post-meta,
-	#content .format-status header,
-	#content .format-status .post-meta {
+	#content .format-quote header {
 		display: none;
 }
 	.format-quote blockquote {
-/*		background: #ff3300;
-		min-height: 45px;
-		padding: 12px 15px 12px 80px;*/
+		background: #377687 url(images/quote-bg.png) no-repeat 15px 15px;
+		opacity: 0.8;
+		padding: 12px 15px 12px 80px;
 }
 	.format-quote blockquote p {
-/*		color: #fff;*/
+		color: #fff;
 		font: italic 1.8em/1.3 "Hoefler Text",Constantia,"Adobe Garamond Pro","Garamond",Georgia,"Times New Roman",Times,serif;
-/*		margin: 0;*/
 }
 	.format-quote blockquote a {
-/*		color: #fff;*/
+		color: #fff;
 		opacity: 0.8;
 		border-color: #fff;
 }
-	.format-quote blockquote a:hover,
-	.format-quote blockquote a:focus,
-	.format-quote blockquote a:active {
-		background: none;
-/*		color: #fff;*/
+	.format-quote blockquote cite,
+	.format-quote blockquote cite a {
+		color: #fff;
+		margin-top: 20px;
+		text-align: right;
+		font-size: 1em;
+}
+	.format-quote blockquote cite a:hover,
+	.format-quote blockquote cite a:focus,
+	.format-quote blockquote cite a:active {
+		color: #fff;
 		opacity: .95;
 		border-bottom: 1px solid #fff;
 }
-	.format-image .postbody .content .frame .wrapper img.alignleft {
-		float:none;
-}
-	.format-image .postbody .content .frame .wrapper img.alignright {
-		float:none;
-}
+
 /* 	Status Format	*/
-	.format-status h1 {
+	#content .format-status header {
 		display: none;
 }
-	.format-image .post-entry {
-		margin-left:60px;
-		margin-right:24px;
+	#status-avatar {
+		display: block;
+		float: left;
+}
+	#status-text {
+		margin-left: 70px;
+}		
+
+/*	Image Format	*/
+	.format-image .post-entry img {
+		border: 3px solid #000;
+		max-width: 600px;
+/*		margin-left:60px;
+		margin-right:24px;*/
 }
 	.format-image .post-entry p {
 		color:#777;
@@ -783,14 +788,16 @@ License URI: license.txt
 	.format-image .post-entry p img {
 		display:none;
 }
-	.format-link header:after {
+
+/*	Link Format	*/
+	.format-link header h1:after {
 		content:"\2192";
-		color:#a3b7ba;
+/*		color:#a3b7ba;*/
 		padding-left:10px;
 		text-decoration:none;
 }
 
-/*	Thumbnails List	*/
+/*	Thumbnails	*/
 	#thumbnail {
 		width: 100%;
 }
@@ -890,10 +897,7 @@ License URI: license.txt
 		letter-spacing: -1px;
 		line-height: 1;
 		margin: 0;
-/*		padding-left: 15%;*/
 		text-shadow: 0 0 1px #3F544E;
-/*		position: fixed;
-		top: 380px;*/
 }
 	.featured-subtitle {
 		text-align:center;
@@ -1333,9 +1337,6 @@ License URI: license.txt
   	.visible-phone {
     		display: inherit !important;
   	}
-/*  	.hidden-phone {
-    		display: inherit !important;
-  	}*/
   	.hidden-desktop {
     		display: inherit !important;
   	}

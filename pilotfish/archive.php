@@ -32,36 +32,14 @@ get_header(); ?>
                 single_cat_title();
               }
         ?>
-	</h6>
-                    
-        <?php while (have_posts()) : the_post(); ?>        
-        	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<header>
-				<h1><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h1>
-			</header>
-			<div class="post-meta">
-                	<?php pilotfish_entry_meta(); ?>
-				    <?php if ( comments_open() ) : ?>
-                        <span class="comments-link">
-                        <span class="mdash">&mdash;</span>
-                    	<?php comments_popup_link(__('No Response &darr;', 'pilotfish'), __('One Response &darr;', 'pilotfish'), __('% Responses &darr;', 'pilotfish')); ?>
-                        </span>
-                    	<?php endif; ?> 
-                	</div><!-- end of .post-meta -->    
-		      	
-		      	<div class="entry-content">
-				<?php if (is_archive() || is_search()) { ?>
-			  		<?php the_excerpt(); ?>
-				<?php } else { ?>
-			  		<?php the_content(); ?>
-				<?php } ?>
-		      	</div>
-		      
-		      	<footer class="post-data">  
-			<?php the_tags(__('TAGS:', 'pilotfish') . ' ', ', ', '<br />'); ?>
-			<?php printf(__('FILED UNDER: %s', 'pilotfish'), get_the_category_list(', ')); ?>
-                	</footer><!-- end of .post-data -->
-		</article>
+	</h6>                  
+        <?php while (have_posts()) : the_post();       
+        	if( !get_post_format() ) {
+					get_template_part( 'content', 'standard' );
+				} else {
+					get_template_part( 'content', get_post_format() );
+				}
+				comments_template( '', true ); ?>
 	<?php endwhile; /* End loop */ ?>
 <?php endif; ?>
 

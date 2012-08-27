@@ -19,16 +19,6 @@
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <header><h1><?php the_title(); ?></h1></header>
                 <p><?php _e('&#8249; Return to', 'pilotfish'); ?> <a href="<?php echo get_permalink($post->post_parent); ?>" rel="gallery"><?php echo get_the_title($post->post_parent); ?></a></p>
-
-                <div class="post-meta">
-                    <?php pilotfish_entry_meta(); ?>
-				    <?php if ( comments_open() ) : ?>
-                        <span class="comments-link">
-                        <span class="mdash">&mdash;</span>
-                    <?php comments_popup_link(__('No Response &darr;', 'pilotfish'), __('One Response &darr;', 'pilotfish'), __('% Responses &darr;', 'pilotfish')); ?>
-                        </span>
-                    <?php endif; ?> 
-                </div><!-- end of .post-meta -->
                                 
                 <div class="attachment-entry">
                     <a href="<?php echo wp_get_attachment_url($post->ID); ?>"><?php echo wp_get_attachment_image( $post->ID, 'large' ); ?></a>
@@ -37,19 +27,25 @@
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'pilotfish'), 'after' => '</div>')); ?>
                 </div><!-- end of .post-entry -->
 
-               <div class="navigation">
+               <div class="pager">
 	               <div class="previous"><?php previous_image_link( 'thumbnail' ); ?></div>
-			      <div class="next"><?php next_image_link( 'thumbnail' ); ?></div>
+			<div class="next"><?php next_image_link( 'thumbnail' ); ?></div>
 		       </div><!-- end of .navigation -->
                         
-                <?php if ( comments_open() ) : ?>
                 <footer class="post-data">
-				    <?php the_tags(__('TAGS:', 'pilotfish') . ' ', ', ', '<br />'); ?> 
-                    <?php the_category(__('FILED UNDER: %s', 'pilotfish') . ', '); ?> 
-                </footer><!-- end of .post-data -->
-                <?php endif; ?>             
-
-            <div class="post-edit"><?php edit_post_link(__('Edit', 'pilotfish')); ?></div>             
+		        <div class="post-meta">
+		        <?php pilotfish_entry_meta(); ?>
+					    <?php if ( comments_open() ) : ?>
+		                <span class="comments-link">
+		                <span class="mdash">&mdash;</span>
+		            <?php comments_popup_link(__('No Response &darr;', 'pilotfish'), __('One Response &darr;', 'pilotfish'), __('% Responses &darr;', 'pilotfish')); ?>
+		                </span>
+		            <?php endif; ?> 
+		        </div><!-- end of .post-meta -->  
+			<?php the_tags(__('TAGS:', 'pilotfish') . ' ', ', ', ' | '); ?>
+			<?php printf(__('FILED UNDER: %s', 'pilotfish'), get_the_category_list(', ')); ?> | 
+			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'pilotfish'), the_title_attribute('echo=0')); ?>"><?php _e('Permalink', 'pilotfish'); ?></a>
+                </footer><!-- end of .post-data -->             
             </article><!-- end of #post-<?php the_ID(); ?> -->
             
 			<?php comments_template( '', true ); ?>
