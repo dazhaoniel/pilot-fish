@@ -1,0 +1,458 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pilot Fish 0.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-14 21:23+0700\n"
+"PO-Revision-Date: 2012-08-14 21:27+0700\n"
+"Last-Translator: Daniel <daniel@danielatwork.com>\n"
+"Language-Team: Daniel Zhao <daniel@danielatwork.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ./pilot-fish/pilotfish\n"
+"X-Poedit-SearchPath-0: ./pilot-fish/pilotfish\n"
+
+#: pilot-fish/pilotfish/search.php:15
+msgid "We found"
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:20
+msgid " &#8211; "
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:22
+msgid "articles for "
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:23
+msgid "<span class=\"post-search-terms\">"
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:25
+msgid "</span><!-- end of .post-search-terms -->"
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:36
+#: pilot-fish/pilotfish/index.php:19
+#, php-format
+msgid "Permanent Link to %s"
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:43
+#: pilot-fish/pilotfish/page.php:33
+#: pilot-fish/pilotfish/single.php:29
+#: pilot-fish/pilotfish/single-project.php:23
+#: pilot-fish/pilotfish/image.php:36
+#: pilot-fish/pilotfish/index.php:37
+msgid "Continue Reading &rarr;"
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:44
+#: pilot-fish/pilotfish/page.php:34
+#: pilot-fish/pilotfish/single.php:41
+#: pilot-fish/pilotfish/single-project.php:35
+#: pilot-fish/pilotfish/image.php:37
+#: pilot-fish/pilotfish/index.php:38
+msgid "Pages:"
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:48
+#: pilot-fish/pilotfish/archive.php:61
+#: pilot-fish/pilotfish/single.php:45
+#: pilot-fish/pilotfish/image.php:47
+#: pilot-fish/pilotfish/index.php:42
+msgid "TAGS:"
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:49
+#, php-format
+msgid "FILED UNDER %s"
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:50
+#: pilot-fish/pilotfish/page.php:66
+#: pilot-fish/pilotfish/single.php:49
+#: pilot-fish/pilotfish/single-project.php:42
+#: pilot-fish/pilotfish/image.php:52
+#: pilot-fish/pilotfish/index.php:46
+msgid "Edit"
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:51
+#: pilot-fish/pilotfish/page.php:26
+#: pilot-fish/pilotfish/archive.php:47
+#: pilot-fish/pilotfish/single.php:24
+#: pilot-fish/pilotfish/image.php:28
+#: pilot-fish/pilotfish/index.php:26
+msgid "No Response &darr;"
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:51
+#: pilot-fish/pilotfish/page.php:26
+#: pilot-fish/pilotfish/archive.php:47
+#: pilot-fish/pilotfish/single.php:24
+#: pilot-fish/pilotfish/image.php:28
+#: pilot-fish/pilotfish/index.php:26
+msgid "One Response &darr;"
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:51
+#: pilot-fish/pilotfish/page.php:26
+#: pilot-fish/pilotfish/archive.php:47
+#: pilot-fish/pilotfish/single.php:24
+#: pilot-fish/pilotfish/image.php:28
+#: pilot-fish/pilotfish/index.php:26
+msgid "% Responses &darr;"
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:62
+#: pilot-fish/pilotfish/page.php:75
+#: pilot-fish/pilotfish/archive.php:71
+#: pilot-fish/pilotfish/index.php:53
+msgid "&larr; previous"
+msgstr ""
+
+#: pilot-fish/pilotfish/search.php:63
+#: pilot-fish/pilotfish/page.php:76
+#: pilot-fish/pilotfish/archive.php:72
+#: pilot-fish/pilotfish/index.php:54
+msgid "next &rarr;"
+msgstr ""
+
+#: pilot-fish/pilotfish/footer.php:43
+msgid "http://wordpress.org"
+msgstr ""
+
+#: pilot-fish/pilotfish/footer.php:44
+msgid "http://danielatwork.com"
+msgstr ""
+
+#: pilot-fish/pilotfish/footer.php:48
+msgid "Back to Top"
+msgstr ""
+
+#: pilot-fish/pilotfish/sidebar-home.php:21
+msgid "think"
+msgstr ""
+
+#: pilot-fish/pilotfish/sidebar-home.php:22
+msgid "I get inspirations from everything around me, so that's why I kept moving, to get to know people, places, experiences."
+msgstr ""
+
+#: pilot-fish/pilotfish/sidebar-home.php:39
+msgid "design"
+msgstr ""
+
+#: pilot-fish/pilotfish/sidebar-home.php:40
+msgid "I am addicted to details, so always wanted to control every variable to ensure perfection."
+msgstr ""
+
+#: pilot-fish/pilotfish/sidebar-home.php:55
+msgid "develop"
+msgstr ""
+
+#: pilot-fish/pilotfish/sidebar-home.php:56
+msgid "I code clean, flexible, standards-compliant HTML/CSS/JS that loads quickly and works across browsers and devices."
+msgstr ""
+
+#: pilot-fish/pilotfish/archive.php:22
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: pilot-fish/pilotfish/archive.php:24
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: pilot-fish/pilotfish/archive.php:26
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: pilot-fish/pilotfish/archive.php:30
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: pilot-fish/pilotfish/archive.php:62
+#: pilot-fish/pilotfish/single.php:46
+#: pilot-fish/pilotfish/image.php:48
+#: pilot-fish/pilotfish/index.php:43
+#, php-format
+msgid "FILED UNDER: %s"
+msgstr ""
+
+#: pilot-fish/pilotfish/single.php:35
+#: pilot-fish/pilotfish/single-project.php:29
+msgid "About"
+msgstr ""
+
+#: pilot-fish/pilotfish/single.php:57
+msgid "<span class=\"meta-nav\">&larr;</span> previous post"
+msgstr ""
+
+#: pilot-fish/pilotfish/single.php:58
+msgid "next post <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: pilot-fish/pilotfish/single-project.php:47
+msgid "<span class=\"meta-nav\">&larr;</span> previous project"
+msgstr ""
+
+#: pilot-fish/pilotfish/single-project.php:48
+msgid "next project <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: pilot-fish/pilotfish/home.php:16
+msgid "Hello World!"
+msgstr ""
+
+#: pilot-fish/pilotfish/home.php:18
+msgid "A Minimal, Responsive Portfolio Theme"
+msgstr ""
+
+#: pilot-fish/pilotfish/home.php:19
+msgid "You can edit this section from home.php in the Edit Panel. Happy Blogging! "
+msgstr ""
+
+#: pilot-fish/pilotfish/comments.php:11
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: pilot-fish/pilotfish/comments.php:17
+msgid "No Response"
+msgstr ""
+
+#: pilot-fish/pilotfish/comments.php:17
+msgid "One Response"
+msgstr ""
+
+#: pilot-fish/pilotfish/comments.php:17
+msgid "% Responses"
+msgstr ""
+
+#: pilot-fish/pilotfish/comments.php:25
+msgid "&#8249; previous"
+msgstr ""
+
+#: pilot-fish/pilotfish/comments.php:26
+msgid "next &#8250;"
+msgstr ""
+
+#: pilot-fish/pilotfish/comments.php:38
+msgid "Name"
+msgstr ""
+
+#: pilot-fish/pilotfish/comments.php:40
+msgid "E-mail"
+msgstr ""
+
+#: pilot-fish/pilotfish/comments.php:42
+msgid "Website"
+msgstr ""
+
+#: pilot-fish/pilotfish/image.php:21
+msgid "&#8249; Return to"
+msgstr ""
+
+#: pilot-fish/pilotfish/404.php:16
+msgid "404 &#8212; Oops! Deadend Here..."
+msgstr ""
+
+#: pilot-fish/pilotfish/404.php:17
+msgid "You can return"
+msgstr ""
+
+#: pilot-fish/pilotfish/404.php:17
+msgid "&larr; Home"
+msgstr ""
+
+#: pilot-fish/pilotfish/404.php:17
+msgid "or explore other pages and posts."
+msgstr ""
+
+#: pilot-fish/pilotfish/functions.php:24
+msgid "Primary Navigation"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:6
+msgid "Primary Sidebar"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:14
+msgid "Footer One"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:22
+msgid "Footer Two"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:30
+msgid "Footer Three"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:38
+msgid "Featured One"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:46
+msgid "Featured Two"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:54
+msgid "Featured Three"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:70
+msgid "Use this widget to add a vCard"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:71
+msgid "pilotfish: vCard"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:98
+msgid "vCard"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:164
+msgid "Title (optional):"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:168
+msgid "Street Address:"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:172
+msgid "City/Locality:"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:176
+msgid "State/Region:"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:180
+msgid "Zipcode/Postal Code:"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:184
+msgid "Telephone:"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/widgets.php:188
+msgid "Email:"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:17
+msgid "Theme Options"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:26
+msgid "Zero"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:30
+msgid "One"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:34
+msgid "Two"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:38
+msgid "Three"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:42
+msgid "Four"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:46
+msgid "Five"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:53
+msgid "Yes"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:57
+msgid "No"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:61
+msgid "Maybe"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:76
+msgid " Theme Options"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:79
+msgid "Options saved"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:93
+msgid "A checkbox"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:96
+msgid "Sample checkbox"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:105
+msgid "Some text"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:108
+msgid "Sample text input"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:117
+msgid "Select input"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:135
+msgid "Sample select input"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:144
+#: pilot-fish/pilotfish/includes/theme-options.php:146
+msgid "Radio buttons"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:174
+msgid "A textbox"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:177
+msgid "Sample text box"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/theme-options.php:183
+msgid "Save Options"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/scripts.php:62
+msgid "Projects"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/scripts.php:63
+msgid "Project"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/scripts.php:107
+msgid "Untitled"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/scripts.php:135
+msgid "Continue Reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: pilot-fish/pilotfish/includes/template-tags.php:5
+#, php-format
+msgid "<span class=\"%1$s\">Posted on</span> %2$s by %3$s"
+msgstr ""
+
