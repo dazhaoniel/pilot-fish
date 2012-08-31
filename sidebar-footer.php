@@ -1,3 +1,13 @@
+<?php
+/**
+ * Footer Widget Template
+ *
+ * @file           sidebar-footer.php
+ * @package        Pilot Fish 
+ * @filesource     wp-content/themes/pilot-fish/sidebar-footer.php
+ * @since          Pilot Fish 0.3.2
+ */
+?>
 <div id="widgets-footer">   
 	    <div class="row span4">
 	    <?php pilotfish_widgets(); // before widgets hook ?> 

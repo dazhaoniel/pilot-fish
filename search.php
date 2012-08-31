@@ -8,7 +8,6 @@
  * @filesource     wp-content/themes/pilot-fish/search.php
  * @since          Pilot Fish 0.1
  */
-
 get_header(); ?>
 
         <div id="content" class="row span8" role="main">

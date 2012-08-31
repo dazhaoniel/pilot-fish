@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pilot Fish 0.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-29 22:42-0500\n"
-"PO-Revision-Date: 2012-08-29 23:39-0500\n"
+"POT-Creation-Date: 2012-08-31 13:29-0500\n"
+"PO-Revision-Date: 2012-08-31 14:23-0500\n"
 "Last-Translator: Daniel <daniel@danielatwork.com>\n"
 "Language-Team: Daniel Zhao <daniel@danielatwork.com>\n"
 "Language: \n"
@@ -28,10 +28,10 @@ msgstr "Enlace permanente a %s"
 
 #: pilot-fish/content-image.php:10
 #: pilot-fish/content-standard.php:10
-#: pilot-fish/page.php:33
+#: pilot-fish/page.php:19
 #: pilot-fish/content-link.php:23
 #: pilot-fish/content-aside.php:10
-#: pilot-fish/single-project.php:18
+#: pilot-fish/single-project.php:17
 msgid "Continue Reading &rarr;"
 msgstr "Sigue leyendo &rarr;"
 
@@ -39,42 +39,42 @@ msgstr "Sigue leyendo &rarr;"
 #: pilot-fish/content-standard.php:16
 #: pilot-fish/content-link.php:29
 #: pilot-fish/content-aside.php:16
-#: pilot-fish/single-project.php:24
+#: pilot-fish/single-project.php:23
 msgid "About"
 msgstr "Sobre"
 
 #: pilot-fish/content-image.php:22
 #: pilot-fish/content-standard.php:22
-#: pilot-fish/page.php:34
+#: pilot-fish/page.php:20
 #: pilot-fish/content-link.php:35
 #: pilot-fish/content-aside.php:22
-#: pilot-fish/single-project.php:30
+#: pilot-fish/single-project.php:29
 msgid "Pages:"
 msgstr "Páginas:"
 
 #: pilot-fish/content-image.php:31
 #: pilot-fish/content-standard.php:31
-#: pilot-fish/page.php:26
+#: pilot-fish/page.php:60
 #: pilot-fish/content-link.php:43
 #: pilot-fish/content-aside.php:31
 msgid "No Response &darr;"
-msgstr ""
+msgstr "Sin respuesta &darr;"
 
 #: pilot-fish/content-image.php:31
 #: pilot-fish/content-standard.php:31
-#: pilot-fish/page.php:26
+#: pilot-fish/page.php:60
 #: pilot-fish/content-link.php:43
 #: pilot-fish/content-aside.php:31
 msgid "One Response &darr;"
-msgstr ""
+msgstr "Una respuesta &darr;"
 
 #: pilot-fish/content-image.php:31
 #: pilot-fish/content-standard.php:31
-#: pilot-fish/page.php:26
+#: pilot-fish/page.php:60
 #: pilot-fish/content-link.php:43
 #: pilot-fish/content-aside.php:31
 msgid "% Responses &darr;"
-msgstr ""
+msgstr "% respuestas &darr;"
 
 #: pilot-fish/content-image.php:35
 #: pilot-fish/content-standard.php:35
@@ -89,7 +89,7 @@ msgstr "ETIQUETAS:"
 #: pilot-fish/content-aside.php:36
 #, php-format
 msgid "FILED UNDER: %s"
-msgstr ""
+msgstr "ARCHIVADO EN: %s"
 
 #: pilot-fish/content-image.php:37
 #: pilot-fish/content-standard.php:37
@@ -100,72 +100,72 @@ msgstr "Enlace permanente"
 
 #: pilot-fish/content-image.php:40
 #: pilot-fish/content-standard.php:40
-#: pilot-fish/page.php:68
+#: pilot-fish/page.php:65
 #: pilot-fish/content-link.php:51
 #: pilot-fish/content-aside.php:40
-#: pilot-fish/single-project.php:40
+#: pilot-fish/single-project.php:39
 msgid "Edit"
 msgstr "Editar"
 
-#: pilot-fish/search.php:15
+#: pilot-fish/search.php:14
 msgid "We found"
-msgstr ""
+msgstr " "
 
-#: pilot-fish/search.php:20
+#: pilot-fish/search.php:19
 msgid " &#8211; "
 msgstr " &#8211; "
 
-#: pilot-fish/search.php:22
+#: pilot-fish/search.php:21
 msgid "articles for "
-msgstr "entradas para"
+msgstr " resultados de la búsqueda para: "
 
-#: pilot-fish/search.php:23
+#: pilot-fish/search.php:22
 msgid "<span class=\"post-search-terms\">"
 msgstr "<span class=\"post-search-terms\">"
 
-#: pilot-fish/search.php:25
+#: pilot-fish/search.php:24
 msgid "</span><!-- end of .post-search-terms -->"
 msgstr "</span><!-- end of .post-search-terms -->"
 
-#: pilot-fish/search.php:42
-#: pilot-fish/page.php:77
+#: pilot-fish/search.php:41
+#: pilot-fish/page.php:74
 #: pilot-fish/archive.php:49
 msgid "&larr; previous"
 msgstr "&larr; anterior"
 
-#: pilot-fish/search.php:43
-#: pilot-fish/page.php:78
+#: pilot-fish/search.php:42
+#: pilot-fish/page.php:75
 #: pilot-fish/archive.php:50
 msgid "next &rarr;"
 msgstr "siguiente &rarr;"
 
-#: pilot-fish/page.php:61
+#: pilot-fish/page.php:47
 msgid "Page Hierarchy:"
-msgstr ""
+msgstr "Jerarquía de las páginas"
 
-#: pilot-fish/footer.php:43
+#: pilot-fish/footer.php:22
 msgid "http://wordpress.org"
 msgstr "http://wordpress.org"
 
-#: pilot-fish/footer.php:44
+#: pilot-fish/footer.php:23
 msgid "WordPress"
 msgstr "WordPress"
 
-#: pilot-fish/footer.php:44
+#: pilot-fish/footer.php:23
 msgid "Theme by"
-msgstr ""
+msgstr "Tema por "
 
-#: pilot-fish/footer.php:44
+#: pilot-fish/footer.php:23
 msgid "http://danielatwork.com"
 msgstr "http://danielatwork.com"
 
-#: pilot-fish/footer.php:45
+#: pilot-fish/footer.php:24
 msgid "Daniel Zhao"
 msgstr "Daniel Zhao"
 
-#: pilot-fish/footer.php:48
+#: pilot-fish/footer.php:27
 msgid "Back to Top"
-msgstr "Volver al principio"
+msgstr "Vuelve al principio"
 
 #: pilot-fish/sidebar-home.php:20
 msgid "featured one"
@@ -219,11 +219,11 @@ msgstr "<span class=\"meta-nav\">&larr;</span> entrada antigua"
 msgid "next post <span class=\"meta-nav\">&rarr;</span>"
 msgstr "entrada nueva <span class=\"meta-nav\">&rarr;</span>"
 
-#: pilot-fish/single-project.php:45
+#: pilot-fish/single-project.php:44
 msgid "<span class=\"meta-nav\">&larr;</span> previous project"
 msgstr "<span class=\"meta-nav\">&larr;</span> projecto antiguo"
 
-#: pilot-fish/single-project.php:46
+#: pilot-fish/single-project.php:45
 msgid "next project <span class=\"meta-nav\">&rarr;</span>"
 msgstr "projecto nuevo <span class=\"meta-nav\">&rarr;</span>"
 
@@ -257,15 +257,15 @@ msgstr "Esta entrada está protegida. Introduce la contraseña para ver los come
 
 #: pilot-fish/comments.php:17
 msgid "No Response to"
-msgstr ""
+msgstr "Sin respuesta para"
 
 #: pilot-fish/comments.php:17
 msgid "One Response to"
-msgstr ""
+msgstr "Una respuesta para"
 
 #: pilot-fish/comments.php:17
 msgid "% Responses to"
-msgstr ""
+msgstr "% respuestas para"
 
 #: pilot-fish/comments.php:25
 msgid "&#8249; previous"
@@ -281,23 +281,23 @@ msgstr "Nombre"
 
 #: pilot-fish/comments.php:40
 msgid "E-mail"
-msgstr ""
+msgstr "Correo electrónico"
 
 #: pilot-fish/comments.php:42
 msgid "Website"
-msgstr ""
+msgstr "Sitio web"
 
-#: pilot-fish/image.php:19
+#: pilot-fish/image.php:18
 msgid "&larr; Return to"
-msgstr "&larr; Volver a"
+msgstr "&larr; Vuelve a"
 
 #: pilot-fish/404.php:16
 msgid "404 &#8212; Oops! Deadend Here..."
-msgstr ""
+msgstr "404 &#8212; ¡Ay! Página no encontrada..."
 
 #: pilot-fish/404.php:17
 msgid "You can return"
-msgstr "Puedes volver a"
+msgstr "Puede volver a"
 
 #: pilot-fish/404.php:17
 msgid "&larr; Home"
@@ -345,11 +345,11 @@ msgstr ""
 
 #: pilot-fish/includes/widgets.php:71
 msgid "pilotfish: vCard"
-msgstr ""
+msgstr "pilotfish: vCard"
 
 #: pilot-fish/includes/widgets.php:98
 msgid "vCard"
-msgstr ""
+msgstr "vCard"
 
 #: pilot-fish/includes/widgets.php:164
 msgid "Title (optional):"
@@ -357,27 +357,27 @@ msgstr ""
 
 #: pilot-fish/includes/widgets.php:168
 msgid "Street Address:"
-msgstr ""
+msgstr "Calle:"
 
 #: pilot-fish/includes/widgets.php:172
 msgid "City/Locality:"
-msgstr ""
+msgstr "Ciudad:"
 
 #: pilot-fish/includes/widgets.php:176
 msgid "State/Region:"
-msgstr ""
+msgstr "Provincia:"
 
 #: pilot-fish/includes/widgets.php:180
 msgid "Zipcode/Postal Code:"
-msgstr ""
+msgstr "Código postal:"
 
 #: pilot-fish/includes/widgets.php:184
 msgid "Telephone:"
-msgstr ""
+msgstr "Número de teléfono:"
 
 #: pilot-fish/includes/widgets.php:188
 msgid "Email:"
-msgstr ""
+msgstr "Correo electrónico:"
 
 #: pilot-fish/includes/scripts.php:64
 msgid "Projects"
@@ -389,7 +389,7 @@ msgstr "Projecto"
 
 #: pilot-fish/includes/scripts.php:109
 msgid "Untitled"
-msgstr ""
+msgstr "Sin nombre"
 
 #: pilot-fish/includes/scripts.php:137
 msgid "Continue Reading <span class=\"meta-nav\">&rarr;</span>"

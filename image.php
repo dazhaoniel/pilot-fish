@@ -7,8 +7,7 @@
  * @filesource     wp-content/themes/pilot-fish/image.php
  * @since          Pilot Fish 0.1
  */
-?>
-<?php get_header(); ?>
+get_header(); ?>
 
         <div id="post-images" class="row span8">        
 <?php if (have_posts()) : ?>

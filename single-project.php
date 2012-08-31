@@ -8,7 +8,6 @@
  * @since          Pilot Fish 0.2
  */
 get_header(); ?>
-
         <div id="project" class="row span12" role="main">                
 <?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?> 

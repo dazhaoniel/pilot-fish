@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pilot Fish 0.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-30 16:58-0500\n"
-"PO-Revision-Date: 2012-08-30 17:23-0500\n"
+"POT-Creation-Date: 2012-08-30 18:29-0500\n"
+"PO-Revision-Date: 2012-08-30 18:29-0500\n"
 "Last-Translator: Daniel <daniel@danielatwork.com>\n"
 "Language-Team: Daniel Zhao <daniel@danielatwork.com>\n"
 "Language: \n"
@@ -28,10 +28,10 @@ msgstr "链向 %s 的固定链接"
 
 #: pilot-fish/content-image.php:10
 #: pilot-fish/content-standard.php:10
-#: pilot-fish/page.php:33
+#: pilot-fish/page.php:32
 #: pilot-fish/content-link.php:23
 #: pilot-fish/content-aside.php:10
-#: pilot-fish/single-project.php:18
+#: pilot-fish/single-project.php:17
 msgid "Continue Reading &rarr;"
 msgstr "继续阅读 &rarr;"
 
@@ -39,22 +39,22 @@ msgstr "继续阅读 &rarr;"
 #: pilot-fish/content-standard.php:16
 #: pilot-fish/content-link.php:29
 #: pilot-fish/content-aside.php:16
-#: pilot-fish/single-project.php:24
+#: pilot-fish/single-project.php:23
 msgid "About"
 msgstr "关于"
 
 #: pilot-fish/content-image.php:22
 #: pilot-fish/content-standard.php:22
-#: pilot-fish/page.php:34
+#: pilot-fish/page.php:33
 #: pilot-fish/content-link.php:35
 #: pilot-fish/content-aside.php:22
-#: pilot-fish/single-project.php:30
+#: pilot-fish/single-project.php:29
 msgid "Pages:"
 msgstr "页码："
 
 #: pilot-fish/content-image.php:31
 #: pilot-fish/content-standard.php:31
-#: pilot-fish/page.php:26
+#: pilot-fish/page.php:25
 #: pilot-fish/content-link.php:43
 #: pilot-fish/content-aside.php:31
 msgid "No Response &darr;"
@@ -62,7 +62,7 @@ msgstr "无回复 &darr;"
 
 #: pilot-fish/content-image.php:31
 #: pilot-fish/content-standard.php:31
-#: pilot-fish/page.php:26
+#: pilot-fish/page.php:25
 #: pilot-fish/content-link.php:43
 #: pilot-fish/content-aside.php:31
 msgid "One Response &darr;"
@@ -70,7 +70,7 @@ msgstr "1条回复 &darr;"
 
 #: pilot-fish/content-image.php:31
 #: pilot-fish/content-standard.php:31
-#: pilot-fish/page.php:26
+#: pilot-fish/page.php:25
 #: pilot-fish/content-link.php:43
 #: pilot-fish/content-aside.php:31
 msgid "% Responses &darr;"
@@ -100,70 +100,70 @@ msgstr "固定链接"
 
 #: pilot-fish/content-image.php:40
 #: pilot-fish/content-standard.php:40
-#: pilot-fish/page.php:68
+#: pilot-fish/page.php:67
 #: pilot-fish/content-link.php:51
 #: pilot-fish/content-aside.php:40
-#: pilot-fish/single-project.php:40
+#: pilot-fish/single-project.php:39
 msgid "Edit"
 msgstr "编辑"
 
-#: pilot-fish/search.php:15
+#: pilot-fish/search.php:14
 msgid "We found"
 msgstr ""
 
-#: pilot-fish/search.php:20
+#: pilot-fish/search.php:19
 msgid " &#8211; "
 msgstr " &#8211; "
 
-#: pilot-fish/search.php:22
+#: pilot-fish/search.php:21
 msgid "articles for "
 msgstr ""
 
-#: pilot-fish/search.php:23
+#: pilot-fish/search.php:22
 msgid "<span class=\"post-search-terms\">"
 msgstr "<span class=\"post-search-terms\">"
 
-#: pilot-fish/search.php:25
+#: pilot-fish/search.php:24
 msgid "</span><!-- end of .post-search-terms -->"
 msgstr "</span><!-- end of .post-search-terms -->"
 
-#: pilot-fish/search.php:42
-#: pilot-fish/page.php:77
+#: pilot-fish/search.php:41
+#: pilot-fish/page.php:76
 #: pilot-fish/archive.php:49
 msgid "&larr; previous"
 msgstr "&larr; 上一页"
 
-#: pilot-fish/search.php:43
-#: pilot-fish/page.php:78
+#: pilot-fish/search.php:42
+#: pilot-fish/page.php:77
 #: pilot-fish/archive.php:50
 msgid "next &rarr;"
 msgstr "下一页 &rarr;"
 
-#: pilot-fish/page.php:61
+#: pilot-fish/page.php:60
 msgid "Page Hierarchy:"
 msgstr ""
 
-#: pilot-fish/footer.php:43
+#: pilot-fish/footer.php:22
 msgid "http://wordpress.org"
 msgstr "http://wordpress.org"
 
-#: pilot-fish/footer.php:44
+#: pilot-fish/footer.php:23
 msgid "WordPress"
 msgstr "WordPress"
 
-#: pilot-fish/footer.php:44
+#: pilot-fish/footer.php:23
 msgid "Theme by"
 msgstr "主题作者"
 
-#: pilot-fish/footer.php:44
+#: pilot-fish/footer.php:23
 msgid "http://danielatwork.com"
 msgstr "http://danielatwork.com"
 
-#: pilot-fish/footer.php:45
+#: pilot-fish/footer.php:24
 msgid "Daniel Zhao"
 msgstr "Daniel Zhao"
 
-#: pilot-fish/footer.php:48
+#: pilot-fish/footer.php:27
 msgid "Back to Top"
 msgstr "回到顶部"
 
@@ -219,11 +219,11 @@ msgstr ""
 msgid "next post <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: pilot-fish/single-project.php:45
+#: pilot-fish/single-project.php:44
 msgid "<span class=\"meta-nav\">&larr;</span> previous project"
 msgstr ""
 
-#: pilot-fish/single-project.php:46
+#: pilot-fish/single-project.php:45
 msgid "next project <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
@@ -287,7 +287,7 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: pilot-fish/image.php:19
+#: pilot-fish/image.php:18
 msgid "&larr; Return to"
 msgstr ""
 

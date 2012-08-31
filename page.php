@@ -8,27 +8,13 @@
  * @since          Pilot Fish 0.1
  */
 get_header(); ?>
-
-        <div id="content-full" class="row span12" role="main">
-        
+        <div id="content-full" class="row span12" role="main">       
 <?php if (have_posts()) : ?>
 
 		<?php while (have_posts()) : the_post(); ?>
         
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<header><h1><?php the_title(); ?></h1></header>
-                <?php if ( comments_open() ) : ?>               
-                <div class="post-meta">
-                <?php pilotfish_entry_meta(); ?>
-		<?php if ( comments_open() ) : ?>
-                        <span class="comments-link">
-                        <span class="mdash">&mdash;</span>
-                    <?php comments_popup_link(__('No Response &darr;', 'pilotfish'), __('One Response &darr;', 'pilotfish'), __('% Responses &darr;', 'pilotfish')); ?>
-                        </span>
-                    <?php endif; ?> 
-                </div><!-- end of .post-meta -->
-                <?php endif; ?> 
-                
+		<header><h1><?php the_title(); ?></h1></header>                
                 <div class="post-entry">
                     <?php the_content(__('Continue Reading &rarr;', 'pilotfish')); ?>
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'pilotfish'), 'after' => '</div>')); ?>
@@ -65,6 +51,17 @@ get_header(); ?>
 		  </ul>         
 		<?php } ?>
 		</div>
+		<footer class="post-data">
+			<div class="post-meta">
+                	<?php pilotfish_entry_meta(); ?>
+				<?php if ( comments_open() ) : ?>
+                        	<span class="comments-link">
+                        		<span class="mdash">&mdash;</span>
+                    			<?php comments_popup_link(__('No Response &darr;', 'pilotfish'), __('One Response &darr;', 'pilotfish'), __('% Responses &darr;', 'pilotfish')); ?>
+                        	</span>
+                    		<?php endif; ?> 
+                	</div><!-- end of .post-meta -->
+		</footer>
             <div class="post-edit"><?php edit_post_link(__('Edit', 'pilotfish')); ?></div> 
             </article><!-- end of #post-<?php the_ID(); ?> -->
             
