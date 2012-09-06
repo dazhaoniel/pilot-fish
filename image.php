@@ -18,7 +18,7 @@ get_header(); ?>
                 <p><?php _e('&larr; Return to', 'pilotfish'); ?> <a href="<?php echo get_permalink($post->post_parent); ?>" rel="gallery"><?php echo get_the_title($post->post_parent); ?></a></p>
                                 
                 <div class="attachment-entry">
-                    <a href="<?php echo wp_get_attachment_url($post->ID); ?>" rel="lightbox"><div class="stack"><?php echo wp_get_attachment_image( $post->ID, 'large' ); ?></div></a>
+                    <a href="<?php echo wp_get_attachment_url($post->ID); ?>"><div class="stack"><?php echo wp_get_attachment_image( $post->ID, 'large' ); ?></div></a>
 					<?php if ( !empty($post->post_excerpt) ) the_excerpt(); ?>
                     <?php the_content(__('Continue Reading &rarr;', 'pilotfish')); ?>
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'pilotfish'), 'after' => '</div>')); ?>

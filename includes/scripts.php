@@ -5,7 +5,6 @@
 if (!function_exists('pilotfish_script')):
 function pilotfish_scripts() {
   	wp_enqueue_style('pilotfish_main_style', get_template_directory_uri() . '/style.css', true, null);
-  	wp_enqueue_style('pilotfish_lightbox_style', get_template_directory_uri() . '/css/lightbox.css', true, null);
 
   	if (!is_admin()) {
     		wp_deregister_script('jquery');
@@ -17,10 +16,8 @@ function pilotfish_scripts() {
   	}
 
   	wp_register_script('pilotfish_modernizr', get_template_directory_uri() . '/js/modernizr.js', array('jquery'), null, false);
-  	wp_register_script('pilotfish_lightbox', get_template_directory_uri() . '/js/lightbox.js', array('jquery'), null, true);
   	wp_register_script('pilotfish_main', get_template_directory_uri() . '/js/main.js', array('jquery'), null, true);
   	wp_enqueue_script('pilotfish_modernizr');
-  	wp_enqueue_script('pilotfish_lightbox');
   	wp_enqueue_script('pilotfish_main');
 }
 endif;

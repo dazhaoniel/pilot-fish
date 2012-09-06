@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pilot Fish 0.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-30 18:29-0500\n"
-"PO-Revision-Date: 2012-08-30 18:29-0500\n"
+"POT-Creation-Date: 2012-09-01 11:41-0500\n"
+"PO-Revision-Date: 2012-09-01 11:41-0500\n"
 "Last-Translator: Daniel <daniel@danielatwork.com>\n"
 "Language-Team: Daniel Zhao <daniel@danielatwork.com>\n"
 "Language: \n"
@@ -28,7 +28,7 @@ msgstr ""
 
 #: pilot-fish/content-image.php:10
 #: pilot-fish/content-standard.php:10
-#: pilot-fish/page.php:32
+#: pilot-fish/page.php:19
 #: pilot-fish/content-link.php:23
 #: pilot-fish/content-aside.php:10
 #: pilot-fish/single-project.php:17
@@ -45,7 +45,7 @@ msgstr ""
 
 #: pilot-fish/content-image.php:22
 #: pilot-fish/content-standard.php:22
-#: pilot-fish/page.php:33
+#: pilot-fish/page.php:20
 #: pilot-fish/content-link.php:35
 #: pilot-fish/content-aside.php:22
 #: pilot-fish/single-project.php:29
@@ -54,7 +54,7 @@ msgstr ""
 
 #: pilot-fish/content-image.php:31
 #: pilot-fish/content-standard.php:31
-#: pilot-fish/page.php:25
+#: pilot-fish/page.php:60
 #: pilot-fish/content-link.php:43
 #: pilot-fish/content-aside.php:31
 msgid "No Response &darr;"
@@ -62,7 +62,7 @@ msgstr ""
 
 #: pilot-fish/content-image.php:31
 #: pilot-fish/content-standard.php:31
-#: pilot-fish/page.php:25
+#: pilot-fish/page.php:60
 #: pilot-fish/content-link.php:43
 #: pilot-fish/content-aside.php:31
 msgid "One Response &darr;"
@@ -70,7 +70,7 @@ msgstr ""
 
 #: pilot-fish/content-image.php:31
 #: pilot-fish/content-standard.php:31
-#: pilot-fish/page.php:25
+#: pilot-fish/page.php:60
 #: pilot-fish/content-link.php:43
 #: pilot-fish/content-aside.php:31
 msgid "% Responses &darr;"
@@ -100,7 +100,7 @@ msgstr ""
 
 #: pilot-fish/content-image.php:40
 #: pilot-fish/content-standard.php:40
-#: pilot-fish/page.php:67
+#: pilot-fish/page.php:65
 #: pilot-fish/content-link.php:51
 #: pilot-fish/content-aside.php:40
 #: pilot-fish/single-project.php:39
@@ -128,19 +128,23 @@ msgid "</span><!-- end of .post-search-terms -->"
 msgstr ""
 
 #: pilot-fish/search.php:41
-#: pilot-fish/page.php:76
+#: pilot-fish/page.php:74
 #: pilot-fish/archive.php:49
 msgid "&larr; previous"
 msgstr ""
 
 #: pilot-fish/search.php:42
-#: pilot-fish/page.php:77
+#: pilot-fish/page.php:75
 #: pilot-fish/archive.php:50
 msgid "next &rarr;"
 msgstr ""
 
-#: pilot-fish/page.php:60
+#: pilot-fish/page.php:47
 msgid "Page Hierarchy:"
+msgstr ""
+
+#: pilot-fish/footer.php:22
+msgid "powered by"
 msgstr ""
 
 #: pilot-fish/footer.php:22
@@ -279,12 +283,24 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
+#: pilot-fish/comments.php:39
+msgid "name (required)"
+msgstr ""
+
 #: pilot-fish/comments.php:40
 msgid "E-mail"
 msgstr ""
 
+#: pilot-fish/comments.php:41
+msgid "email (required)"
+msgstr ""
+
 #: pilot-fish/comments.php:42
 msgid "Website"
+msgstr ""
+
+#: pilot-fish/comments.php:43
+msgid "website"
 msgstr ""
 
 #: pilot-fish/image.php:18

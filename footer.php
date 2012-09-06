@@ -19,7 +19,7 @@
     <?php get_sidebar('footer'); ?>          
     <div id="copyright" class="clear">    
         <div class="row span6 copyright">
-            <small><?php esc_attr_e('&copy;', 'pilotfish'); ?> <?php _e(date('Y')); ?> <a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"><?php bloginfo('name'); ?></a> powered by <a href="<?php echo esc_url(__('http://wordpress.org','pilotfish')); ?>" title="<?php esc_attr_e('WordPress', 'pilotfish'); ?>">
+            <small><?php esc_attr_e('&copy;', 'pilotfish'); ?> <?php _e(date('Y')); ?> <a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"><?php bloginfo('name'); ?></a> <?php _e('powered by', 'pilotfish'); ?> <a href="<?php echo esc_url(__('http://wordpress.org','pilotfish')); ?>" title="<?php esc_attr_e('WordPress', 'pilotfish'); ?>">
                     <?php _e('WordPress', 'pilotfish'); ?></a></small><br /><small><?php _e('Theme by','pilotfish') ?> <a href="<?php echo esc_url(__('http://danielatwork.com','pilotfish')); ?>" title="<?php esc_attr_e('Daniel Zhao', 'pilotfish'); ?>">
                     <?php _e('Daniel Zhao', 'pilotfish'); ?></a></small>
         </div><!-- end of .copyright -->

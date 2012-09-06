@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pilot Fish 0.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-31 13:29-0500\n"
-"PO-Revision-Date: 2012-08-31 14:23-0500\n"
+"POT-Creation-Date: 2012-09-01 11:41-0500\n"
+"PO-Revision-Date: 2012-09-01 23:57-0500\n"
 "Last-Translator: Daniel <daniel@danielatwork.com>\n"
 "Language-Team: Daniel Zhao <daniel@danielatwork.com>\n"
 "Language: \n"
@@ -141,7 +141,11 @@ msgstr "siguiente &rarr;"
 
 #: pilot-fish/page.php:47
 msgid "Page Hierarchy:"
-msgstr "Jerarquía de las páginas"
+msgstr "Jerarquía de la página:"
+
+#: pilot-fish/footer.php:22
+msgid "powered by"
+msgstr "creado con"
 
 #: pilot-fish/footer.php:22
 msgid "http://wordpress.org"
@@ -279,13 +283,25 @@ msgstr "siguiente &#8250;"
 msgid "Name"
 msgstr "Nombre"
 
+#: pilot-fish/comments.php:39
+msgid "name (required)"
+msgstr "nombre (requerido)"
+
 #: pilot-fish/comments.php:40
 msgid "E-mail"
 msgstr "Correo electrónico"
 
+#: pilot-fish/comments.php:41
+msgid "email (required)"
+msgstr "correo electrónico (requerido)"
+
 #: pilot-fish/comments.php:42
 msgid "Website"
 msgstr "Sitio web"
+
+#: pilot-fish/comments.php:43
+msgid "website"
+msgstr "sitio web"
 
 #: pilot-fish/image.php:18
 msgid "&larr; Return to"
@@ -305,7 +321,7 @@ msgstr "&larr; Inicio"
 
 #: pilot-fish/404.php:17
 msgid "or explore other pages and posts."
-msgstr ""
+msgstr "o explora las otras páginas y entradas"
 
 #: pilot-fish/functions.php:24
 msgid "Primary Navigation"

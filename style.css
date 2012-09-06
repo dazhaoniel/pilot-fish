@@ -1,12 +1,12 @@
 /* 
 Theme Name: Pilot Fish 
 Theme URI: http://wordpress.danielatwork.com/project/pilot-fish/
-Description: *EDIT*, Minimal, full width, portfolio, responsive design with one custom post type and parallax scrolling. Version 0.3.2 has include Japanese and Spanish translations.
+Description: Pilot Fish is an elegant portfolio theme with minimal design, featuring one custom post type to highlight projects and work, and parallax scrolling on the front page to display a featured image. Responsive layout makes it easy adapting to mobile devices. Also supports custom menus, post formats and available in Japanese and Spanish. 
 
 Author: Daniel Zhao
 Author URI: http://danielatwork.com/
-Version: 0.3.2 
-Tags: white, blue, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, featured-images, flexible-width, full-width-template, post-formats, translation-ready
+Version: 0.3.3 
+Tags: white, blue, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, right-sidebar, featured-images, flexible-width, full-width-template, post-formats, translation-ready
 	
 License: GNU General Public License (GPL)
 License URI: license.txt
@@ -60,7 +60,16 @@ License URI: license.txt
 	input[type="submit"]::-webkit-focus-inner {border:0;}
 
 	.wp-caption {
-		max-width: auto !important;	
+		max-width: auto !important;
+		background-color: #F3F3F3;
+    		border: 1px solid #DDDDDD;
+    		border-radius: 3px 3px 3px 3px;
+    		margin: 10px 0;
+    		padding-top: 4px;
+    		text-align: center;	
+}
+	.wp-caption img {
+		margin: auto;
 }
 	.wp-caption-text {
 		padding: 5px 0 0 0;
@@ -68,7 +77,6 @@ License URI: license.txt
 }
 	caption, th, td {
 		font-weight: normal;
-		text-align: left;
 }
 
 /* 02 - Global Styles
@@ -787,11 +795,6 @@ License URI: license.txt
 		display: none;
 }
 	.format-image .post-entry img {
-/*		border: 3px solid #000;
-		-webkit-border-radius: 1px;
-		-moz-border-radius: 1px;
-		-o-border-radius: 1px;
-		border-radius: 1px;*/
 		max-width: 600px;
 }
 	.format-image .post-entry p {
@@ -1280,8 +1283,8 @@ License URI: license.txt
 /* Landscape phones and down */
 @media (max-width: 480px) {
   	html {
-  		overflow-x: auto;
-		-webkit-overflow-x: auto;
+  		overflow-x: hidden;
+		-webkit-overflow-x: hidden;
 		-moz-overflow-x: auto;
 		-o-overflow-x: auto;
   	}
@@ -1302,6 +1305,15 @@ License URI: license.txt
     		width: 96%;
     		margin-left: auto;
     		margin-right: auto;
+  	}
+  	.post-entry img,
+  	.wp-caption-text {
+  		max-width: 320px !important;
+  	}
+  	embed,
+  	iframe {
+  		max-width: 320px;
+  		max-height: 180px;
   	}
 	#access { width: 320px; }
   	.menu-index .menu-item {
@@ -1407,6 +1419,15 @@ License URI: license.txt
   	}
   	#thumbnail .last {
 		margin-right:2.083% !important;
+  	}
+  	.post-entry img,
+  	.wp-caption-text {
+  		max-width: 470px !important;
+  	}
+  	embed,
+  	iframe {
+  		max-width: 470px;
+  		max-height: 264px;
   	}
   	.span12 {
     		width: 99.9468085036383%;

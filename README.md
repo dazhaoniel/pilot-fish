@@ -9,3 +9,5 @@ To Do List:
 
 1. move sidebar-footer from footer.php to sidebar-footer.php
 2. theme options
+3. Resize video and images for all Media Queries
+4. 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pilot Fish 0.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-31 14:24-0500\n"
-"PO-Revision-Date: 2012-08-31 14:24-0500\n"
+"POT-Creation-Date: 2012-09-01 11:36-0500\n"
+"PO-Revision-Date: 2012-09-01 11:41-0500\n"
 "Last-Translator: Daniel <daniel@danielatwork.com>\n"
 "Language-Team: Daniel Zhao <daniel@danielatwork.com>\n"
 "Language: \n"
@@ -144,6 +144,10 @@ msgid "Page Hierarchy:"
 msgstr "ページの階層:"
 
 #: pilot-fish/footer.php:22
+msgid "powered by"
+msgstr "powered by"
+
+#: pilot-fish/footer.php:22
 msgid "http://wordpress.org"
 msgstr "http://wordpress.org"
 
@@ -279,12 +283,24 @@ msgstr "新しいコメント &#8250;"
 msgid "Name"
 msgstr "お名前"
 
+#: pilot-fish/comments.php:39
+msgid "name (required)"
+msgstr "お名前(必須)"
+
 #: pilot-fish/comments.php:40
 msgid "E-mail"
 msgstr "メールアドレス (非公開)"
 
+#: pilot-fish/comments.php:41
+msgid "email (required)"
+msgstr "メールアドレス(必須)"
+
 #: pilot-fish/comments.php:42
 msgid "Website"
+msgstr "ウェブサイト"
+
+#: pilot-fish/comments.php:43
+msgid "website"
 msgstr "ウェブサイト"
 
 #: pilot-fish/image.php:18
