@@ -795,7 +795,7 @@ License URI: license.txt
 		display: none;
 }
 	.format-image .post-entry img {
-		max-width: 600px;
+/*		max-width: 600px;*/
 }
 	.format-image .post-entry p {
 		color:#777;
@@ -887,14 +887,14 @@ License URI: license.txt
 	.stack { position: relative; z-index: 10; }
  
 /* Image styles */
-	.stack img { max-width: 100%; height: auto; vertical-align: bottom; border: 10px solid #fff; border-radius: 3px;
+/*	.stack img { max-width: 100%; height: auto; vertical-align: bottom; border: 10px solid #fff; border-radius: 3px;
 	    -webkit-box-sizing: border-box;
 	    -moz-box-sizing: border-box;
 	    box-sizing: border-box;
 	    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 	    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 	    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-}
+}*/
 
 /*	Featured Content	*/
 	#featured {
@@ -1283,39 +1283,45 @@ License URI: license.txt
 /* Landscape phones and down */
 @media (max-width: 480px) {
   	html {
-  		overflow-x: hidden;
-		-webkit-overflow-x: hidden;
+  		overflow-x: auto;
+		-webkit-overflow-x: auto;
 		-moz-overflow-x: auto;
 		-o-overflow-x: auto;
   	}
-  	#header #logo { width: 100%; }
+  	#header #logo { max-width: 100%; padding-left:0; }
   	.page-header h1 small {
     		display: block;
     		line-height: 18px;
   	}
   	#container,
   	#footer {
-    		width: 320px !important;
+    		width: 100%;
+		padding: 0;
   	}
+	#wrapper { padding: auto; }
   	.span12, 
   	.span8,
   	.span6,
   	.span4,
   	.span3 {
-    		width: 96%;
-    		margin-left: auto;
-    		margin-right: auto;
+    		width: 100%;
+    		clear: both;
   	}
-  	.post-entry img,
+	.post-type-archive-project #wrapper { padding-left:5px; padding-right:5px; }
+  	.post-entry img {
+		max-width: 260px !important;
+		clear: both;	
+	}
+	.wp-caption,
   	.wp-caption-text {
-  		max-width: 320px !important;
+  		max-width: 270px !important;
   	}
   	embed,
   	iframe {
-  		max-width: 320px;
+  		max-width: 300px;
   		max-height: 180px;
   	}
-	#access { width: 320px; }
+	#access { width: 100%; float: left; }
   	.menu-index .menu-item {
     		width: 100%;
 	}
@@ -1349,10 +1355,6 @@ License URI: license.txt
   	select {
     		width: 90% !important;
   	}
-  	.size-full,
-  	.wp-caption-text {
-    		max-width: 400px;
-  	}
   	.hidden-phone {
   		display: none !important;
   	}
@@ -1385,9 +1387,11 @@ License URI: license.txt
   	select {
     		width: 90% !important;
   	}
-  	.size-full,
+	.post-entry img {
+		max-width: 500px; }
+	.wp-caption,
   	.wp-caption-text {
-    		width: auto;
+  		max-width: 520px;
   	}
   	.visible-phone {
     		display: inherit !important;
@@ -1459,6 +1463,12 @@ License URI: license.txt
   	.visible-desktop {
     		display: none !important ;
   	}
+	.post-entry img {
+		max-width: 460px; }
+	.wp-caption,
+  	.wp-caption-text {
+  		max-width: 470px;
+  	}
 }
 
 /* Large desktop */
@@ -1497,6 +1507,12 @@ License URI: license.txt
   	}
   	.span3 {
     		width: 220px;
+  	}
+	.post-entry img {
+		max-width: 590px; }
+	.wp-caption,
+  	.wp-caption-text {
+  		max-width: 600px;
   	}
 }
 
