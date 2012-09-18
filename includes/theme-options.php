@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * @file           theme-options.php
+ * @package        Pilot Fish
+ * @filesource     wp-content/themes/pilot-fish/includes/theme-options.php
+ * @since          Pilot Fish 0.3.3
+ */
 add_action( 'admin_init', 'theme_options_init' );
 add_action( 'admin_menu', 'theme_options_add_page' );
 
@@ -7,7 +12,7 @@ add_action( 'admin_menu', 'theme_options_add_page' );
  * Init plugin options to white list our options
  */
 function theme_options_init(){
-	register_setting( 'pilotfish_options', 'pilotfish_theme_options', 'theme_options_validate' );
+	register_setting( 'pilotfish_options', 'pilotfish_theme_options', 'pilotfish_theme_options_validate' );
 }
 
 /**
@@ -16,51 +21,6 @@ function theme_options_init(){
 function theme_options_add_page() {
 	add_theme_page( __( 'Theme Options', 'pilotfish' ), __( 'Theme Options', 'pilotfish' ), 'edit_theme_options', 'theme_options', 'theme_options_do_page' );
 }
-
-/**
- * Create arrays for our select and radio options
- */
-$select_options = array(
-	'0' => array(
-		'value' =>	'0',
-		'label' => __( 'Zero', 'pilotfish' )
-	),
-	'1' => array(
-		'value' =>	'1',
-		'label' => __( 'One', 'pilotfish' )
-	),
-	'2' => array(
-		'value' => '2',
-		'label' => __( 'Two', 'pilotfish' )
-	),
-	'3' => array(
-		'value' => '3',
-		'label' => __( 'Three', 'pilotfish' )
-	),
-	'4' => array(
-		'value' => '4',
-		'label' => __( 'Four', 'pilotfish' )
-	),
-	'5' => array(
-		'value' => '3',
-		'label' => __( 'Five', 'pilotfish' )
-	)
-);
-
-$radio_options = array(
-	'yes' => array(
-		'value' => 'yes',
-		'label' => __( 'Yes', 'pilotfish' )
-	),
-	'no' => array(
-		'value' => 'no',
-		'label' => __( 'No', 'pilotfish' )
-	),
-	'maybe' => array(
-		'value' => 'maybe',
-		'label' => __( 'Maybe', 'pilotfish' )
-	)
-);
 
 /**
  * Create the options page
@@ -73,7 +33,7 @@ function theme_options_do_page() {
 
 	?>
 	<div class="wrap">
-		<?php screen_icon(); echo "<h2>" . get_current_theme() . __( ' Theme Options', 'pilotfish' ) . "</h2>"; ?>
+		<?php screen_icon(); echo "<h2>" . wp_get_theme() . __( ' Theme Options', 'pilotfish' ) . "</h2>"; ?>
 
 		<?php if ( false !== $_REQUEST['settings-updated'] ) : ?>
 		<div class="updated fade"><p><strong><?php _e( 'Options saved', 'pilotfish' ); ?></strong></p></div>
@@ -87,99 +47,43 @@ function theme_options_do_page() {
 				<?php /* Some Updates about Daniel :) */ ?>
 				<tr valign="top"><th scope="row"></th>
 					<td>
-						<?php @readfile("http://danielatwork.com/aboutme.html"); ?>
+						<?php _e( '<p>Thank you for downloading Pilot Fish (^^) For more information on customizing the theme, please go to <a href="http://wordpress.danielatwork.com/pilotfish/faq/" target="_blank">http://wordpress.danielatwork.com/pilotfish/faq/</a></p>
+							<p>Follow Danni on twitter <a href="https://twitter.com/danni1990" target="_blank">@danni1990</a></p>', 'pilotfish' ); ?>
 					</td>
 				</tr>
 				<?php
 				/**
-				 * A sample checkbox option
+				 * Add Google Analytics option
 				 */
 				?>
-				<tr valign="top"><th scope="row"><?php _e( 'A checkbox', 'pilotfish' ); ?></th>
+				<tr valign="top"><th scope="row"><?php _e( 'Google Analytics', 'pilotfish' ); ?></th>
 					<td>
-						<input id="pilotfish_theme_options[option1]" name="pilotfish_theme_options[option1]" type="checkbox" value="1" <?php checked( '1', $options['option1'] ); ?> />
-						<label class="description" for="pilotfish_theme_options[option1]"><?php _e( 'Sample checkbox', 'pilotfish' ); ?></label>
-					</td>
-				</tr>
-
-				<?php
-				/**
-				 * A sample text input option
-				 */
-				?>
-				<tr valign="top"><th scope="row"><?php _e( 'Some text', 'pilotfish' ); ?></th>
-					<td>
-						<input id="pilotfish_theme_options[sometext]" class="regular-text" type="text" name="pilotfish_theme_options[sometext]" value="<?php esc_attr_e( $options['sometext'] ); ?>" />
-						<label class="description" for="pilotfish_theme_options[sometext]"><?php _e( 'Sample text input', 'pilotfish' ); ?></label>
+						<input id="pilotfish_theme_options[add_ga]" name="pilotfish_theme_options[add_ga]" type="checkbox" value="1" <?php checked( '1', $options['add_ga'] ); ?> />
+						<label class="description" for="pilotfish_theme_options[add_ga]"><?php _e( 'Add Google Analytics to footer', 'pilotfish' ); ?></label>
 					</td>
 				</tr>
 
 				<?php
 				/**
-				 * A sample select input option
+				 * Google Analytics tracking code
 				 */
 				?>
-				<tr valign="top"><th scope="row"><?php _e( 'Select input', 'pilotfish' ); ?></th>
+				<tr valign="top"><th scope="row"><?php _e( 'Google Analytics Tracking Code', 'pilotfish' ); ?></th>
 					<td>
-						<select name="pilotfish_theme_options[selectinput]">
-							<?php
-								$selected = $options['selectinput'];
-								$p = '';
-								$r = '';
-
-								foreach ( $select_options as $option ) {
-									$label = $option['label'];
-									if ( $selected == $option['value'] ) // Make default first in list
-										$p = "\n\t<option style=\"padding-right: 10px;\" selected='selected' value='" . esc_attr( $option['value'] ) . "'>$label</option>";
-									else
-										$r .= "\n\t<option style=\"padding-right: 10px;\" value='" . esc_attr( $option['value'] ) . "'>$label</option>";
-								}
-								echo $p . $r;
-							?>
-						</select>
-						<label class="description" for="pilotfish_theme_options[selectinput]"><?php _e( 'Sample select input', 'pilotfish' ); ?></label>
+						<input id="pilotfish_theme_options[ga_tracking_code]" class="regular-text" type="text" name="pilotfish_theme_options[ga_tracking_code]" value="<?php if( !empty($options['ga_tracking_code']) ) echo esc_attr( $options['ga_tracking_code'] ); ?>" />
+						<label class="description" for="pilotfish_theme_options[ga_tracking_code]"><?php _e( 'UA-XXXXX-X', 'pilotfish' ); ?></label>
 					</td>
 				</tr>
 
 				<?php
 				/**
-				 * A sample of radio buttons
+				 * Add a favicon
 				 */
-				?>
-				<tr valign="top"><th scope="row"><?php _e( 'Radio buttons', 'pilotfish' ); ?></th>
+				?>				
+				<tr valign="top"><th scope="row"><?php _e( 'Enable Favicon', 'pilotfish' ); ?></th>
 					<td>
-						<fieldset><legend class="screen-reader-text"><span><?php _e( 'Radio buttons', 'pilotfish' ); ?></span></legend>
-						<?php
-							if ( ! isset( $checked ) )
-								$checked = '';
-							foreach ( $radio_options as $option ) {
-								$radio_setting = $options['radioinput'];
-
-								if ( '' != $radio_setting ) {
-									if ( $options['radioinput'] == $option['value'] ) {
-										$checked = "checked=\"checked\"";
-									} else {
-										$checked = '';
-									}
-								}
-								?>
-								<label class="description"><input type="radio" name="pilotfish_theme_options[radioinput]" value="<?php esc_attr_e( $option['value'] ); ?>" <?php echo $checked; ?> /> <?php echo $option['label']; ?></label><br />
-								<?php
-							}
-						?>
-						</fieldset>
-					</td>
-				</tr>
-
-				<?php
-				/**
-				 * A sample textarea option
-				 */
-				?>
-				<tr valign="top"><th scope="row"><?php _e( 'A textbox', 'pilotfish' ); ?></th>
-					<td>
-						<textarea id="pilotfish_theme_options[sometextarea]" class="large-text" cols="50" rows="10" name="pilotfish_theme_options[sometextarea]"><?php echo esc_textarea( $options['sometextarea'] ); ?></textarea>
-						<label class="description" for="pilotfish_theme_options[sometextarea]"><?php _e( 'Sample text box', 'pilotfish' ); ?></label>
+						<input id="pilotfish_theme_options[add_favicon]" name="pilotfish_theme_options[add_favicon]" type="checkbox" value="1" <?php checked( '1', $options['add_favicon'] ); ?> />
+						<label class="description" for="pilotfish_theme_options[add_favicon]"><?php _e( 'a favicon should be 16 x 16px and named "favicon.ico"<br />Please upload the favicon to the main directory of the theme through FTP.', 'pilotfish' ); ?></label>
 					</td>
 				</tr>
 			</table>
@@ -195,29 +99,19 @@ function theme_options_do_page() {
 /**
  * Sanitize and validate input. Accepts an array, return a sanitized array.
  */
-function theme_options_validate( $input ) {
-	global $select_options, $radio_options;
+function pilotfish_theme_options_validate( $input ) {
 
 	// Our checkbox value is either 0 or 1
-	if ( ! isset( $input['option1'] ) )
-		$input['option1'] = null;
-	$input['option1'] = ( $input['option1'] == 1 ? 1 : 0 );
+	if ( ! isset( $input['add_ga'] ) )
+		$input['add_ga'] = null;
+	$input['add_ga'] = ( $input['add_ga'] == 1 ? 1 : 0 );
 
 	// Say our text option must be safe text with no HTML tags
-	$input['sometext'] = wp_filter_nohtml_kses( $input['sometext'] );
+	$input['ga_tracking_code'] = wp_filter_nohtml_kses( $input['ga_tracking_code'] );
 
-	// Our select option must actually be in our array of select options
-	if ( ! array_key_exists( $input['selectinput'], $select_options ) )
-		$input['selectinput'] = null;
-
-	// Our radio option must actually be in our array of radio options
-	if ( ! isset( $input['radioinput'] ) )
-		$input['radioinput'] = null;
-	if ( ! array_key_exists( $input['radioinput'], $radio_options ) )
-		$input['radioinput'] = null;
-
-	// Say our textarea option must be safe text with the allowed tags for posts
-	$input['sometextarea'] = wp_filter_post_kses( $input['sometextarea'] );
+	if ( ! isset( $input['add_favicon'] ) )
+		$input['add_favicon'] = null;
+	$input['add_favicon'] = ( $input['add_favicon'] == 1 ? 1 : 0 );
 
 	return $input;
 }

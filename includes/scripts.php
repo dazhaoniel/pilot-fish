@@ -218,3 +218,47 @@ function pilotfish_url_grabber() {
 
 	return esc_url_raw( $matches[1] );
 }
+
+/** 
+ * Include the Google Analytics Tracking Code (ga.js)
+ */
+// @ http://code.google.com/apis/analytics/docs/tracking/asyncUsageGuide.html
+function google_analytics_tracking_code(){
+
+	$options = get_option('pilotfish_theme_options');
+	$propertyID = $options['ga_tracking_code'];
+
+	if ($options['add_ga'] == 1) { ?>
+
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', '<?php echo $propertyID; ?>']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+
+<?php }
+}
+
+// include GA tracking code before the closing head tag
+// add_action('wp_head', 'google_analytics_tracking_code');
+
+// include GA tracking code before the closing body tag
+add_action('wp_footer', 'google_analytics_tracking_code');
+
+/**
+ * Add and favicon
+ */
+function pilotfish_favicon_link() {
+
+	$options = get_option('pilotfish_theme_options');
+	if ($options['add_favicon'] == 1) { 
+    		echo '<link rel="shortcut icon" type="image/x-icon" href="'. get_stylesheet_directory() . '/favicon.ico" />' . "\n";
+	}
+}
+add_action('wp_head', 'pilotfish_favicon_link');
