@@ -47,8 +47,7 @@ function theme_options_do_page() {
 				<?php /* Some Updates about Daniel :) */ ?>
 				<tr valign="top"><th scope="row"></th>
 					<td>
-						<?php _e( '<p>Thank you for downloading Pilot Fish (^^) For more information on customizing the theme, please go to <a href="http://wordpress.danielatwork.com/pilotfish/faq/" target="_blank">http://wordpress.danielatwork.com/pilotfish/faq/</a></p>
-							<p>Follow Danni on twitter <a href="https://twitter.com/danni1990" target="_blank">@danni1990</a></p>', 'pilotfish' ); ?>
+						<p><?php _e( 'Thank you for downloading Pilot Fish (^^) For more information on customizing the theme, please go to ', 'pilotfish' ); ?><a href="<?php echo esc_url(__('http://wordpress.danielatwork.com/pilotfish/faq/','pilotfish')); ?>" target="_blank"><?php _e('Pilot Fish FAQ', 'pilotfish'); ?></a></p>
 					</td>
 				</tr>
 				<?php
@@ -77,13 +76,13 @@ function theme_options_do_page() {
 
 				<?php
 				/**
-				 * Add a favicon
+				 * Turning Page Hierarchy On or Off
 				 */
-				?>				
-				<tr valign="top"><th scope="row"><?php _e( 'Enable Favicon', 'pilotfish' ); ?></th>
+				?>
+				<tr valign="top"><th scope="row"><?php _e( 'Page Hierarchy', 'pilotfish' ); ?></th>
 					<td>
-						<input id="pilotfish_theme_options[add_favicon]" name="pilotfish_theme_options[add_favicon]" type="checkbox" value="1" <?php checked( '1', $options['add_favicon'] ); ?> />
-						<label class="description" for="pilotfish_theme_options[add_favicon]"><?php _e( 'a favicon should be 16 x 16px and named "favicon.ico"<br />Please upload the favicon to the main directory of the theme through FTP.', 'pilotfish' ); ?></label>
+						<input id="pilotfish_theme_options[add_ph]" name="pilotfish_theme_options[add_ph]" type="checkbox" value="1" <?php checked( '1', $options['add_ph'] ); ?> />
+						<label class="description" for="pilotfish_theme_options[add_ph]"><?php _e( 'Add Child Page links to Pages', 'pilotfish' ); ?></label>
 					</td>
 				</tr>
 			</table>
@@ -101,7 +100,7 @@ function theme_options_do_page() {
  */
 function pilotfish_theme_options_validate( $input ) {
 
-	// Our checkbox value is either 0 or 1
+	// Our checkbox value is either 0 or 1 for Google Analytics
 	if ( ! isset( $input['add_ga'] ) )
 		$input['add_ga'] = null;
 	$input['add_ga'] = ( $input['add_ga'] == 1 ? 1 : 0 );
@@ -109,9 +108,10 @@ function pilotfish_theme_options_validate( $input ) {
 	// Say our text option must be safe text with no HTML tags
 	$input['ga_tracking_code'] = wp_filter_nohtml_kses( $input['ga_tracking_code'] );
 
-	if ( ! isset( $input['add_favicon'] ) )
-		$input['add_favicon'] = null;
-	$input['add_favicon'] = ( $input['add_favicon'] == 1 ? 1 : 0 );
+	// Our checkbox value is either 0 or 1 for Page Hierarchy
+	if ( ! isset( $input['add_ph'] ) )
+		$input['add_ph'] = null;
+	$input['add_ph'] = ( $input['add_ph'] == 1 ? 1 : 0 );
 
 	return $input;
 }

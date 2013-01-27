@@ -47,6 +47,8 @@
             <span class="site-description"><?php bloginfo('description'); ?></span>
         </div><!-- end of #logo -->  
     <?php endif; // header image was removed ?>
+
+<!-- Primary Navigation Menu -->
     <nav id="access">
 	<?php wp_nav_menu( array( 'theme_location' => 'primary-navigation' ) ); ?>
     </nav>

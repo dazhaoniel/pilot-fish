@@ -16,10 +16,12 @@ function pilotfish_scripts() {
   	}
 
   	wp_register_script('pilotfish_modernizr', get_template_directory_uri() . '/js/modernizr.js', array('jquery'), null, false);
-	wp_register_script('pilotfish_respond', get_template_directory_uri() . '/js/respond.min.js', array('jquery'), null, false);
-  	wp_register_script('pilotfish_main', get_template_directory_uri() . '/js/main.js', array('jquery'), null, true);
+	wp_register_script('pilotfish_mediaqueries', get_template_directory_uri() . '/js/css3-mediaqueries.js', array('jquery'), null, false);
+  	// wp_register_script('pilotfish_selectnav', get_template_directory_uri() . '/js/selectnav.js', array('jquery'), '1.0', true);
+	wp_register_script('pilotfish_main', get_template_directory_uri() . '/js/main.js', array('jquery'), null, true);
   	wp_enqueue_script('pilotfish_modernizr');
-	wp_enqueue_script('pilotfish_respond');
+	wp_enqueue_script('pilotfish_mediaqueries');
+	// wp_enqueue_script('pilotfish_selectnav');
   	wp_enqueue_script('pilotfish_main');
 }
 endif;
@@ -200,7 +202,7 @@ endif;
 add_filter( 'wp_title', 'pilotfish_filter_wp_title', 10, 3 );
 
 /*
- * Comment replu script
+ * Comment reply script
  */
 function pilotfish_enqueue_comment_reply_script() {
 	if ( comments_open() && get_option( 'thread_comments' ) ) {
@@ -250,15 +252,3 @@ function google_analytics_tracking_code(){
 
 // include GA tracking code before the closing body tag
 add_action('wp_footer', 'google_analytics_tracking_code');
-
-/**
- * Add and favicon
- */
-function pilotfish_favicon_link() {
-
-	$options = get_option('pilotfish_theme_options');
-	if ($options['add_favicon'] == 1) { 
-    		echo '<link rel="shortcut icon" type="image/x-icon" href="'. get_stylesheet_directory() . '/favicon.ico" />' . "\n";
-	}
-}
-add_action('wp_head', 'pilotfish_favicon_link');

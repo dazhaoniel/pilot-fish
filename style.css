@@ -1,12 +1,12 @@
 /* 
 Theme Name: Pilot Fish 
 Theme URI: http://wordpress.danielatwork.com/project/pilot-fish/
-Description: Pilot Fish is an elegant portfolio theme with minimal design, featuring one custom post type to highlight projects and work, and parallax scrolling on the front page to display a featured image. Responsive layout makes it easy adapting to mobile devices. Also supports custom menus, post formats and available in Japanese and Spanish. 
+Description: Pilot Fish is an elegant portfolio theme with minimal design, featuring one custom post type to highlight projects and work, and parallax scrolling on the front page to display a featured image. Responsive layout makes it easy adapting to mobile devices. Also supports custom menus, post formats and available in Japanese, Spanish and Russian. 
 
 Author: Daniel Zhao
 Author URI: http://danielatwork.com/
 Version: 0.3.3 
-Tags: white, blue, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, right-sidebar, featured-images, flexible-width, full-width-template, post-formats, translation-ready, theme-options, blavatar
+Tags: white, blue, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, right-sidebar, featured-images, flexible-width, full-width-template, post-formats, translation-ready, theme-options
 	
 License: GNU General Public License (GPL)
 License URI: license.txt
@@ -482,8 +482,6 @@ License URI: license.txt
 		color: #8CA1A1;
 }
 /* Primary Navigation */
-/* Style Primary Navigation Specific to viewport width */
-@media (min-width: 481px) {
 	#access .menu {
 		clear:both;
 		margin:0 20px;
@@ -532,7 +530,7 @@ License URI: license.txt
 }
 	#access .menu li li {
 		float:none;
-	}
+}
 	#access .menu:after, 
 	#access .menu ul:after {
 		clear:both;
@@ -541,11 +539,11 @@ License URI: license.txt
 		height:0;
 		overflow:hidden;
 		visibility:hidden;
-	}
+}
 	#access .menu, 
 	#access .menu ul {
 		min-height:0;
-	}
+}
 	#access .menu ul.sub-menu,
 	#access .menu ul.children {
 		left:0;
@@ -553,30 +551,30 @@ License URI: license.txt
 		top:0;
 		visibility:hidden;
 		z-index:10;
-	}
+}
 	#access .menu li:hover > ul {
 		top:100%;
 		visibility:visible;
-	}
+}
 	#access .menu li li:hover > ul {
 		left:100%;
 		top:0;
-	}
+}
 	#access .menu ul {
 		margin:-10px 0 0 -30px;
 		padding:10px 30px 30px;
-	}
+}
 	#access .menu ul ul {
 		margin:-30px 0 0 -10px;
 		padding:30px 30px 30px 10px;
-	}
+}
 	#access .menu ul li a:hover {
 		background-image: url(images/menu-bg.png);
-	}
+}
 	#access .menu ul {
 		min-width:12em;
 		width:auto;
-	}
+}
 	#access .menu li li {
 		background:#fff;
 		background-image:none;
@@ -585,7 +583,7 @@ License URI: license.txt
 		color:#444;
 		filter:none;
 		width:auto;
-	}
+}
 	#access .menu li li a {
 		border:none;
 		color:#444;
@@ -597,38 +595,37 @@ License URI: license.txt
 		padding:5px 10px;
 		text-shadow:none;
 		white-space:nowrap;
-	}
+}
 	#access .menu li li a:hover {
 		background:#f5f5f5;
 		background-image:none;
 		border:none;
 		color:#444;
 		filter:none;
-	}
+}
 	#access .menu ul > li + li {
 		border-top:0;
-	}
+}
 	#access .menu li li:hover > ul {
 		left:100%;
 		top:0;
-	}
+}
 	#access .menu > li:first-child > a, 
 	#access .menu ul > li:first-child > a {
 		border-left:none;
-	}
+}
 	#access .menu > li:first-child > a, 
 	#access .menu-container li + li + li li:first-child > a {
-	}
+}
 	#access .menu ul.children a, 
 	#access .menu .current_page_ancestor, 
 	#access .menu .current_page_ancestor ul a {
 		background:none;
 		background-image:none;
 		filter:none;
-	}
+}
 	#access  ul.sub-menu .current_page_item a {
 		background:transparent !important;
-	}
 }
 
 /* 06 - Content
@@ -859,6 +856,7 @@ License URI: license.txt
 		width: 300px;
 		margin-top: 80px;
 		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
 }
 	#thumbnail .row .title-overlay span {
 		color: white;
@@ -874,6 +872,7 @@ License URI: license.txt
 }
 	#thumbnail div a:hover > img {
 		opacity: .1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)"; /* IE 8 */
 		transition:opacity 0.8s;
 		-moz-transition:opacity 0.8s; /* Firefox 4 */
 		-webkit-transition:opacity 0.8s; /* Safari and Chrome */
@@ -881,6 +880,7 @@ License URI: license.txt
 }
 	#thumbnail div a:hover > span.title-overlay {
 		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; /* IE 8 */
 }
 /*	Post Images	*/
 	#post-images .pager { margin-top: 30px; }
@@ -1256,8 +1256,8 @@ License URI: license.txt
 
 /* .last to keep the last item inline */
 .last {
-	margin-left:0;
-	margin-right:0!important;
+	margin-left:0 !important;
+	margin-right:0 !important;
 }
 
 .hidden {
@@ -1281,7 +1281,7 @@ License URI: license.txt
 ==================================================*/
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   	html {
   		overflow-x: auto;
 		-webkit-overflow-x: auto;
@@ -1322,9 +1322,11 @@ License URI: license.txt
   		max-height: 180px;
   	}
 	#access { width: 100%; float: left; }
+	nav select { margin: auto; }
   	.menu-index .menu-item {
-    		width: 100%;
+ /*   		width: 100%;*/
 	}
+	#access .menu { display: none; }
   	ul,
 	ul ul {
     		list-style: none;
@@ -1360,9 +1362,11 @@ License URI: license.txt
   	}
 }
 
-
+@media only screen and (min-width: 481px) {	
+	nav select { display: none; }
+}
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   	body { }
   	#container,
   	#footer {
@@ -1405,7 +1409,7 @@ License URI: license.txt
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
+@media only screen and (min-width: 768px) and (max-width: 979px) {
   	#container { width: 100%; padding-left:0; padding-right:0; }
   	.row {
     		*zoom: 1;
@@ -1472,7 +1476,7 @@ License URI: license.txt
 }
 
 /* Large desktop */
-@media (min-width: 980px) {
+@media only screen and (min-width: 980px) {
   	.row {
     		*zoom: 1;
   	}
@@ -1528,3 +1532,6 @@ License URI: license.txt
 		width: 96%;
 	}
 }
+
+/* Fix for IE 
+======================================== */

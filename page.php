@@ -18,39 +18,45 @@ get_header(); ?>
                 <div class="post-entry">
                     <?php the_content(__('Continue Reading &rarr;', 'pilotfish')); ?>
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'pilotfish'), 'after' => '</div>')); ?>
+	
 	<!-- Display children if page has children -->
-		<div class="page-hierarchy">             
-                <?php
-		//if the post has a parent
-		if($post->post_parent){
-		  //collect ancestor pages
-		  $relations = get_post_ancestors($post->ID);
-		  //get child pages
-		  $result = $wpdb->get_results( "SELECT ID FROM wp_posts WHERE post_parent = $post->ID AND post_type='page'" );
-		  if ($result){
-		    foreach($result as $pageID){
-		      array_push($relations, $pageID->ID);
-		    }
-		  }
-		  //add current post to pages
-		  array_push($relations, $post->ID);
-		  //get comma delimited list of children and parents and self
-		  $relations_string = implode(",",$relations);
-		  //use include to list only the collected pages. 
-		  $sidelinks = wp_list_pages("title_li=&echo=0&include=".$relations_string);
-		}else{
-		  // display only main level and children
-		  $sidelinks = wp_list_pages("title_li=&echo=0&depth=1&child_of=".$post->ID);
-		}
+		<?php
+			$options = get_option('pilotfish_theme_options');
+			if ($options['add_ph'] == 1) { ?> 
+			<div class="page-hierarchy">             
+		        <?php
+			//if the post has a parent
+			if($post->post_parent){
+			  //collect ancestor pages
+			  $relations = get_post_ancestors($post->ID);
+			  //get child pages
+			  $result = $wpdb->get_results( "SELECT ID FROM wp_posts WHERE post_parent = $post->ID AND post_type='page'" );
+			  if ($result){
+			    foreach($result as $pageID){
+			      array_push($relations, $pageID->ID);
+			    }
+			  }
+			  //add current post to pages
+			  array_push($relations, $post->ID);
+			  //get comma delimited list of children and parents and self
+			  $relations_string = implode(",",$relations);
+			  //use include to list only the collected pages. 
+			  $sidelinks = wp_list_pages("title_li=&echo=0&include=".$relations_string);
+			}else{
+			  // display only main level and children
+			  $sidelinks = wp_list_pages("title_li=&echo=0&depth=1&child_of=".$post->ID);
+			}
 
-		if ($sidelinks) { ?>
-		  <h5><?php _e('Page Hierarchy:', 'pilotfish'); ?> <?php the_title(); ?></h5>
-		  <ul>
-		    <?php //links in <li> tags
-		    echo $sidelinks; ?>
-		  </ul>         
+			if ($sidelinks) { ?>
+			  <h5><?php _e('Page Hierarchy:', 'pilotfish'); ?> <?php the_title(); ?></h5>
+			  <ul>
+			    <?php //links in <li> tags
+			    echo $sidelinks; ?>
+			  </ul>         
+			<?php } ?>
 		<?php } ?>
-		</div>
+		</div><!-- end of post-hierarchy -->
+
 		<footer class="post-data">
 			<div class="post-meta">
                 	<?php pilotfish_entry_meta(); ?>

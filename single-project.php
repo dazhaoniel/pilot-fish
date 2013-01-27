@@ -32,12 +32,19 @@ get_header(); ?>
                 <footer class="post-data">
 		        <div class="post-meta">
 		        <?php pilotfish_entry_meta(); ?>
+				<?php if ( comments_open() ) : ?>
+		                	<span class="comments-link">
+		                	<span class="mdash">&mdash;</span>
+		            		<?php comments_popup_link(__('No Response &darr;', 'pilotfish'), __('One Response &darr;', 'pilotfish'), __('% Responses &darr;', 'pilotfish')); ?>
+		                	</span>
+		            	<?php endif; ?>
 		        </div><!-- end of .post-meta -->
 					<?php echo get_the_term_list( $post->ID, 'Skills', '', ', ', '' ); ?> 
                 </footer><!-- end of .post-data -->             
 
             <div class="post-edit"><?php edit_post_link(__('Edit', 'pilotfish')); ?></div>             
             </article><!-- end of #post-<?php the_ID(); ?> -->
+		<?php comments_template( '', true ); ?>
         <?php endwhile; ?>
          
         <nav id="post-nav" class="pager">
