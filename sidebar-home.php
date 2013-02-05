@@ -59,6 +59,5 @@
 	<?php endif; //end of sidebar-home-3 ?>
 	
         <?php pilotfish_widgets_end(); // after widgets hook ?>
-        </div><!-- end of .span4 last -->
-        
+        </div><!-- end of .span4 last -->     
     </div><!-- end of #widgets -->

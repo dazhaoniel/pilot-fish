@@ -42,8 +42,8 @@ get_header(); ?>
 		    <div class="next"><?php previous_posts_link(__('next &rarr;', 'pilotfish')); ?></div>
 		  </nav>
 		<?php } ?>
-<?php endif; ?>   
+<?php endif; ?>
+   
         </div><!-- end of #search-results -->
-
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

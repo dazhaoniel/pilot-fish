@@ -17,11 +17,9 @@ function pilotfish_scripts() {
 
   	wp_register_script('pilotfish_modernizr', get_template_directory_uri() . '/js/modernizr.js', array('jquery'), null, false);
 	wp_register_script('pilotfish_mediaqueries', get_template_directory_uri() . '/js/css3-mediaqueries.js', array('jquery'), null, false);
-  	// wp_register_script('pilotfish_selectnav', get_template_directory_uri() . '/js/selectnav.js', array('jquery'), '1.0', true);
 	wp_register_script('pilotfish_main', get_template_directory_uri() . '/js/main.js', array('jquery'), null, true);
   	wp_enqueue_script('pilotfish_modernizr');
 	wp_enqueue_script('pilotfish_mediaqueries');
-	// wp_enqueue_script('pilotfish_selectnav');
   	wp_enqueue_script('pilotfish_main');
 }
 endif;

@@ -47,7 +47,7 @@ function theme_options_do_page() {
 				<?php /* Some Updates about Daniel :) */ ?>
 				<tr valign="top"><th scope="row"></th>
 					<td>
-						<p><?php _e( 'Thank you for downloading Pilot Fish (^^) For more information on customizing the theme, please go to ', 'pilotfish' ); ?><a href="<?php echo esc_url(__('http://wordpress.danielatwork.com/pilotfish/faq/','pilotfish')); ?>" target="_blank"><?php _e('Pilot Fish FAQ', 'pilotfish'); ?></a></p>
+						<p><?php _e( 'Thank you for downloading Pilot Fish (^^) For more information on customizing the theme, please go to ', 'pilotfish' ); ?><a href="<?php echo esc_url(__('http://wordpress.danielatwork.com/pilotfish/faq/','pilotfish')); ?>" target="_blank"><?php _e('Pilot Fish FAQ', 'pilotfish'); ?></a><?php _e(', or find Danni on Twitter @danni1990', 'pilotfish'); ?></p>
 					</td>
 				</tr>
 				<?php
@@ -115,5 +115,4 @@ function pilotfish_theme_options_validate( $input ) {
 
 	return $input;
 }
-
 // adapted from http://planetozh.com/blog/2009/05/handling-plugins-options-in-wordpress-28-with-register_setting/

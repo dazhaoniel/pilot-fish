@@ -1,7 +1,7 @@
 /* 
 Theme Name: Pilot Fish 
 Theme URI: http://wordpress.danielatwork.com/project/pilot-fish/
-Description: Pilot Fish is an elegant portfolio theme with minimal design: featuring a custom post type to highlight projects and work, and parallax scrolling on the front page to display a featured image. Responsive layout makes it adaptive to mobile devices. Also Pilot Fish supports custom menus, post formats and is available in Japanese, Spanish and Russian. In this release, version 0.3.3,  new features include a responsive dropdown menu for mobile devices, a theme option to include Google Analytics and is now compatible with IE8. Disclaimer: if you modified code in the original theme then an update will erase all your changes. So please either ignore this release or back up your changes.
+Description: Pilot Fish is an elegant portfolio theme with minimal design: featuring a custom post type to highlight projects and work, and parallax scrolling on the front page to display a featured image. Responsive layout makes it adaptive to mobile devices. Also Pilot Fish supports custom menus, post formats and is available in Japanese, Spanish and Russian. In this release, version 0.3.3,  new features include a dropdown menu for mobile devices, a theme option to include Google Analytics and is now compatible with IE8. Disclaimer: if you modified code in the original theme then an update will erase all your changes. So please either ignore this release or back up your changes.
 
 Author: Daniel Zhao
 Author URI: http://danielatwork.com/
@@ -27,6 +27,7 @@ License URI: license.txt
 	11 - Footer
 	12 - Misc
 	13 - Media Queries
+	14 - Fixes for IE8
 */
 
 /* 01 - Reset & Basics (Inspired by E. Meyers)
@@ -837,20 +838,17 @@ License URI: license.txt
 		_display:inline; /* IE6 and below */
 		_zoom:1; /* IE6 and below */
 }
-	#thumbnail ul li:focus,
-	#thumbnail ul li:hover {
-}
 	#thumbnail div a:hover {
 		text-decoration: none;
 }
-	#thumbnail li img {
+	#thumbnail div div a img {
 		border: none;
 		opacity: 1;
 		width: 300px; 
 		height: 175px;
 		display: block;
 }
-	#thumbnail .row .title-overlay {
+	#thumbnail .row div .title-overlay {
 		text-align: center;
 		position: absolute;
 		width: 300px;
@@ -858,7 +856,7 @@ License URI: license.txt
 		opacity: 0;
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
 }
-	#thumbnail .row .title-overlay span {
+	#thumbnail .row div .title-overlay span {
 		color: white;
 		background-color: rgba(0, 0, 0, .2);
 		padding: 7px;
@@ -1323,9 +1321,6 @@ License URI: license.txt
   	}
 	#access { width: 100%; float: left; }
 	nav select { margin: auto; }
-  	.menu-index .menu-item {
- /*   		width: 100%;*/
-	}
 	#access .menu { display: none; }
   	ul,
 	ul ul {
@@ -1533,5 +1528,14 @@ License URI: license.txt
 	}
 }
 
-/* Fix for IE 
+/* Fixes for IE8
 ======================================== */
+	.ie8 #thumbnail div div {
+		width: 300px !important;
+		height: 175px !important;
+}
+	.ie8 #thumbnail div div a img {
+		margin-top: -21px;
+		width: 300px;
+		height: 175px;
+}

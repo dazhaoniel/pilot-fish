@@ -74,7 +74,6 @@ $(document).ready(function(){
 ///////////////////////////////
 
 jQuery(document).ready(function(){
-//	if(isMobile()) {
 		jQuery("<select />").appendTo("nav");
       		jQuery("<option />", {
 		 	"selected": "selected",
@@ -91,5 +90,4 @@ jQuery(document).ready(function(){
 	      	jQuery("nav select").change(function() {
 			window.location = jQuery(this).find("option:selected").val();
 	      	}); 
-//	}
 });
