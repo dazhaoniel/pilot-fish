@@ -84,7 +84,51 @@ if (!function_exists('create_post_type')):
 	}
 	
 endif;
-register_taxonomy("Skills", array("project"), array("hierarchical" => true, "label" => "Skills", "singular_label" => "Skill", "rewrite" => true));
+
+// Custom Categories for Projects
+register_taxonomy( 'project_type', 
+    	array('project'),
+    	array('hierarchical' => true,     /* if this is true, it acts like categories */             
+    		'labels' => array(
+    			'name' => __( 'Project Type', 'pilotfish' ), /* name of the custom taxonomy */
+    			'singular_name' => __( 'Project Type', 'pilotfish' ), /* single taxonomy name */
+    			'search_items' =>  __( 'Search Project Types', 'pilotfish' ), /* search title for taxomony */
+    			'all_items' => __( 'All Project Types', 'pilotfish' ), /* all title for taxonomies */
+    			'parent_item' => __( 'Parent Project Type', 'pilotfish' ), /* parent title for taxonomy */
+    			'parent_item_colon' => __( 'Parent Project Type:', 'pilotfish' ), /* parent taxonomy title */
+    			'edit_item' => __( 'Edit Project Type', 'pilotfish' ), /* edit custom taxonomy title */
+    			'update_item' => __( 'Update Project Type', 'pilotfish' ), /* update title for taxonomy */
+    			'add_new_item' => __( 'Add New Project Type', 'pilotfish' ), /* add new title for taxonomy */
+    			'new_item_name' => __( 'New Project Type', 'pilotfish' ) /* name title for taxonomy */
+    		),
+    		'show_admin_column' => true, 
+    		'show_ui' => true,
+    		'query_var' => true,
+    		'rewrite' => array( 'slug' => 'project_type' ),
+    	)
+    ); 
+
+// Custom Tags for Projects
+register_taxonomy( 'skills', 
+    	array('project'), 
+    	array('hierarchical' => false,    /* if this is false, it acts like tags */                
+    		'labels' => array(
+    			'name' => __( 'Skills', 'pilotfish' ), /* name of the custom taxonomy */
+    			'singular_name' => __( 'Skill', 'pilotfish' ), /* single taxonomy name */
+    			'search_items' =>  __( 'Search Skills', 'pilotfish' ), /* search title for taxomony */
+    			'all_items' => __( 'All Skills', 'pilotfish' ), /* all title for taxonomies */
+    			'parent_item' => __( 'Parent Skill', 'pilotfish' ), /* parent title for taxonomy */
+    			'parent_item_colon' => __( 'Parent Skill:', 'pilotfish' ), /* parent taxonomy title */
+    			'edit_item' => __( 'Edit Skill', 'pilotfish' ), /* edit custom taxonomy title */
+    			'update_item' => __( 'Update Skill', 'pilotfish' ), /* update title for taxonomy */
+    			'add_new_item' => __( 'Add New Skill', 'pilotfish' ), /* add new title for taxonomy */
+    			'new_item_name' => __( 'New Skill Name', 'pilotfish' ) /* name title for taxonomy */
+    		),
+    		'show_admin_column' => true,
+    		'show_ui' => true,
+    		'query_var' => true,
+    	)
+    );   
 
 
 /**

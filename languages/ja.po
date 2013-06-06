@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pilot Fish 0.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-23 09:24-0500\n"
-"PO-Revision-Date: 2013-01-23 09:24-0500\n"
+"POT-Creation-Date: 2013-05-19 21:46-0500\n"
+"PO-Revision-Date: 2013-05-19 21:46-0500\n"
 "Last-Translator: Daniel Zhao <daniel@danielatwork.com>\n"
 "Language-Team: Daniel Zhao <daniel@danielatwork.com>\n"
 "Language: \n"
@@ -16,15 +16,21 @@ msgstr ""
 
 #: pilot-fish/blog.php:34
 #: pilot-fish/archive-project.php:34
+#: pilot-fish/taxonomy-project_type.php:34
 #: pilot-fish/search.php:41
 msgid "&larr; previous"
 msgstr "&larr; 前のページ"
 
 #: pilot-fish/blog.php:35
 #: pilot-fish/archive-project.php:35
+#: pilot-fish/taxonomy-project_type.php:35
 #: pilot-fish/search.php:42
 msgid "next &rarr;"
 msgstr "次のページ &rarr;"
+
+#: pilot-fish/taxonomy-project_type.php:14
+msgid "Posts Categorized:"
+msgstr ""
 
 #: pilot-fish/image.php:18
 msgid "&larr; Return to"
@@ -218,11 +224,11 @@ msgstr "<span class=\"meta-nav\">&larr;</span> 過去の投稿"
 msgid "next post <span class=\"meta-nav\">&rarr;</span>"
 msgstr "新しい投稿 <span class=\"meta-nav\">&rarr;</span>"
 
-#: pilot-fish/single-project.php:44
+#: pilot-fish/single-project.php:51
 msgid "<span class=\"meta-nav\">&larr;</span> previous project"
 msgstr "<span class=\"meta-nav\">&larr;</span> 過去の作品"
 
-#: pilot-fish/single-project.php:45
+#: pilot-fish/single-project.php:52
 msgid "next project <span class=\"meta-nav\">&rarr;</span>"
 msgstr "新しい作品 <span class=\"meta-nav\">&rarr;</span>"
 
@@ -242,7 +248,7 @@ msgstr "ホームに戻る &larr;"
 msgid "or explore other pages and posts."
 msgstr "または他のページを検索してみてください。"
 
-#: pilot-fish/page.php:47
+#: pilot-fish/page.php:51
 msgid "Page Hierarchy:"
 msgstr "ページの階層:"
 
@@ -343,6 +349,10 @@ msgstr ""
 msgid "Pilot Fish FAQ"
 msgstr ""
 
+#: pilot-fish/includes/theme-options.php:50
+msgid ", or find Danni on Twitter @danni1990"
+msgstr ""
+
 #: pilot-fish/includes/theme-options.php:58
 msgid "Google Analytics"
 msgstr ""
@@ -359,7 +369,15 @@ msgstr ""
 msgid "UA-XXXXX-X"
 msgstr ""
 
-#: pilot-fish/includes/theme-options.php:79
+#: pilot-fish/includes/theme-options.php:82
+msgid "Page Hierarchy"
+msgstr "ページの階層:"
+
+#: pilot-fish/includes/theme-options.php:85
+msgid "Add Child Page links to Pages"
+msgstr ""
+
+#: pilot-fish/includes/theme-options.php:91
 msgid "Save Options"
 msgstr ""
 
@@ -371,11 +389,92 @@ msgstr "作品"
 msgid "Project"
 msgstr "作品"
 
-#: pilot-fish/includes/scripts.php:108
+#: pilot-fish/includes/scripts.php:93
+#: pilot-fish/includes/scripts.php:94
+#, fuzzy
+msgid "Project Type"
+msgstr "作品"
+
+#: pilot-fish/includes/scripts.php:95
+msgid "Search Project Types"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:96
+#, fuzzy
+msgid "All Project Types"
+msgstr "作品"
+
+#: pilot-fish/includes/scripts.php:97
+msgid "Parent Project Type"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:98
+msgid "Parent Project Type:"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:99
+msgid "Edit Project Type"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:100
+msgid "Update Project Type"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:101
+msgid "Add New Project Type"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:102
+#, fuzzy
+msgid "New Project Type"
+msgstr "作品"
+
+#: pilot-fish/includes/scripts.php:116
+msgid "Skills"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:117
+msgid "Skill"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:118
+#, fuzzy
+msgid "Search Skills"
+msgstr "サイト内検索"
+
+#: pilot-fish/includes/scripts.php:119
+msgid "All Skills"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:120
+msgid "Parent Skill"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:121
+msgid "Parent Skill:"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:122
+msgid "Edit Skill"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:123
+msgid "Update Skill"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:124
+msgid "Add New Skill"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:125
+msgid "New Skill Name"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:152
 msgid "Untitled"
 msgstr "無題"
 
-#: pilot-fish/includes/scripts.php:136
+#: pilot-fish/includes/scripts.php:180
 msgid "Continue Reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "続きを読む <span class=\"meta-nav\">&rarr;</span>"
 

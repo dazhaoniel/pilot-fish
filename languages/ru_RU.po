@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pilot Fish 0.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-23 09:24-0500\n"
-"PO-Revision-Date: 2013-01-23 09:25-0500\n"
+"POT-Creation-Date: 2013-05-19 21:47-0500\n"
+"PO-Revision-Date: 2013-05-19 21:47-0500\n"
 "Last-Translator: Daniel Zhao <daniel@danielatwork.com>\n"
 "Language-Team: ubuntu\n"
 "Language: ru\n"
@@ -19,15 +19,21 @@ msgstr ""
 
 #: pilot-fish/blog.php:34
 #: pilot-fish/archive-project.php:34
+#: pilot-fish/taxonomy-project_type.php:34
 #: pilot-fish/search.php:41
 msgid "&larr; previous"
 msgstr "&larr; Предыдущие"
 
 #: pilot-fish/blog.php:35
 #: pilot-fish/archive-project.php:35
+#: pilot-fish/taxonomy-project_type.php:35
 #: pilot-fish/search.php:42
 msgid "next &rarr;"
 msgstr "Следующие &rarr;"
+
+#: pilot-fish/taxonomy-project_type.php:14
+msgid "Posts Categorized:"
+msgstr ""
 
 #: pilot-fish/image.php:18
 msgid "&larr; Return to"
@@ -221,11 +227,11 @@ msgstr "<span class=\"meta-nav\">&larr;</span> предыдущая запись
 msgid "next post <span class=\"meta-nav\">&rarr;</span>"
 msgstr "следующая запись <span class=\"meta-nav\">&rarr;</span>"
 
-#: pilot-fish/single-project.php:44
+#: pilot-fish/single-project.php:51
 msgid "<span class=\"meta-nav\">&larr;</span> previous project"
 msgstr "<span class=\"meta-nav\">&larr;</span> предыдущий проект"
 
-#: pilot-fish/single-project.php:45
+#: pilot-fish/single-project.php:52
 msgid "next project <span class=\"meta-nav\">&rarr;</span>"
 msgstr "следующий проект <span class=\"meta-nav\">&rarr;</span>"
 
@@ -245,7 +251,7 @@ msgstr "&larr; Главная"
 msgid "or explore other pages and posts."
 msgstr "или просмотреть другие страницы и записи."
 
-#: pilot-fish/page.php:47
+#: pilot-fish/page.php:51
 msgid "Page Hierarchy:"
 msgstr "Иерархия страниц:"
 
@@ -346,6 +352,10 @@ msgstr ""
 msgid "Pilot Fish FAQ"
 msgstr ""
 
+#: pilot-fish/includes/theme-options.php:50
+msgid ", or find Danni on Twitter @danni1990"
+msgstr ""
+
 #: pilot-fish/includes/theme-options.php:58
 msgid "Google Analytics"
 msgstr ""
@@ -362,7 +372,16 @@ msgstr ""
 msgid "UA-XXXXX-X"
 msgstr ""
 
-#: pilot-fish/includes/theme-options.php:79
+#: pilot-fish/includes/theme-options.php:82
+#, fuzzy
+msgid "Page Hierarchy"
+msgstr "Иерархия страниц:"
+
+#: pilot-fish/includes/theme-options.php:85
+msgid "Add Child Page links to Pages"
+msgstr ""
+
+#: pilot-fish/includes/theme-options.php:91
 msgid "Save Options"
 msgstr ""
 
@@ -374,11 +393,92 @@ msgstr "Проекты"
 msgid "Project"
 msgstr "Проект"
 
-#: pilot-fish/includes/scripts.php:108
+#: pilot-fish/includes/scripts.php:93
+#: pilot-fish/includes/scripts.php:94
+#, fuzzy
+msgid "Project Type"
+msgstr "Проект"
+
+#: pilot-fish/includes/scripts.php:95
+msgid "Search Project Types"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:96
+#, fuzzy
+msgid "All Project Types"
+msgstr "Проекты"
+
+#: pilot-fish/includes/scripts.php:97
+msgid "Parent Project Type"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:98
+msgid "Parent Project Type:"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:99
+msgid "Edit Project Type"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:100
+msgid "Update Project Type"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:101
+msgid "Add New Project Type"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:102
+#, fuzzy
+msgid "New Project Type"
+msgstr "Проект"
+
+#: pilot-fish/includes/scripts.php:116
+msgid "Skills"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:117
+msgid "Skill"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:118
+#, fuzzy
+msgid "Search Skills"
+msgstr "Поиск"
+
+#: pilot-fish/includes/scripts.php:119
+msgid "All Skills"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:120
+msgid "Parent Skill"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:121
+msgid "Parent Skill:"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:122
+msgid "Edit Skill"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:123
+msgid "Update Skill"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:124
+msgid "Add New Skill"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:125
+msgid "New Skill Name"
+msgstr ""
+
+#: pilot-fish/includes/scripts.php:152
 msgid "Untitled"
 msgstr "Без имени"
 
-#: pilot-fish/includes/scripts.php:136
+#: pilot-fish/includes/scripts.php:180
 msgid "Continue Reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Продолжить чтение <span class=\"meta-nav\">&rarr;</span>"
 

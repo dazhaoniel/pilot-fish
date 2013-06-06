@@ -11,7 +11,7 @@
         <div id="widgets" class="row span4 last">
         <?php pilotfish_widgets(); // above widgets hook ?>
             
-            <?php (dynamic_sidebar('sidebar-primary')) ?>
+            <?php dynamic_sidebar('sidebar-primary'); ?>
             
         <?php pilotfish_widgets_end(); // after widgets hook ?>
         </div><!-- end of #widgets -->
