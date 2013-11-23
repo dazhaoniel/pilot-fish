@@ -4,30 +4,27 @@ msgstr ""
 "Project-Id-Version: Pilot Fish 0.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-19 21:47-0500\n"
-"PO-Revision-Date: 2013-05-19 21:47-0500\n"
+"PO-Revision-Date: 2013-11-06 16:04-0500\n"
 "Last-Translator: Daniel Zhao <daniel@danielatwork.com>\n"
 "Language-Team: ubuntu\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Virtaal 0.7.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.5.7\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ./pilot-fish\n"
 "X-Poedit-SearchPath-0: ./pilot-fish\n"
 
-#: pilot-fish/blog.php:34
-#: pilot-fish/archive-project.php:34
-#: pilot-fish/taxonomy-project_type.php:34
-#: pilot-fish/search.php:41
+#: pilot-fish/blog.php:34 pilot-fish/archive-project.php:34
+#: pilot-fish/taxonomy-project_type.php:34 pilot-fish/search.php:41
 msgid "&larr; previous"
 msgstr "&larr; Предыдущие"
 
-#: pilot-fish/blog.php:35
-#: pilot-fish/archive-project.php:35
-#: pilot-fish/taxonomy-project_type.php:35
-#: pilot-fish/search.php:42
+#: pilot-fish/blog.php:35 pilot-fish/archive-project.php:35
+#: pilot-fish/taxonomy-project_type.php:35 pilot-fish/search.php:42
 msgid "next &rarr;"
 msgstr "Следующие &rarr;"
 
@@ -39,71 +36,52 @@ msgstr ""
 msgid "&larr; Return to"
 msgstr "&larr; Вернуться к"
 
-#: pilot-fish/image.php:23
-#: pilot-fish/content-quote.php:10
-#: pilot-fish/content-standard.php:10
-#: pilot-fish/content-image.php:10
+#: pilot-fish/image.php:23 pilot-fish/content-quote.php:10
+#: pilot-fish/content-standard.php:10 pilot-fish/content-image.php:10
 msgid "Continue Reading &rarr;"
 msgstr "Продолжнить чтение &rarr;"
 
-#: pilot-fish/image.php:24
-#: pilot-fish/content-quote.php:22
-#: pilot-fish/content-standard.php:22
-#: pilot-fish/content-image.php:22
+#: pilot-fish/image.php:24 pilot-fish/content-quote.php:22
+#: pilot-fish/content-standard.php:22 pilot-fish/content-image.php:22
 msgid "Pages:"
 msgstr "Страницы:"
 
-#: pilot-fish/image.php:38
-#: pilot-fish/content-quote.php:31
-#: pilot-fish/content-standard.php:31
-#: pilot-fish/content-image.php:31
+#: pilot-fish/image.php:38 pilot-fish/content-quote.php:31
+#: pilot-fish/content-standard.php:31 pilot-fish/content-image.php:31
 msgid "No Response &darr;"
 msgstr "Без ответа &darr;"
 
-#: pilot-fish/image.php:38
-#: pilot-fish/content-quote.php:31
-#: pilot-fish/content-standard.php:31
-#: pilot-fish/content-image.php:31
+#: pilot-fish/image.php:38 pilot-fish/content-quote.php:31
+#: pilot-fish/content-standard.php:31 pilot-fish/content-image.php:31
 msgid "One Response &darr;"
 msgstr "Один ответ &darr;"
 
-#: pilot-fish/image.php:38
-#: pilot-fish/content-quote.php:31
-#: pilot-fish/content-standard.php:31
-#: pilot-fish/content-image.php:31
+#: pilot-fish/image.php:38 pilot-fish/content-quote.php:31
+#: pilot-fish/content-standard.php:31 pilot-fish/content-image.php:31
 msgid "% Responses &darr;"
 msgstr "% ответов &darr;"
 
-#: pilot-fish/image.php:42
-#: pilot-fish/content-quote.php:35
-#: pilot-fish/content-standard.php:35
-#: pilot-fish/content-image.php:35
+#: pilot-fish/image.php:42 pilot-fish/content-quote.php:35
+#: pilot-fish/content-standard.php:35 pilot-fish/content-image.php:35
 msgid "TAGS:"
 msgstr "Метки:"
 
-#: pilot-fish/image.php:43
-#: pilot-fish/content-quote.php:36
-#: pilot-fish/content-standard.php:36
-#: pilot-fish/content-image.php:36
+#: pilot-fish/image.php:43 pilot-fish/content-quote.php:36
+#: pilot-fish/content-standard.php:36 pilot-fish/content-image.php:36
 #, php-format
 msgid "FILED UNDER: %s"
 msgstr "Размещено под: %s"
 
-#: pilot-fish/image.php:44
-#: pilot-fish/content-quote.php:8
-#: pilot-fish/content-quote.php:37
-#: pilot-fish/content-standard.php:8
-#: pilot-fish/content-standard.php:37
-#: pilot-fish/content-image.php:8
+#: pilot-fish/image.php:44 pilot-fish/content-quote.php:8
+#: pilot-fish/content-quote.php:37 pilot-fish/content-standard.php:8
+#: pilot-fish/content-standard.php:37 pilot-fish/content-image.php:8
 #: pilot-fish/content-image.php:37
 #, php-format
 msgid "Permanent Link to %s"
 msgstr "Постоянная ссылка на %s"
 
-#: pilot-fish/image.php:44
-#: pilot-fish/content-quote.php:37
-#: pilot-fish/content-standard.php:37
-#: pilot-fish/content-image.php:37
+#: pilot-fish/image.php:44 pilot-fish/content-quote.php:37
+#: pilot-fish/content-standard.php:37 pilot-fish/content-image.php:37
 msgid "Permalink"
 msgstr "Ссылка"
 
@@ -136,24 +114,36 @@ msgid "featured one"
 msgstr "дополнение раз"
 
 #: pilot-fish/sidebar-home.php:21
-msgid "Replace the text here in the sidebar-home.php, or add widgets to Featured One area."
-msgstr "Этот текст можно заменить в sidebar-home.php или добавив виджеты в зону дополнения 1."
+msgid ""
+"Replace the text here in the sidebar-home.php, or add widgets to Featured "
+"One area."
+msgstr ""
+"Этот текст можно заменить в sidebar-home.php или добавив виджеты в зону "
+"дополнения 1."
 
 #: pilot-fish/sidebar-home.php:38
 msgid "featured two"
 msgstr "дополнение два"
 
 #: pilot-fish/sidebar-home.php:39
-msgid "Replace the text here in the sidebar-home.php, or add widgets to Featured Two area."
-msgstr "Этот текст можно заменить в sidebar-home.php или добавив виджеты в зону дополнения 2."
+msgid ""
+"Replace the text here in the sidebar-home.php, or add widgets to Featured "
+"Two area."
+msgstr ""
+"Этот текст можно заменить в sidebar-home.php или добавив виджеты в зону "
+"дополнения 2."
 
 #: pilot-fish/sidebar-home.php:54
 msgid "featured three"
 msgstr "дополнение три"
 
 #: pilot-fish/sidebar-home.php:55
-msgid "Replace the text here in the sidebar-home.php, or add widgets to Featured Three area."
-msgstr "Этот текст можно заменить в sidebar-home.php или добавив виджеты в зону дополнения 3."
+msgid ""
+"Replace the text here in the sidebar-home.php, or add widgets to Featured "
+"Three area."
+msgstr ""
+"Этот текст можно заменить в sidebar-home.php или добавив виджеты в зону "
+"дополнения 3."
 
 #: pilot-fish/footer.php:22
 msgid "powered by"
@@ -183,14 +173,12 @@ msgstr ""
 msgid "Back to Top"
 msgstr "Вверх"
 
-#: pilot-fish/content-quote.php:16
-#: pilot-fish/content-standard.php:16
+#: pilot-fish/content-quote.php:16 pilot-fish/content-standard.php:16
 #: pilot-fish/content-image.php:16
 msgid "About"
 msgstr "О нас"
 
-#: pilot-fish/content-quote.php:40
-#: pilot-fish/content-standard.php:40
+#: pilot-fish/content-quote.php:40 pilot-fish/content-standard.php:40
 #: pilot-fish/content-image.php:40
 msgid "Edit"
 msgstr "Правка"
@@ -212,8 +200,11 @@ msgid "A Minimal, Responsive Portfolio Theme"
 msgstr "Простая, представительная тема"
 
 #: pilot-fish/home.php:19
-msgid "You can edit this section from home.php in the Edit Panel. Happy Blogging! "
-msgstr "Вы можете отредактировать эту секцию в home.php или в Редакторе. Удачного блоггинга!"
+msgid ""
+"You can edit this section from home.php in the Edit Panel. Happy Blogging! "
+msgstr ""
+"Вы можете отредактировать эту секцию в home.php или в Редакторе. Удачного "
+"блоггинга!"
 
 #: pilot-fish/home.php:23
 msgid "Featured Widgets Area"
@@ -276,8 +267,10 @@ msgid "Author Archives: %s"
 msgstr "Авторские архивы: %s"
 
 #: pilot-fish/comments.php:11
-msgid "This post is password protected. Enter the password to view any comments."
-msgstr "Эта запись защищена паролем. Введите пароль для отображения любых записей."
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Эта запись защищена паролем. Введите пароль для отображения любых записей."
 
 #: pilot-fish/comments.php:17
 msgid "No Response to"
@@ -341,7 +334,9 @@ msgid "Options saved"
 msgstr ""
 
 #: pilot-fish/includes/theme-options.php:50
-msgid "Thank you for downloading Pilot Fish (^^) For more information on customizing the theme, please go to "
+msgid ""
+"Thank you for downloading Pilot Fish (^^) For more information on "
+"customizing the theme, please go to "
 msgstr ""
 
 #: pilot-fish/includes/theme-options.php:50
@@ -393,8 +388,7 @@ msgstr "Проекты"
 msgid "Project"
 msgstr "Проект"
 
-#: pilot-fish/includes/scripts.php:93
-#: pilot-fish/includes/scripts.php:94
+#: pilot-fish/includes/scripts.php:93 pilot-fish/includes/scripts.php:94
 #, fuzzy
 msgid "Project Type"
 msgstr "Проект"
@@ -549,4 +543,3 @@ msgstr "Телефон:"
 #: pilot-fish/includes/widgets.php:188
 msgid "Email:"
 msgstr "Адрес email:"
-

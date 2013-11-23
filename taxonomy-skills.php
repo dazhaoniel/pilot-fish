@@ -1,17 +1,17 @@
 <?php
 /**
- * Projects By Type Template
+ * Projects By Skills Template
  *
  *
- * @file           taxonomy-project_type.php
+ * @file           taxonomy-skills.php
  * @package        Pilot Fish 
- * @filesource     wp-content/themes/pilot-fish/taxonomy-project_type.php
+ * @filesource     wp-content/themes/pilot-fish/taxonomy-skills.php
  * @since          Pilot Fish 0.3.4
  */
 get_header(); ?>
 
 <div id="project-archive" class="row span12" role="main">
-<h1 class="archive-title h2"><span><?php _e("Project Type:", "pilotfish"); ?></span> <?php single_cat_title(); ?></h1>
+<h1 class="archive-title h2"><span><?php _e("Project Skills:", "pilotfish"); ?></span> <?php single_tag_title(); ?></h1>
 <?php if (have_posts()) : ?>
         <div id="thumbnail">
 			<?php $var = 1; ?>
