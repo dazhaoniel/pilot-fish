@@ -127,6 +127,7 @@ register_taxonomy( 'skills',
     		'show_admin_column' => true,
     		'show_ui' => true,
     		'query_var' => true,
+    		'rewrite' => array( 'slug' => 'skills' ),
     	)
     );   
 

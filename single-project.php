@@ -39,7 +39,9 @@ get_header(); ?>
 		                	</span>
 		            	<?php endif; ?>
 		        </div><!-- end of .post-meta -->
-					<?php echo get_the_term_list( $post->ID, 'Skills', '', ', ', '' ); ?> 
+					<?php echo the_terms( $post->ID, 'project_type', 'Project Type: ', ', ', '' ); ?>
+                    <br />
+                    <?php echo the_terms( $post->ID, 'skills', '', ', ', '' ); ?> 
                 </footer><!-- end of .post-data -->             
 
             <div class="post-edit"><?php edit_post_link(__('Edit', 'pilotfish')); ?></div>             
