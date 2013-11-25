@@ -264,6 +264,14 @@ function pilotfish_url_grabber() {
 	return esc_url_raw( $matches[1] );
 }
 
+function modify_num_posts_for_projects($query)
+{
+    if ($query->is_main_query() && $query->is_post_type_archive('project') && !is_admin())
+        $query->set('posts_per_page', 12);
+}
+ 
+add_action('pre_get_posts', 'modify_num_posts_for_projects');
+
 /** 
  * Include the Google Analytics Tracking Code (ga.js)
  */
