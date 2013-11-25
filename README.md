@@ -2,6 +2,7 @@ Pilot Fish WordPress Theme
 ==========================
 
 [Pilot Fish in the WordPress Theme Directory](http://wordpress.org/extend/themes/pilot-fish)
+
 Author: [Daniel Zhao](http://danielatwork.com)
 
 Current Version: 0.3.4
