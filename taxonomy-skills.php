@@ -36,13 +36,5 @@ get_header(); ?>
 		  </nav>
 	<?php } ?>	    
 </div><!-- end of #project-archive -->
-<?php get_footer(); ?>
-						</div> <!-- end #main -->
-
-						<?php /*get_sidebar();*/ ?>
-
-				</div> <!-- end #inner-content -->
-
-			</div> <!-- end #content -->
 
 <?php get_footer(); ?>
