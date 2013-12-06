@@ -11,7 +11,7 @@
 
 get_header(); ?>
     
-	<div id="featured" class="row span12 hidden-phone">
+	<div id="featured" class="hidden-phone">
 	<div id="banner-text" class="span12">     
 		<h1 class="featured-title"><?php echo __('Hello World!','pilotfish'); ?></h1>
 	</div>

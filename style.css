@@ -811,7 +811,6 @@ License URI: license.txt
 
 /*	Thumbnails	*/
 	#thumbnail {
-		width: 100%;
 }
 	#thumbnail:after {
 		content: ".";
@@ -863,9 +862,6 @@ License URI: license.txt
 		-moz-border-radius: 3px;
 		-o-border-radius: 3px;
 		border-radius: 3px;
-}
-	#thumbnail {
-		margin-left: 0;
 }
 	#thumbnail div a:hover > img {
 		opacity: .1;
@@ -925,6 +921,7 @@ License URI: license.txt
 }
 	.featured-subtitle {
 		text-align:center;
+		padding-top: 20px;
 }
 
 /* 07 - Sidebar
