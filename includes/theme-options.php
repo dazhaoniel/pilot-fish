@@ -47,7 +47,7 @@ function theme_options_do_page() {
 				<?php /* Some Updates about Daniel :) */ ?>
 				<tr valign="top"><th scope="row"></th>
 					<td>
-						<p><?php _e( 'Thank you for downloading Pilot Fish (^^) For more information on customizing the theme, please go to ', 'pilotfish' ); ?><a href="<?php echo esc_url(__('http://wordpress.danielatwork.com/pilotfish/faq/','pilotfish')); ?>" target="_blank"><?php _e('Pilot Fish FAQ', 'pilotfish'); ?></a><?php _e(', or find Danni on Twitter @danni1990', 'pilotfish'); ?></p>
+						<p><?php _e( 'Thank you for downloading Pilot Fish (^^) For more information on customizing the theme, please go to ', 'pilotfish' ); ?><a href="<?php echo esc_url(__('http://wordpress.danielatwork.com/pilotfish/faq/','pilotfish')); ?>" target="_blank"><?php _e('Pilot Fish FAQ', 'pilotfish'); ?></a><?php _e(', or find Danni on Twitter ', 'pilotfish'); ?><a href="<?php echo esc_url(__('https://twitter.com/danni1990','pilotfish')); ?>" target="_blank"><?php _e('@danni1990', 'pilotfish'); ?></a></p>
 					</td>
 				</tr>
 				<?php
@@ -83,6 +83,18 @@ function theme_options_do_page() {
 					<td>
 						<input id="pilotfish_theme_options[add_ph]" name="pilotfish_theme_options[add_ph]" type="checkbox" value="1" <?php checked( '1', $options['add_ph'] ); ?> />
 						<label class="description" for="pilotfish_theme_options[add_ph]"><?php _e( 'Add Child Page links to Pages', 'pilotfish' ); ?></label>
+					</td>
+				</tr>
+
+				<?php
+				/**
+				 * Replace Featured Image
+				 */
+				?>
+				<tr valign="top"><th scope="row"><?php _e( 'Replace Landing Page Featured Image Bavarian Forest', 'pilotfish' ); ?></th>
+					<td>
+						<input id="pilotfish_theme_options[featured_image_url]" class="regular-text" placeholder="http://" type="text" name="pilotfish_theme_options[featured_image_url]" value="<?php if( !empty($options['featured_image_url']) ) echo esc_attr( $options['featured_image_url'] ); ?>" />
+						<label class="description" for="pilotfish_theme_options[featured_image_url]"><?php _e( 'URL to your image', 'pilotfish' ); ?></label>
 					</td>
 				</tr>
 			</table>

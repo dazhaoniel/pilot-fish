@@ -303,3 +303,27 @@ function google_analytics_tracking_code(){
 
 // include GA tracking code before the closing body tag
 add_action('wp_footer', 'google_analytics_tracking_code');
+
+
+/**
+ * Styles the header image displayed on the Appearance > Header admin panel.
+ *
+ * Referenced via add_theme_support('custom-header') in pilotfish_setup().
+ */
+if ( ! function_exists( 'pilotfish_featured_image_override' ) ) :
+function pilotfish_featured_image_override() {
+
+	$options = get_option('pilotfish_theme_options');
+	$featuredURL = $options['featured_image_url'];
+	if ( $featuredURL != '' ):
+?>
+	<style type="text/css">
+	#featured {
+		background-image: url(<?php echo $featuredURL; ?>);
+	}
+	<?php endif; ?>
+	</style>
+<?php
+}
+endif; // pilotfish_admin_header_style
+add_action('pilotfish_in_wrapper', 'pilotfish_featured_image_override');
