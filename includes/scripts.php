@@ -306,9 +306,7 @@ add_action('wp_footer', 'google_analytics_tracking_code');
 
 
 /**
- * Styles the header image displayed on the Appearance > Header admin panel.
- *
- * Referenced via add_theme_support('custom-header') in pilotfish_setup().
+ * Change the Homepage Featured Image
  */
 if ( ! function_exists( 'pilotfish_featured_image_override' ) ) :
 function pilotfish_featured_image_override() {
@@ -325,5 +323,5 @@ function pilotfish_featured_image_override() {
 	</style>
 <?php
 }
-endif; // pilotfish_admin_header_style
-add_action('pilotfish_in_wrapper', 'pilotfish_featured_image_override');
+endif; // pilotfish_featured_image_override
+add_action('wp_footer', 'pilotfish_featured_image_override');
