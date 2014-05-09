@@ -27,4 +27,3 @@
 	    <?php pilotfish_widgets_end(); // after widgets hook ?>
 	    </div>
 </div> <!-- end of #widgets-footer -->
-<hr>
