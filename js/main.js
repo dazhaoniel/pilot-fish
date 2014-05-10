@@ -29,11 +29,11 @@ function scrollBanner() {
     });
 }
 
+
+jQuery(document).ready(function(){
 ///////////////////////////////
 // Initialize Parallax 
 ///////////////////////////////	
-
-jQuery(document).ready(function(){
 	if(!isMobile()) {
 		jQuery(window).scroll(function() {	      
 	       		scrollBanner();	      
@@ -48,46 +48,54 @@ jQuery(document).ready(function(){
 			'top':'0'
 		});
 	}
-});
 
 ///////////////////////////////
 // Hide Comment Form Elements
 ///////////////////////////////
-	
-jQuery(document).ready(function(){
 	jQuery( '#commentform label' ).hide();
 	jQuery( '#commentform .required' ).hide();
-});
 
 ///////////////////////////////
 // Remove Title of Images
 ///////////////////////////////
-
-/* The first line waits until the page has finished to load and is ready to manipulate */
-$(document).ready(function(){
-    /* remove the 'title' attribute of all <img /> tags */
-    $("img").removeAttr("title");
-});
+    $("img").removeAttr("title"); /* The first line waits until the page has finished to load and is ready to manipulate, then remove the 'title' attribute of all <img /> tags */
 
 ///////////////////////////////
 // Dropdown Menus for Mobile
 ///////////////////////////////
+	jQuery("<select />").appendTo("nav");
+  		jQuery("<option />", {
+	 	"selected": "selected",
+	 	"value"   : "",
+	 	"text"    : "Go to..."
+      	}).appendTo("nav select");
+      	jQuery("nav a").each(function() {
+       	var el = jQuery(this);
+       	jQuery("<option />", {
+	   	"value"   : el.attr("href"),
+	   	"text"    : el.text()
+       	}).appendTo("nav select");
+      	});
+      	jQuery("nav select").change(function() {
+		window.location = jQuery(this).find("option:selected").val();
+      	});
 
-jQuery(document).ready(function(){
-		jQuery("<select />").appendTo("nav");
-      		jQuery("<option />", {
-		 	"selected": "selected",
-		 	"value"   : "",
-		 	"text"    : "Go to..."
-	      	}).appendTo("nav select");
-	      	jQuery("nav a").each(function() {
-	       	var el = jQuery(this);
-	       	jQuery("<option />", {
-		   	"value"   : el.attr("href"),
-		   	"text"    : el.text()
-	       	}).appendTo("nav select");
-	      	});
-	      	jQuery("nav select").change(function() {
-			window.location = jQuery(this).find("option:selected").val();
-	      	}); 
+///////////////////////////////
+// Scroll To Top Transition
+///////////////////////////////
+	$('.scroll-top a').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 800);
+		return false;
+	});
+
+///////////////////////////////////
+// Initialize Lightbox for Gallery
+///////////////////////////////////
+	// Initialize the Lightbox automatically for any links to images with extensions .jpg, .jpeg, .png or .gif
+    $("a[href$='.jpg'], a[href$='.png'], a[href$='.jpeg'], a[href$='.gif']").attr('data-lightbox','images');
+    //Initialize the Lightbox and add data-lightbox="gallery" to all gallery images when the gallery is set up using [gallery link="file"] so that a Lightbox Gallery exists
+    $(".gallery a[href$='.jpg'], .gallery a[href$='.png'], .gallery a[href$='.jpeg'], .gallery a[href$='.gif']").attr('data-lightbox','gallery');
+ 
 });

@@ -4,7 +4,8 @@
  */
 if (!function_exists('pilotfish_script')):
 function pilotfish_scripts() {
-  	wp_enqueue_style('pilotfish_main_style', get_template_directory_uri() . '/style.css', true, null);
+  	wp_enqueue_style('pilotfish_main_style', get_stylesheet_directory_uri() . '/style.css', array(), false, 'all');
+  	wp_enqueue_style('pilotfish_lightbox_style', get_stylesheet_directory_uri() . '/css/lightbox.css', array(), false, 'all');
 
   	if (!is_admin()) {
     		wp_deregister_script('jquery');
@@ -15,12 +16,12 @@ function pilotfish_scripts() {
     		wp_enqueue_script('comment-reply');
   	}
 
-  	wp_register_script('pilotfish_modernizr', get_template_directory_uri() . '/js/modernizr.js', array('jquery'), null, false);
-	wp_register_script('pilotfish_mediaqueries', get_template_directory_uri() . '/js/css3-mediaqueries.js', array('jquery'), null, false);
-	wp_register_script('pilotfish_main', get_template_directory_uri() . '/js/main.js', array('jquery'), null, true);
-  	wp_enqueue_script('pilotfish_modernizr');
-	wp_enqueue_script('pilotfish_mediaqueries');
-  	wp_enqueue_script('pilotfish_main');
+  	wp_enqueue_script('pilotfish_modernizr', get_stylesheet_directory_uri() . '/js/modernizr.js', array('jquery'), null, false);
+	wp_enqueue_script('pilotfish_mediaqueries', get_stylesheet_directory_uri() . '/js/css3-mediaqueries.js', array('jquery'), null, false);
+	wp_enqueue_script('pilotfish_lightbox', get_stylesheet_directory_uri() . '/js/lightbox.min.js', array('jquery'), null, true);
+	wp_enqueue_script('pilotfish_main', get_stylesheet_directory_uri() . '/js/main.js', array('jquery'), null, true);
+
+	wp_enqueue_style('pilotfish_font', '//fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700|Fredericka+the+Great', array(), false, 'all');
 }
 endif;
 add_action('wp_enqueue_scripts', 'pilotfish_scripts');
@@ -185,7 +186,7 @@ endif;
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and pilotfish_continue_reading_link().
  */
-if (!function_exists('pilotfish_auto_excerpt_more'))://
+if (!function_exists('pilotfish_auto_excerpt_more')):
 function pilotfish_auto_excerpt_more( $more ) {
 	return ' &hellip;' . pilotfish_continue_reading_link();
 }
@@ -247,35 +248,42 @@ add_filter( 'wp_title', 'pilotfish_filter_wp_title', 10, 3 );
 /*
  * Comment reply script
  */
+if (!function_exists('pilotfish_enqueue_comment_reply_script')):
 function pilotfish_enqueue_comment_reply_script() {
 	if ( comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+endif;
 add_action( 'comment_form_before', 'pilotfish_enqueue_comment_reply_script' );
 
 /**
  * Return the URL for the first link found in the post content.
  */
+if (!function_exists('pilotfish_url_grabber')):
 function pilotfish_url_grabber() {
 	if ( ! preg_match( '/<a\s[^>]*?href=[\'"](.+?)[\'"]/is', get_the_content(), $matches ) )
 		return false;
 
 	return esc_url_raw( $matches[1] );
 }
+endif;
 
+
+if (!function_exists('modify_num_posts_for_projects')):
 function modify_num_posts_for_projects($query)
 {
     if ($query->is_main_query() && $query->is_post_type_archive('project') && !is_admin())
         $query->set('posts_per_page', 12);
 }
- 
+endif;
 add_action('pre_get_posts', 'modify_num_posts_for_projects');
 
 /** 
  * Include the Google Analytics Tracking Code (ga.js)
  */
 // @ http://code.google.com/apis/analytics/docs/tracking/asyncUsageGuide.html
+if (!function_exists('google_analytics_tracking_code')):
 function google_analytics_tracking_code(){
 
 	$options = get_option('pilotfish_theme_options');
@@ -297,6 +305,7 @@ function google_analytics_tracking_code(){
 
 <?php }
 }
+endif;
 
 // include GA tracking code before the closing head tag
 // add_action('wp_head', 'google_analytics_tracking_code');

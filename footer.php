@@ -24,7 +24,7 @@
                     <?php _e('Daniel Zhao', 'pilotfish'); ?></a></small>
         </div><!-- end of .copyright -->
         
-        <div class="row span6 last scroll-top"><small><a href="#" title="<?php esc_attr_e( 'scroll to top', 'pilotfish' ); ?>"><?php _e( 'Back to Top', 'pilotfish' ); ?></a></small></div><!-- end of .scroll-top -->      
+        <div class="row span6 last scroll-top"><small><a href="" title="<?php esc_attr_e( 'scroll to top', 'pilotfish' ); ?>"><?php _e( 'Back to Top', 'pilotfish' ); ?></a></small></div><!-- end of .scroll-top -->      
     </div><!-- end of #copyright -->
 
 </div><!-- end of #footer -->

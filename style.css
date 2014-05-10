@@ -1,10 +1,10 @@
 /* 
 Theme Name: Pilot Fish 
 Theme URI: http://wordpress.danielatwork.com/project/pilot-fish/
-Description: Pilot Fish is an elegant portfolio theme with minimal design: featuring a custom post type to highlight projects and work, and parallax scrolling on the front page to display a featured image. Responsive layout makes it adaptive to mobile devices. Also Pilot Fish supports custom menus, post formats, and is available in Japanese, Spanish, Russian and Dutch. In this release, version 0.3.5, new features include custom category and custom tags listings for project, now you can have several project archieve pages by different project types and skills. Disclaimer: if you modified code in the original theme then an update will erase all your changes. So please either ignore this release or back up your changes.
+Description: Pilot Fish is an elegant portfolio theme with minimal design: featuring a custom post type to highlight projects and work, and parallax scrolling on the front page to display a featured image. Responsive layout makes it adaptive to mobile devices. Also Pilot Fish supports custom menus, post formats, and is available in Japanese, Spanish, Russian, Dutch and German. Disclaimer: if you modified code in the original theme then an update will erase all your changes. So please either ignore this release or back up your changes.
 Author: Daniel Zhao
 Author URI: http://danielatwork.com/
-Version: 0.3.5
+Version: 0.3.6
 Tags: white, blue, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, right-sidebar, featured-images, fluid-layout, responsive-layout, full-width-template, post-formats, translation-ready, theme-options
 	
 License: GNU General Public License (GPL)
@@ -61,12 +61,12 @@ License URI: license.txt
 
 	.wp-caption {
 		max-width: auto !important;
-		background-color: #F3F3F3;
-    		border: 1px solid #DDDDDD;
-    		border-radius: 3px 3px 3px 3px;
-    		margin: 10px 0;
-    		padding-top: 4px;
-    		text-align: center;	
+		/*background-color: #F3F3F3;*/
+		border: 1px solid #DDDDDD;
+		border-radius: 3px 3px 3px 3px;
+		margin: 10px 0;
+		padding-top: 4px;
+		text-align: center;	
 }
 	.wp-caption img {
 		margin: auto;
@@ -135,7 +135,7 @@ License URI: license.txt
 	small { font-size: 80%; }
 /*	Blockquotes  */
 	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; font-family: "Droid Serif","Georgia",serif; }
-	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 5px solid #4FA1AB; }
 	blockquote cite { display: block; font-size: 12px; color: #555; }
 	blockquote cite:before { content: "\2014 \0020"; }
 	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
@@ -565,8 +565,8 @@ License URI: license.txt
 		padding: 0;
 }
 	#access .menu ul ul {
-		margin:-30px 0 0 -10px;
-		padding:30px 30px 30px 10px;
+/*		margin:-30px 0 0 -10px;
+		padding:30px 30px 30px 10px;*/
 }
 	#access .menu ul li a:hover {
 		background-image: url(images/menu-bg.png);
@@ -702,20 +702,24 @@ License URI: license.txt
 }
 	.post-entry table,
 	.comment table {
-		border-bottom: 1px solid #ddd;
+		border: solid #ddd;
+		border-width: 1px 0 0 1px;
 		margin: 0 0 1.625em;
 		width: 100%;}
 	.post-entry th,
 	.comment th {
-		font-weight: 500;
+		font-weight: 600;
 		letter-spacing: 0.1em;
 		line-height: 2.6em;
 		text-transform: uppercase;
+		border: solid #ddd;
+		border-width: 0 1px 1px 0;
 }
 	.post-entry td,
 	.comment td {
-		border-top: 1px solid #ddd;
-		padding: 6px 10px 6px 0;
+		border: solid #ddd;
+		border-width: 0 1px 1px 0;
+		padding: 6px 10px;
 }
 	.page-hierarchy {
 		padding-top: 30px;
@@ -1117,6 +1121,10 @@ License URI: license.txt
 		  display: inline-block;
 		  padding: 5px 14px;
 }
+	div.pager a, div.pager span {
+		  display: inline-block;
+		  padding: 5px 14px;
+}
 	.pager a:hover {
 		  text-decoration: none;
 }
@@ -1414,7 +1422,7 @@ License URI: license.txt
     		clear: both;
   	}
   	[class*="span"] {
-    		float: left;
+    		/*float: left;*/
   	}
   	#thumbnail {
 		width: 636px;
@@ -1484,7 +1492,7 @@ License URI: license.txt
     		clear: both;
   	}
   	[class*="span"] {
-    		float: left;
+    		/*float: left;*/
   	}
   	#container,
   	#footer {

@@ -29,12 +29,23 @@ get_header(); ?>
 				comments_template( '', true ); ?>
         <?php endwhile; ?> 
 
-        <?php if ($wp_query->max_num_pages > 1) { ?>
-		  <nav id="post-nav" class="pager">
-		    <div class="previous"><?php next_posts_link(__('&larr; previous', 'pilotfish')); ?></div>
-		    <div class="next"><?php previous_posts_link(__('next &rarr;', 'pilotfish')); ?></div>
-		  </nav>
-		<?php } ?>
+		<?php if ($wp_query->max_num_pages > 1) : ?>
+				<?php $maxnumber = 999999999;
+				$pagargs = array(
+					'base' => str_replace( $maxnumber, '%#%', esc_url( get_pagenum_link( $maxnumber ) ) ),
+					'format'       => '?page=%#%',
+					'total' => $wp_query->max_num_pages,
+					'current' => max( 1, get_query_var('paged') ),
+					'prev_next'    => True,
+					'prev_text'    => '&larr;',
+					'next_text'    => '&rarr;',
+					'type'         => 'plain',
+				); ?>
+				<div id="post-nav" class="pager">
+				<?php echo paginate_links( $pagargs ); ?>
+				</div>
+				
+		<?php endif; ?>
 <?php endif; ?>  
         </div><!-- end of #content-blog -->
 <?php get_sidebar(); ?>

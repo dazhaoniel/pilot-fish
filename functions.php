@@ -5,11 +5,11 @@
  
 if (!defined('__DIR__')) { define('__DIR__', dirname(__FILE__)); }
 
-require ( get_template_directory() . '/includes/theme-options.php' );
-require ( get_template_directory() . '/includes/scripts.php' );
-require ( get_template_directory() . '/includes/hooks.php' );
-require ( get_template_directory() . '/includes/template-tags.php' );
-require ( get_template_directory() . '/includes/widgets.php' );
+require ( get_stylesheet_directory() . '/includes/theme-options.php' );
+require ( get_stylesheet_directory() . '/includes/scripts.php' );
+require ( get_stylesheet_directory() . '/includes/hooks.php' );
+require ( get_stylesheet_directory() . '/includes/template-tags.php' );
+require ( get_stylesheet_directory() . '/includes/widgets.php' );
 
 // Set the content width based on the theme's design and stylesheet
 if (!isset($content_width)) { $content_width = 960; }
@@ -18,7 +18,7 @@ if (!function_exists('pilotfish_setup')):
 function pilotfish_setup() {
 
 // Make theme available for translation
-  	load_theme_textdomain('pilotfish', get_template_directory() . '/languages');
+  	load_theme_textdomain('pilotfish', get_stylesheet_directory() . '/languages');
 
 // Register wp_nav_menu() menus
   	register_nav_menu( 'primary-navigation', __( 'Primary Navigation', 'pilotfish' ) );
