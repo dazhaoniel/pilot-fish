@@ -12,7 +12,7 @@ function pilotfish_scripts() {
     		wp_register_script('jquery', '', '', '', false);
   	}
 
-  	if (is_single() && comments_open() && get_option('thread_comments')) {
+  	if (comments_open() && get_option('thread_comments')) {
     		wp_enqueue_script('comment-reply');
   	}
 
@@ -245,18 +245,6 @@ endif;
 // call our custom wp_title filter, with normal (10) priority, and 3 args
 add_filter( 'wp_title', 'pilotfish_filter_wp_title', 10, 3 );
 
-/*
- * Comment reply script
- */
-if (!function_exists('pilotfish_enqueue_comment_reply_script')):
-function pilotfish_enqueue_comment_reply_script() {
-	if ( comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-endif;
-add_action( 'comment_form_before', 'pilotfish_enqueue_comment_reply_script' );
-
 /**
  * Return the URL for the first link found in the post content.
  */
@@ -286,10 +274,10 @@ add_action('pre_get_posts', 'modify_num_posts_for_projects');
 if (!function_exists('google_analytics_tracking_code')):
 function google_analytics_tracking_code(){
 
-	$options = get_option('pilotfish_theme_options');
-	$propertyID = $options['ga_tracking_code'];
+	$options = get_option('pilot_fish');
+	$propertyID = $options['pilotfish_ga_tracking_code'];
 
-	if ($options['add_ga'] == 1) { ?>
+	if ($options['pilotfish_add_ga'] == 1) { ?>
 
 		<script type="text/javascript">
 		  var _gaq = _gaq || [];
@@ -298,7 +286,7 @@ function google_analytics_tracking_code(){
 
 		  (function() {
 		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/analytics.js';
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 		</script>
@@ -320,8 +308,8 @@ add_action('wp_footer', 'google_analytics_tracking_code');
 if ( ! function_exists( 'pilotfish_featured_image_override' ) ) :
 function pilotfish_featured_image_override() {
 
-	$options = get_option('pilotfish_theme_options');
-	$featuredURL = $options['featured_image_url'];
+	$options = get_option('pilot_fish');
+	$featuredURL = $options['pilotfish_featured_image_url'];
 	if ( $featuredURL != '' ):
 ?>
 	<style type="text/css">
@@ -334,3 +322,21 @@ function pilotfish_featured_image_override() {
 }
 endif; // pilotfish_featured_image_override
 add_action('wp_footer', 'pilotfish_featured_image_override');
+
+/** 
+ * Upload favicon for a website
+ */
+if (!function_exists('pilotfish_website_favicon')):
+function pilotfish_website_favicon(){
+
+	$options = get_option('pilot_fish');
+	$faviconURL = $options['pilotfish_favicon'];
+
+	if ( $options['pilotfish_activate_favicon'] == 1 ):
+?>
+	  <link rel="shortcut icon" href="<?php echo $faviconURL; ?>">
+	<?php endif; ?>
+<?php
+}
+endif;
+add_action('wp_head', 'pilotfish_website_favicon');

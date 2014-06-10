@@ -5,11 +5,13 @@
  
 if (!defined('__DIR__')) { define('__DIR__', dirname(__FILE__)); }
 
-require ( get_stylesheet_directory() . '/includes/theme-options.php' );
 require ( get_stylesheet_directory() . '/includes/scripts.php' );
 require ( get_stylesheet_directory() . '/includes/hooks.php' );
 require ( get_stylesheet_directory() . '/includes/template-tags.php' );
 require ( get_stylesheet_directory() . '/includes/widgets.php' );
+
+define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_stylesheet_directory_uri() . '/includes/options/' );
+require_once dirname( __FILE__ ) . '/includes/options/options-framework.php';
 
 // Set the content width based on the theme's design and stylesheet
 if (!isset($content_width)) { $content_width = 960; }

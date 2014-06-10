@@ -2,530 +2,658 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pilot Fish 0.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-19 21:47-0500\n"
-"PO-Revision-Date: 2013-11-06 16:04-0500\n"
+"POT-Creation-Date: 2014-06-09 00:38-0500\n"
+"PO-Revision-Date: 2014-06-09 00:38-0500\n"
 "Last-Translator: Daniel Zhao <daniel@danielatwork.com>\n"
 "Language-Team: Daniel Zhao <daniel@danielatwork.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e\n"
-"X-Poedit-Basepath: ./pilot-fish\n"
 "X-Generator: Poedit 1.5.7\n"
-"X-Poedit-SearchPath-0: ./pilot-fish\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"_n_noop: 1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: pilot-fish/blog.php:34 pilot-fish/archive-project.php:34
-#: pilot-fish/taxonomy-project_type.php:34 pilot-fish/search.php:41
+#: 404.php:16
+msgid "404 &#8212; Oops! Deadend Here..."
+msgstr ""
+
+#: 404.php:17
+msgid "You can return"
+msgstr ""
+
+#: 404.php:17
+msgid "&larr; Home"
+msgstr ""
+
+#: 404.php:17
+msgid "or explore other pages and posts."
+msgstr ""
+
+#: archive-project.php:34 archive.php:49 index.php:25 page.php:80
+#: search.php:41 taxonomy-project_type.php:34 taxonomy-skills.php:34
 msgid "&larr; previous"
 msgstr "&larr; 上一页"
 
-#: pilot-fish/blog.php:35 pilot-fish/archive-project.php:35
-#: pilot-fish/taxonomy-project_type.php:35 pilot-fish/search.php:42
+#: archive-project.php:35 archive.php:50 index.php:26 page.php:81
+#: search.php:42 taxonomy-project_type.php:35 taxonomy-skills.php:35
 msgid "next &rarr;"
 msgstr "下一页 &rarr;"
 
-#: pilot-fish/taxonomy-project_type.php:14
-msgid "Posts Categorized:"
-msgstr ""
-
-#: pilot-fish/image.php:18
-msgid "&larr; Return to"
-msgstr ""
-
-#: pilot-fish/image.php:23 pilot-fish/content-quote.php:10
-#: pilot-fish/content-standard.php:10 pilot-fish/content-image.php:10
-msgid "Continue Reading &rarr;"
-msgstr "继续阅读 &rarr;"
-
-#: pilot-fish/image.php:24 pilot-fish/content-quote.php:22
-#: pilot-fish/content-standard.php:22 pilot-fish/content-image.php:22
-msgid "Pages:"
-msgstr "页码："
-
-#: pilot-fish/image.php:38 pilot-fish/content-quote.php:31
-#: pilot-fish/content-standard.php:31 pilot-fish/content-image.php:31
-msgid "No Response &darr;"
-msgstr "无回复 &darr;"
-
-#: pilot-fish/image.php:38 pilot-fish/content-quote.php:31
-#: pilot-fish/content-standard.php:31 pilot-fish/content-image.php:31
-msgid "One Response &darr;"
-msgstr "1条回复 &darr;"
-
-#: pilot-fish/image.php:38 pilot-fish/content-quote.php:31
-#: pilot-fish/content-standard.php:31 pilot-fish/content-image.php:31
-msgid "% Responses &darr;"
-msgstr "% 条回复 &darr;"
-
-#: pilot-fish/image.php:42 pilot-fish/content-quote.php:35
-#: pilot-fish/content-standard.php:35 pilot-fish/content-image.php:35
-msgid "TAGS:"
-msgstr "标签:"
-
-#: pilot-fish/image.php:43 pilot-fish/content-quote.php:36
-#: pilot-fish/content-standard.php:36 pilot-fish/content-image.php:36
+#: archive.php:22
 #, php-format
-msgid "FILED UNDER: %s"
-msgstr "分类目录: %s"
+msgid "Daily Archives: %s"
+msgstr "日度归档：%s"
 
-#: pilot-fish/image.php:44 pilot-fish/content-quote.php:8
-#: pilot-fish/content-quote.php:37 pilot-fish/content-standard.php:8
-#: pilot-fish/content-standard.php:37 pilot-fish/content-image.php:8
-#: pilot-fish/content-image.php:37
+#: archive.php:24
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "月度归档：%s"
+
+#: archive.php:26
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "年度归档：%s"
+
+#: archive.php:30
+#, php-format
+msgid "Author Archives: %s"
+msgstr "作者归档：%s"
+
+#: comments.php:11
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr "这篇文章受密码保护。查看评论请输入密码。"
+
+#: comments.php:17
+msgid "No Response to"
+msgstr ""
+
+#: comments.php:17
+msgid "One Response to"
+msgstr ""
+
+#: comments.php:17
+msgid "% Responses to"
+msgstr ""
+
+#: comments.php:25
+msgid "&#8249; previous"
+msgstr ""
+
+#: comments.php:26
+msgid "next &#8250;"
+msgstr ""
+
+#: comments.php:38
+msgid "Name"
+msgstr ""
+
+#: comments.php:39
+msgid "name (required)"
+msgstr ""
+
+#: comments.php:40
+msgid "E-mail"
+msgstr ""
+
+#: comments.php:41
+msgid "email (required)"
+msgstr ""
+
+#: comments.php:42
+msgid "Website"
+msgstr ""
+
+#: comments.php:43
+msgid "website"
+msgstr ""
+
+#: content-aside.php:8 content-aside.php:37 content-gallery.php:8
+#: content-gallery.php:37 content-image.php:8 content-image.php:37
+#: content-link.php:20 content-link.php:49 content-quote.php:8
+#: content-quote.php:37 content-standard.php:8 content-standard.php:37
+#: content-status.php:8 content-status.php:38 image.php:44
 #, php-format
 msgid "Permanent Link to %s"
 msgstr "链向 %s 的固定链接"
 
-#: pilot-fish/image.php:44 pilot-fish/content-quote.php:37
-#: pilot-fish/content-standard.php:37 pilot-fish/content-image.php:37
+#: content-aside.php:10 content-gallery.php:10 content-image.php:10
+#: content-link.php:23 content-quote.php:10 content-standard.php:10
+#: content-status.php:11 image.php:23 page.php:19 single-project.php:17
+msgid "Continue Reading &rarr;"
+msgstr "继续阅读 &rarr;"
+
+#: content-aside.php:16 content-gallery.php:16 content-image.php:16
+#: content-link.php:29 content-quote.php:16 content-standard.php:16
+#: content-status.php:17 single-project.php:23
+msgid "About"
+msgstr "关于"
+
+#: content-aside.php:22 content-gallery.php:22 content-image.php:22
+#: content-link.php:35 content-quote.php:22 content-standard.php:22
+#: content-status.php:23 image.php:24 page.php:20 single-project.php:29
+msgid "Pages:"
+msgstr "页码："
+
+#: content-aside.php:31 content-gallery.php:31 content-image.php:31
+#: content-link.php:43 content-quote.php:31 content-standard.php:31
+#: content-status.php:32 image.php:38 page.php:66 single-project.php:38
+msgid "No Response &darr;"
+msgstr "无回复 &darr;"
+
+#: content-aside.php:31 content-gallery.php:31 content-image.php:31
+#: content-link.php:43 content-quote.php:31 content-standard.php:31
+#: content-status.php:32 image.php:38 page.php:66 single-project.php:38
+msgid "One Response &darr;"
+msgstr "1条回复 &darr;"
+
+#: content-aside.php:31 content-gallery.php:31 content-image.php:31
+#: content-link.php:43 content-quote.php:31 content-standard.php:31
+#: content-status.php:32 image.php:38 page.php:66 single-project.php:38
+msgid "% Responses &darr;"
+msgstr "% 条回复 &darr;"
+
+#: content-aside.php:35 content-gallery.php:35 content-image.php:35
+#: content-link.php:47 content-quote.php:35 content-standard.php:35
+#: content-status.php:36 image.php:42
+msgid "TAGS:"
+msgstr "标签:"
+
+#: content-aside.php:36 content-gallery.php:36 content-image.php:36
+#: content-link.php:48 content-quote.php:36 content-standard.php:36
+#: content-status.php:37 image.php:43
+#, php-format
+msgid "FILED UNDER: %s"
+msgstr "分类目录: %s"
+
+#: content-aside.php:37 content-gallery.php:37 content-image.php:37
+#: content-link.php:49 content-quote.php:37 content-standard.php:37
+#: content-status.php:38 image.php:44
 msgid "Permalink"
 msgstr "固定链接"
 
-#: pilot-fish/functions.php:24
+#: content-aside.php:40 content-gallery.php:40 content-image.php:40
+#: content-link.php:51 content-quote.php:40 content-standard.php:40
+#: content-status.php:40 page.php:71 single-project.php:47
+msgid "Edit"
+msgstr "编辑"
+
+#: footer.php:22
+msgid "powered by"
+msgstr ""
+
+#: footer.php:22
+msgid "http://wordpress.org"
+msgstr "http://wordpress.org"
+
+#: footer.php:23
+msgid "WordPress"
+msgstr "WordPress"
+
+#: footer.php:23
+msgid "Theme by"
+msgstr "主题作者"
+
+#: footer.php:23
+msgid "http://danielatwork.com"
+msgstr "http://danielatwork.com"
+
+#: footer.php:24
+msgid "Daniel Zhao"
+msgstr "Daniel Zhao"
+
+#: footer.php:27
+msgid "Back to Top"
+msgstr "回到顶部"
+
+#: functions.php:26
 msgid "Primary Navigation"
 msgstr ""
 
-#: pilot-fish/search.php:14
+#: home.php:16
+msgid "Hello World!"
+msgstr ""
+
+#: home.php:18
+msgid "A Minimal, Responsive Portfolio Theme"
+msgstr ""
+
+#: home.php:19
+msgid ""
+"You can edit this section from home.php in the Edit Panel. Happy Blogging! "
+msgstr ""
+
+#: home.php:22
+msgid "Featured Widgets Area"
+msgstr ""
+
+#: image.php:18
+msgid "&larr; Return to"
+msgstr ""
+
+#: options.php:36
+msgid "Google Analytics"
+msgstr ""
+
+#: options.php:37
+msgid "Add Google Analytics to footer"
+msgstr ""
+
+#: options.php:45
+msgid "Google Analytics Tracking Code"
+msgstr ""
+
+#: options.php:46
+msgid "Enter your Google Analytics tracking code here"
+msgstr ""
+
+#: options.php:54
+msgid "Page Hierarchy"
+msgstr ""
+
+#: options.php:55
+msgid "Add Child Page links to Pages"
+msgstr ""
+
+#: options.php:63
+msgid "Featured Image"
+msgstr ""
+
+#: options.php:64
+msgid "Replace Landing Page Featured Image Bavarian Forest"
+msgstr ""
+
+#: options.php:71
+msgid "Activate favicon"
+msgstr ""
+
+#: options.php:72
+msgid "Check to activate favicon. Upload fav icon from below option"
+msgstr ""
+
+#: options.php:80
+msgid "Upload favicon"
+msgstr ""
+
+#: options.php:81
+msgid "Upload favicon for your site"
+msgstr ""
+
+#: page.php:51
+msgid "Page Hierarchy:"
+msgstr ""
+
+#: search.php:14
 msgid "We found"
 msgstr ""
 
-#: pilot-fish/search.php:19
+#: search.php:19
 msgid " &#8211; "
 msgstr " &#8211; "
 
-#: pilot-fish/search.php:21
+#: search.php:21
 msgid "articles for "
 msgstr ""
 
-#: pilot-fish/search.php:22
+#: search.php:22
 msgid "<span class=\"post-search-terms\">"
 msgstr "<span class=\"post-search-terms\">"
 
-#: pilot-fish/search.php:24
+#: search.php:24
 msgid "</span><!-- end of .post-search-terms -->"
 msgstr "</span><!-- end of .post-search-terms -->"
 
-#: pilot-fish/sidebar-home.php:20
+#: searchform.php:2
+msgid "search here &hellip;"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search"
+msgstr ""
+
+#: sidebar-home.php:20
 msgid "featured one"
 msgstr ""
 
-#: pilot-fish/sidebar-home.php:21
+#: sidebar-home.php:21
 msgid ""
 "Replace the text here in the sidebar-home.php, or add widgets to Featured "
 "One area."
 msgstr ""
 
-#: pilot-fish/sidebar-home.php:38
+#: sidebar-home.php:38
 msgid "featured two"
 msgstr ""
 
-#: pilot-fish/sidebar-home.php:39
+#: sidebar-home.php:39
 msgid ""
 "Replace the text here in the sidebar-home.php, or add widgets to Featured "
 "Two area."
 msgstr ""
 
-#: pilot-fish/sidebar-home.php:54
+#: sidebar-home.php:54
 msgid "featured three"
 msgstr ""
 
-#: pilot-fish/sidebar-home.php:55
+#: sidebar-home.php:55
 msgid ""
 "Replace the text here in the sidebar-home.php, or add widgets to Featured "
 "Three area."
 msgstr ""
 
-#: pilot-fish/footer.php:22
-msgid "powered by"
-msgstr ""
-
-#: pilot-fish/footer.php:22
-msgid "http://wordpress.org"
-msgstr "http://wordpress.org"
-
-#: pilot-fish/footer.php:23
-msgid "WordPress"
-msgstr "WordPress"
-
-#: pilot-fish/footer.php:23
-msgid "Theme by"
-msgstr "主题作者"
-
-#: pilot-fish/footer.php:23
-msgid "http://danielatwork.com"
-msgstr "http://danielatwork.com"
-
-#: pilot-fish/footer.php:24
-msgid "Daniel Zhao"
-msgstr "Daniel Zhao"
-
-#: pilot-fish/footer.php:27
-msgid "Back to Top"
-msgstr "回到顶部"
-
-#: pilot-fish/content-quote.php:16 pilot-fish/content-standard.php:16
-#: pilot-fish/content-image.php:16
-msgid "About"
-msgstr "关于"
-
-#: pilot-fish/content-quote.php:40 pilot-fish/content-standard.php:40
-#: pilot-fish/content-image.php:40
-msgid "Edit"
-msgstr "编辑"
-
-#: pilot-fish/searchform.php:2
-msgid "search here &hellip;"
-msgstr ""
-
-#: pilot-fish/searchform.php:3
-msgid "Search"
-msgstr ""
-
-#: pilot-fish/home.php:16
-msgid "Hello World!"
-msgstr ""
-
-#: pilot-fish/home.php:18
-msgid "A Minimal, Responsive Portfolio Theme"
-msgstr ""
-
-#: pilot-fish/home.php:19
-msgid ""
-"You can edit this section from home.php in the Edit Panel. Happy Blogging! "
-msgstr ""
-
-#: pilot-fish/home.php:23
-msgid "Featured Widgets Area"
-msgstr ""
-
-#: pilot-fish/single.php:23
-msgid "<span class=\"meta-nav\">&larr;</span> previous post"
-msgstr ""
-
-#: pilot-fish/single.php:24
-msgid "next post <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#: pilot-fish/single-project.php:51
+#: single-project.php:53
 msgid "<span class=\"meta-nav\">&larr;</span> previous project"
 msgstr ""
 
-#: pilot-fish/single-project.php:52
+#: single-project.php:54
 msgid "next project <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: pilot-fish/404.php:16
-msgid "404 &#8212; Oops! Deadend Here..."
+#: single.php:23
+msgid "<span class=\"meta-nav\">&larr;</span> previous post"
 msgstr ""
 
-#: pilot-fish/404.php:17
-msgid "You can return"
+#: single.php:24
+msgid "next post <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: pilot-fish/404.php:17
-msgid "&larr; Home"
-msgstr ""
-
-#: pilot-fish/404.php:17
-msgid "or explore other pages and posts."
-msgstr ""
-
-#: pilot-fish/page.php:51
-msgid "Page Hierarchy:"
-msgstr ""
-
-#: pilot-fish/archive.php:22
-#, php-format
-msgid "Daily Archives: %s"
-msgstr "日度归档：%s"
-
-#: pilot-fish/archive.php:24
-#, php-format
-msgid "Monthly Archives: %s"
-msgstr "月度归档：%s"
-
-#: pilot-fish/archive.php:26
-#, php-format
-msgid "Yearly Archives: %s"
-msgstr "年度归档：%s"
-
-#: pilot-fish/archive.php:30
-#, php-format
-msgid "Author Archives: %s"
-msgstr "作者归档：%s"
-
-#: pilot-fish/comments.php:11
-msgid ""
-"This post is password protected. Enter the password to view any comments."
-msgstr "这篇文章受密码保护。查看评论请输入密码。"
-
-#: pilot-fish/comments.php:17
-msgid "No Response to"
-msgstr ""
-
-#: pilot-fish/comments.php:17
-msgid "One Response to"
-msgstr ""
-
-#: pilot-fish/comments.php:17
-msgid "% Responses to"
-msgstr ""
-
-#: pilot-fish/comments.php:25
-msgid "&#8249; previous"
-msgstr ""
-
-#: pilot-fish/comments.php:26
-msgid "next &#8250;"
-msgstr ""
-
-#: pilot-fish/comments.php:38
-msgid "Name"
-msgstr ""
-
-#: pilot-fish/comments.php:39
-msgid "name (required)"
-msgstr ""
-
-#: pilot-fish/comments.php:40
-msgid "E-mail"
-msgstr ""
-
-#: pilot-fish/comments.php:41
-msgid "email (required)"
-msgstr ""
-
-#: pilot-fish/comments.php:42
-msgid "Website"
-msgstr ""
-
-#: pilot-fish/comments.php:43
-msgid "website"
-msgstr ""
-
-#: pilot-fish/includes/template-tags.php:5
-#, php-format
-msgid "<span class=\"%1$s\">Posted on</span> %2$s by %3$s"
-msgstr "<span class=\"%1$s\">%3$s 发表于</span> %2$s"
-
-#: pilot-fish/includes/theme-options.php:22
-msgid "Theme Options"
-msgstr ""
-
-#: pilot-fish/includes/theme-options.php:36
-msgid " Theme Options"
-msgstr ""
-
-#: pilot-fish/includes/theme-options.php:39
-msgid "Options saved"
-msgstr ""
-
-#: pilot-fish/includes/theme-options.php:50
-msgid ""
-"Thank you for downloading Pilot Fish (^^) For more information on "
-"customizing the theme, please go to "
-msgstr ""
-
-#: pilot-fish/includes/theme-options.php:50
+#: taxonomy-project_type.php:14
 #, fuzzy
-msgid "http://wordpress.danielatwork.com/pilotfish/faq/"
-msgstr "http://danielatwork.com"
+msgid "Project Type:"
+msgstr "项目"
 
-#: pilot-fish/includes/theme-options.php:50
-msgid "Pilot Fish FAQ"
-msgstr ""
+#: taxonomy-skills.php:14
+#, fuzzy
+msgid "Project Skills:"
+msgstr "项目"
 
-#: pilot-fish/includes/theme-options.php:50
-msgid ", or find Danni on Twitter @danni1990"
-msgstr ""
-
-#: pilot-fish/includes/theme-options.php:58
-msgid "Google Analytics"
-msgstr ""
-
-#: pilot-fish/includes/theme-options.php:61
-msgid "Add Google Analytics to footer"
-msgstr ""
-
-#: pilot-fish/includes/theme-options.php:70
-msgid "Google Analytics Tracking Code"
-msgstr ""
-
-#: pilot-fish/includes/theme-options.php:73
-msgid "UA-XXXXX-X"
-msgstr ""
-
-#: pilot-fish/includes/theme-options.php:82
-msgid "Page Hierarchy"
-msgstr ""
-
-#: pilot-fish/includes/theme-options.php:85
-msgid "Add Child Page links to Pages"
-msgstr ""
-
-#: pilot-fish/includes/theme-options.php:91
-msgid "Save Options"
-msgstr ""
-
-#: pilot-fish/includes/scripts.php:63
+#: includes/scripts.php:64
 msgid "Projects"
 msgstr "项目"
 
-#: pilot-fish/includes/scripts.php:64
+#: includes/scripts.php:65
 msgid "Project"
 msgstr "项目"
 
-#: pilot-fish/includes/scripts.php:93 pilot-fish/includes/scripts.php:94
+#: includes/scripts.php:94 includes/scripts.php:95
 #, fuzzy
 msgid "Project Type"
 msgstr "项目"
 
-#: pilot-fish/includes/scripts.php:95
+#: includes/scripts.php:96
 msgid "Search Project Types"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:96
+#: includes/scripts.php:97
 #, fuzzy
 msgid "All Project Types"
 msgstr "项目"
 
-#: pilot-fish/includes/scripts.php:97
+#: includes/scripts.php:98
 msgid "Parent Project Type"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:98
+#: includes/scripts.php:99
 msgid "Parent Project Type:"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:99
+#: includes/scripts.php:100
 msgid "Edit Project Type"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:100
+#: includes/scripts.php:101
 msgid "Update Project Type"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:101
+#: includes/scripts.php:102
 msgid "Add New Project Type"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:102
+#: includes/scripts.php:103
 #, fuzzy
 msgid "New Project Type"
 msgstr "项目"
 
-#: pilot-fish/includes/scripts.php:116
+#: includes/scripts.php:117
 msgid "Skills"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:117
+#: includes/scripts.php:118
 msgid "Skill"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:118
+#: includes/scripts.php:119
 msgid "Search Skills"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:119
+#: includes/scripts.php:120
 msgid "All Skills"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:120
+#: includes/scripts.php:121
 msgid "Parent Skill"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:121
+#: includes/scripts.php:122
 msgid "Parent Skill:"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:122
+#: includes/scripts.php:123
 msgid "Edit Skill"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:123
+#: includes/scripts.php:124
 msgid "Update Skill"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:124
+#: includes/scripts.php:125
 msgid "Add New Skill"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:125
+#: includes/scripts.php:126
 msgid "New Skill Name"
 msgstr ""
 
-#: pilot-fish/includes/scripts.php:152
+#: includes/scripts.php:154
 msgid "Untitled"
 msgstr "无题"
 
-#: pilot-fish/includes/scripts.php:180
+#: includes/scripts.php:182
 msgid "Continue Reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "继续阅读 <span class=\"meta-nav\">&rarr;</span>"
 
-#: pilot-fish/includes/widgets.php:6
+#: includes/template-tags.php:5
+#, php-format
+msgid "<span class=\"%1$s\">Posted on</span> %2$s by %3$s"
+msgstr "<span class=\"%1$s\">%3$s 发表于</span> %2$s"
+
+#: includes/widgets.php:6
 msgid "Primary Sidebar"
 msgstr ""
 
-#: pilot-fish/includes/widgets.php:14
+#: includes/widgets.php:14
 msgid "Footer One"
 msgstr ""
 
-#: pilot-fish/includes/widgets.php:22
+#: includes/widgets.php:22
 msgid "Footer Two"
 msgstr ""
 
-#: pilot-fish/includes/widgets.php:30
+#: includes/widgets.php:30
 msgid "Footer Three"
 msgstr ""
 
-#: pilot-fish/includes/widgets.php:38
+#: includes/widgets.php:38
 msgid "Featured One"
 msgstr ""
 
-#: pilot-fish/includes/widgets.php:46
+#: includes/widgets.php:46
 msgid "Featured Two"
 msgstr ""
 
-#: pilot-fish/includes/widgets.php:54
+#: includes/widgets.php:54
 msgid "Featured Three"
 msgstr ""
 
-#: pilot-fish/includes/widgets.php:70
+#: includes/widgets.php:70
 msgid "Use this widget to add a vCard"
 msgstr ""
 
-#: pilot-fish/includes/widgets.php:71
+#: includes/widgets.php:71
 msgid "pilotfish: vCard"
 msgstr ""
 
-#: pilot-fish/includes/widgets.php:98
+#: includes/widgets.php:98
 msgid "vCard"
 msgstr ""
 
-#: pilot-fish/includes/widgets.php:164
+#: includes/widgets.php:164
 msgid "Title (optional):"
 msgstr ""
 
-#: pilot-fish/includes/widgets.php:168
+#: includes/widgets.php:168
 msgid "Street Address:"
 msgstr ""
 
-#: pilot-fish/includes/widgets.php:172
+#: includes/widgets.php:172
 msgid "City/Locality:"
 msgstr ""
 
-#: pilot-fish/includes/widgets.php:176
+#: includes/widgets.php:176
 msgid "State/Region:"
 msgstr ""
 
-#: pilot-fish/includes/widgets.php:180
+#: includes/widgets.php:180
 msgid "Zipcode/Postal Code:"
 msgstr "邮政编码："
 
-#: pilot-fish/includes/widgets.php:184
+#: includes/widgets.php:184
 msgid "Telephone:"
 msgstr "电话："
 
-#: pilot-fish/includes/widgets.php:188
+#: includes/widgets.php:188
 msgid "Email:"
 msgstr "电子邮件："
+
+#: includes/options/includes/class-options-framework-admin.php:85
+#: includes/options/includes/class-options-framework-admin.php:86
+#: includes/options/includes/class-options-framework-admin.php:307
+msgid "Theme Options"
+msgstr ""
+
+#: includes/options/includes/class-options-framework-admin.php:174
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: includes/options/includes/class-options-framework-admin.php:205
+msgid "Default options restored."
+msgstr ""
+
+#: includes/options/includes/class-options-framework-admin.php:259
+msgid "Options saved."
+msgstr ""
+
+#: includes/options/includes/class-options-media-uploader.php:63
+msgid "No file chosen"
+msgstr ""
+
+#: includes/options/includes/class-options-media-uploader.php:66
+#: includes/options/includes/class-options-media-uploader.php:119
+msgid "Upload"
+msgstr ""
+
+#: includes/options/includes/class-options-media-uploader.php:68
+#: includes/options/includes/class-options-media-uploader.php:120
+msgid "Remove"
+msgstr ""
+
+#: includes/options/includes/class-options-media-uploader.php:71
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: includes/options/includes/class-options-media-uploader.php:95
+msgid "View File"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:241
+msgid "No Repeat"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:242
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:243
+msgid "Repeat Vertically"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:244
+msgid "Repeat All"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:257
+msgid "Top Left"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:258
+msgid "Top Center"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:259
+msgid "Top Right"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:260
+msgid "Middle Left"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:261
+msgid "Middle Center"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:262
+msgid "Middle Right"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:263
+msgid "Bottom Left"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:264
+msgid "Bottom Center"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:265
+msgid "Bottom Right"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:278
+msgid "Scroll Normally"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:279
+msgid "Fixed in Place"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:353
+msgid "Normal"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:354
+msgid "Italic"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:355
+msgid "Bold"
+msgstr ""
+
+#: includes/options/includes/class-options-sanitization.php:356
+msgid "Bold Italic"
+msgstr ""
+
+#, fuzzy
+#~ msgid "http://wordpress.danielatwork.com/pilotfish/faq/"
+#~ msgstr "http://danielatwork.com"

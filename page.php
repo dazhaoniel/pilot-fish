@@ -21,8 +21,8 @@ get_header(); ?>
 	
 	<!-- Display children if page has children -->
 		<?php
-			$options = get_option('pilotfish_theme_options');
-			if ($options['add_ph'] == 1) { ?> 
+			$options = get_option('pilot_fish');
+			if ($options['pilotfish_add_ph'] == 1) { ?> 
 			<div class="page-hierarchy">             
 		        <?php
 			//if the post has a parent
