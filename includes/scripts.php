@@ -271,7 +271,7 @@ add_action('pre_get_posts', 'modify_num_posts_for_projects');
  * Include the Google Analytics Tracking Code (ga.js)
  */
 // @ http://code.google.com/apis/analytics/docs/tracking/asyncUsageGuide.html
-if (!function_exists('google_analytics_tracking_code')):
+/*if (!function_exists('google_analytics_tracking_code')):
 function google_analytics_tracking_code(){
 
 	$options = get_option('pilot_fish');
@@ -294,12 +294,12 @@ function google_analytics_tracking_code(){
 <?php }
 }
 endif;
-
+*/
 // include GA tracking code before the closing head tag
 // add_action('wp_head', 'google_analytics_tracking_code');
 
 // include GA tracking code before the closing body tag
-add_action('wp_footer', 'google_analytics_tracking_code');
+// add_action('wp_footer', 'google_analytics_tracking_code');
 
 
 /**
@@ -334,7 +334,7 @@ function pilotfish_website_favicon(){
 
 	if ( $options['pilotfish_activate_favicon'] == 1 ):
 ?>
-	  <link rel="shortcut icon" href="<?php echo $faviconURL; ?>">
+	  <link rel="shortcut icon" href="<?php echo esc_url(__( $faviconURL ,'pilotfish')); ?>">
 	<?php endif; ?>
 <?php
 }

@@ -32,7 +32,7 @@ function optionsframework_options() {
 
 
 	// Add Google Analytics option
-	$options[] = array(
+/*	$options[] = array(
 		'name' 		=> __( 'Google Analytics', 'pilotfish' ),
 		'desc' 		=> __( 'Add Google Analytics to footer', 'pilotfish' ),
 		'id' 			=> 'pilotfish_add_ga',
@@ -48,7 +48,7 @@ function optionsframework_options() {
 		'std' 		=> 'UA-XXXXX-X',
 		'type' 		=> 'text'
 	);
-
+*/
 	// Turning Page Hierarchy On or Off
 	$options[] = array(
 		'name' 		=> __( 'Page Hierarchy', 'pilotfish' ),
