@@ -5,7 +5,7 @@
 if (!function_exists('pilotfish_script')):
 function pilotfish_scripts() {
   	wp_enqueue_style('pilotfish_main_style', get_stylesheet_directory_uri() . '/style.css', array(), false, 'all');
-  	wp_enqueue_style('pilotfish_lightbox_style', get_stylesheet_directory_uri() . '/css/lightbox.css', array(), false, 'all');
+  	// wp_enqueue_style('pilotfish_fancybox_style', get_stylesheet_directory_uri() . '/css/jquery.fancybox-1.3.4.css', array(), false, 'all');
 
   	if (!is_admin()) {
     		wp_deregister_script('jquery');
@@ -18,7 +18,7 @@ function pilotfish_scripts() {
 
   	wp_enqueue_script('pilotfish_modernizr', get_stylesheet_directory_uri() . '/js/modernizr.js', array('jquery'), null, false);
 	wp_enqueue_script('pilotfish_mediaqueries', get_stylesheet_directory_uri() . '/js/css3-mediaqueries.js', array('jquery'), null, false);
-	wp_enqueue_script('pilotfish_lightbox', get_stylesheet_directory_uri() . '/js/lightbox.min.js', array('jquery'), null, true);
+	// wp_enqueue_script('pilotfish_fancybox', get_stylesheet_directory_uri() . '/js/jquery.fancybox-1.3.4.pack.js', array('jquery'), null, true);
 	wp_enqueue_script('pilotfish_main', get_stylesheet_directory_uri() . '/js/main.js', array('jquery'), null, true);
 
 	wp_enqueue_style('pilotfish_font', '//fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700|Fredericka+the+Great', array(), false, 'all');
@@ -267,40 +267,6 @@ function modify_num_posts_for_projects($query)
 endif;
 add_action('pre_get_posts', 'modify_num_posts_for_projects');
 
-/** 
- * Include the Google Analytics Tracking Code (ga.js)
- */
-// @ http://code.google.com/apis/analytics/docs/tracking/asyncUsageGuide.html
-/*if (!function_exists('google_analytics_tracking_code')):
-function google_analytics_tracking_code(){
-
-	$options = get_option('pilot_fish');
-	$propertyID = $options['pilotfish_ga_tracking_code'];
-
-	if ($options['pilotfish_add_ga'] == 1) { ?>
-
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', '<?php echo $propertyID; ?>']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/analytics.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		</script>
-
-<?php }
-}
-endif;
-*/
-// include GA tracking code before the closing head tag
-// add_action('wp_head', 'google_analytics_tracking_code');
-
-// include GA tracking code before the closing body tag
-// add_action('wp_footer', 'google_analytics_tracking_code');
-
 
 /**
  * Change the Homepage Featured Image
@@ -314,7 +280,7 @@ function pilotfish_featured_image_override() {
 ?>
 	<style type="text/css">
 	#featured {
-		background-image: url(<?php echo $featuredURL; ?>);
+		background-image: url(<?php echo esc_url( $featuredURL ); ?>);
 	}
 	<?php endif; ?>
 	</style>
@@ -334,7 +300,7 @@ function pilotfish_website_favicon(){
 
 	if ( $options['pilotfish_activate_favicon'] == 1 ):
 ?>
-	  <link rel="shortcut icon" href="<?php echo esc_url(__( $faviconURL ,'pilotfish')); ?>">
+	  <link rel="shortcut icon" href="<?php echo esc_url( $faviconURL ); ?>">
 	<?php endif; ?>
 <?php
 }

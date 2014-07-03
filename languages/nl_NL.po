@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pilot Fish 0.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-09 23:06-0500\n"
-"PO-Revision-Date: 2014-06-09 23:07-0500\n"
+"POT-Creation-Date: 2014-06-25 16:33+0800\n"
+"PO-Revision-Date: 2014-06-25 16:33+0800\n"
 "Last-Translator: Daniel Zhao <daniel@danielatwork.com>\n"
 "Language-Team: Daniel Zhao <daniel@danielatwork.com>\n"
 "MIME-Version: 1.0\n"
@@ -238,54 +238,38 @@ msgstr "Uitgelichte widgets"
 msgid "&larr; Return to"
 msgstr "&larr; Terug naar"
 
-#: options.php:36
-msgid "Google Analytics"
-msgstr "Google Analytics"
-
-#: options.php:37
-msgid "Add Google Analytics to footer"
-msgstr "Voeg Google Analytics toe in footer"
-
-#: options.php:45
-msgid "Google Analytics Tracking Code"
-msgstr "Google Analytics Tracking Code"
-
-#: options.php:46
-msgid "Enter your Google Analytics tracking code here"
-msgstr ""
-
-#: options.php:54
+#: options.php:34
 #, fuzzy
 msgid "Page Hierarchy"
 msgstr "Pagina hierarchie"
 
-#: options.php:55
+#: options.php:35
 msgid "Add Child Page links to Pages"
 msgstr ""
 
-#: options.php:63
+#: options.php:43
 #, fuzzy
 msgid "Featured Image"
 msgstr "Uitgelicht 1"
 
-#: options.php:64
+#: options.php:44
 msgid "Replace Landing Page Featured Image Bavarian Forest"
 msgstr ""
 
-#: options.php:71
+#: options.php:51
 #, fuzzy
 msgid "Activate favicon"
 msgstr "Gebruik favicon"
 
-#: options.php:72
+#: options.php:52
 msgid "Check to activate favicon. Upload fav icon from below option"
 msgstr ""
 
-#: options.php:80
+#: options.php:60
 msgid "Upload favicon"
 msgstr ""
 
-#: options.php:81
+#: options.php:61
 msgid "Upload favicon for your site"
 msgstr ""
 
@@ -663,6 +647,15 @@ msgstr ""
 #: includes/options/includes/class-options-sanitization.php:356
 msgid "Bold Italic"
 msgstr ""
+
+#~ msgid "Google Analytics"
+#~ msgstr "Google Analytics"
+
+#~ msgid "Add Google Analytics to footer"
+#~ msgstr "Voeg Google Analytics toe in footer"
+
+#~ msgid "Google Analytics Tracking Code"
+#~ msgstr "Google Analytics Tracking Code"
 
 #~ msgid " Theme Options"
 #~ msgstr " Thema opties"

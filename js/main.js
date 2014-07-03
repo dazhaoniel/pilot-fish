@@ -89,13 +89,3 @@ jQuery(document).ready(function(){
 		}, 800);
 		return false;
 	});
-
-///////////////////////////////////
-// Initialize Lightbox for Gallery
-///////////////////////////////////
-	// Initialize the Lightbox automatically for any links to images with extensions .jpg, .jpeg, .png or .gif
-    $("a[href$='.jpg'], a[href$='.png'], a[href$='.jpeg'], a[href$='.gif']").attr('data-lightbox','images');
-    //Initialize the Lightbox and add data-lightbox="gallery" to all gallery images when the gallery is set up using [gallery link="file"] so that a Lightbox Gallery exists
-    $(".gallery a[href$='.jpg'], .gallery a[href$='.png'], .gallery a[href$='.jpeg'], .gallery a[href$='.gif']").attr('data-lightbox','gallery');
- 
-});

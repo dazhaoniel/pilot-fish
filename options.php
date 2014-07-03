@@ -29,26 +29,6 @@ function optionsframework_options() {
 
 	$options = array();
 
-
-
-	// Add Google Analytics option
-/*	$options[] = array(
-		'name' 		=> __( 'Google Analytics', 'pilotfish' ),
-		'desc' 		=> __( 'Add Google Analytics to footer', 'pilotfish' ),
-		'id' 			=> 'pilotfish_add_ga',
-		'std' 		=> '0',
-		'type' 		=> 'checkbox'
-	);
-
-	// Google Analytics Tracking Code
-	$options[] = array(
-		'name' 		=> __( 'Google Analytics Tracking Code', 'pilotfish' ),
-		'desc' 		=> __( 'Enter your Google Analytics tracking code here', 'pilotfish' ),
-		'id' 			=> 'pilotfish_ga_tracking_code',
-		'std' 		=> 'UA-XXXXX-X',
-		'type' 		=> 'text'
-	);
-*/
 	// Turning Page Hierarchy On or Off
 	$options[] = array(
 		'name' 		=> __( 'Page Hierarchy', 'pilotfish' ),

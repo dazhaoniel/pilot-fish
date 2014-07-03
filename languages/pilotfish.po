@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pilot Fish v0.3.6\n"
-"POT-Creation-Date: 2014-06-09 00:30-0500\n"
-"PO-Revision-Date: 2014-06-09 00:30-0500\n"
+"POT-Creation-Date: 2014-06-25 16:33+0800\n"
+"PO-Revision-Date: 2014-06-25 16:33+0800\n"
 "Last-Translator: Daniel Zhao <daniel@danielatwork.com>\n"
 "Language-Team: Daniel Zhao <daniel@danielatwork.com>\n"
 "Language: en_US\n"
@@ -234,51 +234,35 @@ msgstr ""
 msgid "&larr; Return to"
 msgstr ""
 
-#: options.php:36
-msgid "Google Analytics"
-msgstr ""
-
-#: options.php:37
-msgid "Add Google Analytics to footer"
-msgstr ""
-
-#: options.php:45
-msgid "Google Analytics Tracking Code"
-msgstr ""
-
-#: options.php:46
-msgid "Enter your Google Analytics tracking code here"
-msgstr ""
-
-#: options.php:54
+#: options.php:34
 msgid "Page Hierarchy"
 msgstr ""
 
-#: options.php:55
+#: options.php:35
 msgid "Add Child Page links to Pages"
 msgstr ""
 
-#: options.php:63
+#: options.php:43
 msgid "Featured Image"
 msgstr ""
 
-#: options.php:64
+#: options.php:44
 msgid "Replace Landing Page Featured Image Bavarian Forest"
 msgstr ""
 
-#: options.php:71
+#: options.php:51
 msgid "Activate favicon"
 msgstr ""
 
-#: options.php:72
+#: options.php:52
 msgid "Check to activate favicon. Upload fav icon from below option"
 msgstr ""
 
-#: options.php:80
+#: options.php:60
 msgid "Upload favicon"
 msgstr ""
 
-#: options.php:81
+#: options.php:61
 msgid "Upload favicon for your site"
 msgstr ""
 
