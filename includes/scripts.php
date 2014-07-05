@@ -282,8 +282,8 @@ function pilotfish_featured_image_override() {
 	#featured {
 		background-image: url(<?php echo esc_url( $featuredURL ); ?>);
 	}
-	<?php endif; ?>
 	</style>
+	<?php endif; ?>
 <?php
 }
 endif; // pilotfish_featured_image_override
