@@ -4,22 +4,20 @@
  */
 if (!function_exists('pilotfish_script')):
 function pilotfish_scripts() {
-  	wp_enqueue_style('pilotfish_main_style', get_stylesheet_directory_uri() . '/style.css', array(), false, 'all');
-  	// wp_enqueue_style('pilotfish_fancybox_style', get_stylesheet_directory_uri() . '/css/jquery.fancybox-1.3.4.css', array(), false, 'all');
+  	wp_enqueue_style('pilotfish_main_style', get_template_directory_uri() . '/style.css', array(), false, 'all');
 
   	if (!is_admin()) {
-    		wp_deregister_script('jquery');
-    		wp_register_script('jquery', '', '', '', false);
+    	wp_deregister_script('jquery');
+    	wp_register_script('jquery', '', '', '', false);
   	}
 
   	if (comments_open() && get_option('thread_comments')) {
-    		wp_enqueue_script('comment-reply');
+    	wp_enqueue_script('comment-reply');
   	}
 
-  	wp_enqueue_script('pilotfish_modernizr', get_stylesheet_directory_uri() . '/js/modernizr.js', array('jquery'), null, false);
-	wp_enqueue_script('pilotfish_mediaqueries', get_stylesheet_directory_uri() . '/js/css3-mediaqueries.js', array('jquery'), null, false);
-	// wp_enqueue_script('pilotfish_fancybox', get_stylesheet_directory_uri() . '/js/jquery.fancybox-1.3.4.pack.js', array('jquery'), null, true);
-	wp_enqueue_script('pilotfish_main', get_stylesheet_directory_uri() . '/js/main.js', array('jquery'), null, true);
+  	wp_enqueue_script('pilotfish_modernizr', get_template_directory_uri() . '/js/modernizr.js', array('jquery'), null, false);
+	wp_enqueue_script('pilotfish_mediaqueries', get_template_directory_uri() . '/js/css3-mediaqueries.js', array('jquery'), null, false);
+	wp_enqueue_script('pilotfish_main', get_template_directory_uri() . '/js/main.js', array('jquery'), null, true);
 
 	wp_enqueue_style('pilotfish_font', '//fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700|Fredericka+the+Great', array(), false, 'all');
 }
