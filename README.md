@@ -11,8 +11,10 @@ Pilot Fish is an elegant portfolio theme with minimal design: featuring a custom
 
 ![Pilot Fish Responsive Showcase](http://danielatwork.com/folio/wp-content/uploads/2012/07/pilot-fish-responsive-showcase-presentation-1024x635.png)
 
-Resource Licenses:
+### Resource Licenses
+
 Cover Photo Bavarian Forest from [Kimmo Savolainen](http://www.ks-image.com/), licensed under Creative Commons.
+
 Stainless Icon from [IconLeak](http://iconleak.com/works/free-app-icons/), under [Free License Agreement](http://iconleak.com/free-license-agreement/).
 
 
