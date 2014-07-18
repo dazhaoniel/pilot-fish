@@ -16,7 +16,7 @@
                 
                 <section id="sidebar-home-1" class="widgets-home">
                 <div class="widget-inner">
-                <img class="aligncenter" src="<?php echo get_stylesheet_directory_uri(); ?>/images/bulb.png" alt="">
+                <img class="aligncenter" src="<?php echo get_template_directory_uri(); ?>/images/bulb.png" alt="">
                 <h3 class="center"><?php _e('featured one', 'pilotfish'); ?></h3>
                 <div class="textwidget"><?php _e('Replace the text here in the sidebar-home.php, or add widgets to Featured One area.','pilotfish'); ?></div>
                 </div>
@@ -34,7 +34,7 @@
                 
                 <section id="sidebar-home-2" class="widgets-home">
                 <div class="widget-inner">
-                <img class="aligncenter" src="<?php echo get_stylesheet_directory_uri(); ?>/images/wheel.png" alt="">
+                <img class="aligncenter" src="<?php echo get_template_directory_uri(); ?>/images/wheel.png" alt="">
                 <h3 class="center"><?php _e('featured two', 'pilotfish'); ?></h3>
                 <div class="textwidget"><?php _e('Replace the text here in the sidebar-home.php, or add widgets to Featured Two area.','pilotfish'); ?></div>
                 </div>
@@ -50,7 +50,7 @@
                 
                 <section id="sidebar-home-3" class="widgets-home">
                 <div class="widget-inner">
-                <img class="aligncenter" src="<?php echo get_stylesheet_directory_uri(); ?>/images/wrench.png" alt="">
+                <img class="aligncenter" src="<?php echo get_template_directory_uri(); ?>/images/wrench.png" alt="">
                 <h3 class="center"><?php _e('featured three', 'pilotfish'); ?></h3>
                 <div class="textwidget"><?php _e('Replace the text here in the sidebar-home.php, or add widgets to Featured Three area.','pilotfish'); ?></div>
                 </div>

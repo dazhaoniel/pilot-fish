@@ -10,7 +10,7 @@ require ( get_template_directory() . '/includes/hooks.php' );
 require ( get_template_directory() . '/includes/template-tags.php' );
 require ( get_template_directory() . '/includes/widgets.php' );
 
-define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_stylesheet_directory_uri() . '/includes/options/' );
+define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/includes/options/' );
 require_once dirname( __FILE__ ) . '/includes/options/options-framework.php';
 
 // Set the content width based on the theme's design and stylesheet
