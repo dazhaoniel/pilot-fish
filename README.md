@@ -16,8 +16,3 @@ Pilot Fish is an elegant portfolio theme with minimal design: featuring a custom
 Cover Photo Bavarian Forest from [Kimmo Savolainen](http://www.ks-image.com/), licensed under Creative Commons.
 
 Stainless Icon from [IconLeak](http://iconleak.com/works/free-app-icons/), under [Free License Agreement](http://iconleak.com/free-license-agreement/).
-
-
-### TO DO LIST
-
-1.
